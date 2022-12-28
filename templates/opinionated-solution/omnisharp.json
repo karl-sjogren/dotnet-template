@@ -1,0 +1,19 @@
+{
+  "FormattingOptions": {
+    "newLine": "\n",
+    "enableEditorConfigSupport": true,
+    "OrganizeImports": true
+  },
+  "RoslynExtensionsOptions": {
+    "DocumentAnalysisTimeoutMs": 100000000
+  },
+  "fileOptions": {
+    "systemExcludeSearchPatterns": [
+      "**/node_modules/**/*",
+      "**/bin/**/*",
+      "**/obj/**/*"
+    ],
+    "excludeSearchPatterns": [
+    ]
+  }
+}
