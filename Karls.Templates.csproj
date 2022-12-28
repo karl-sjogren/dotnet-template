@@ -8,6 +8,8 @@
     <Authors>Karl-Johan Sjögren</Authors>
     <Description>Dotnet templates which sets up my own desired project structure.</Description>
     <PackageTags>dotnet-new;templates;karls;shorthand</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
 
     <TargetFramework>netstandard2.0</TargetFramework>
 
@@ -17,6 +19,10 @@
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
