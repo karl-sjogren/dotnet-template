@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "pack-release": "dotnet pack -o artifacts/ -c Release"
+    }
+}
