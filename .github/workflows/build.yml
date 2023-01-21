@@ -63,6 +63,7 @@ jobs:
 
   publish:
     name: NuGet Publish
+    needs: net-build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
