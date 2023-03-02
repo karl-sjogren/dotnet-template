@@ -14,11 +14,14 @@ on:
         required: true
         default: 'nocombine'
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "combine-prs"
   combine-prs:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/github-script@v6
         id: create-combined-pr
@@ -50,7 +53,7 @@ jobs:
 
                 for (const cr of check_runs) {
                   console.log('Validating check conclusion: ' + cr.conclusion);
-                  if(cr.conclusion != 'success') {
+                  if(cr.conclusion != 'success' && cr.conclusion != 'skipped') {
                     console.log('Discarding ' + branch + ' with check conclusion ' + cr.conclusion);
                     statusOK = false;
                   }
