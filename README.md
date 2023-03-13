@@ -16,7 +16,10 @@ Just run the following command to install the templates.
 dotnet new install Karls.Templates
 ```
 
-If you have them installed and need to update them you can run the following.
+If you have them installed and need to update them you can run the above
+command again.
+
+Or simply this to update all template packages (which is often a good idea).
 
 ```bash
 dotnet new update
@@ -26,9 +29,17 @@ dotnet new update
 
 ### Opinionated Solution
 
-This template creates a solution with a few projects and some default settings
-based on my own preferences.
+This template creates a solution with a single Core project (+tests) and
+some default settings based on my own preferences. It can also include some
+Github Actions/Dependabot specific stuff if passed the `--includeGithubActions`
+flag.
 
 ```bash
 dotnet new karls-solution -n Company.CoolProject
+```
+
+To see available options, run this.
+
+```bash
+dotnet new karls-solution --help
 ```
