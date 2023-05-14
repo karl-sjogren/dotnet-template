@@ -8,6 +8,7 @@
   </ImportGroup>
 
   <ItemGroup>
+    <Using Include="Microsoft.Extensions.Logging.Abstractions"/>
     <Using Include="System.Diagnostics.CodeAnalysis"/>
   </ItemGroup>
 
