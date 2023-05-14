@@ -8,9 +8,18 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 5
+
+  - package-ecosystem: "nuget"
+    directory: "/templates/opinionated-solution/"
+    schedule:
+      interval: "daily"
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/templates/opinionated-solution/"
     schedule:
       interval: "weekly"
