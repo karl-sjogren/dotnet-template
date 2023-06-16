@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/bin": true,
+      "**/obj": true,
+      "**/tmp": true,
+      "**/.yarn/cache": true
+    }
+  }
+  
