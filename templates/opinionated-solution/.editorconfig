@@ -200,6 +200,10 @@ dotnet_diagnostic.CA2017.severity = warning
 dotnet_diagnostic.CA2254.severity = warning
 dotnet_diagnostic.RS0030.severity = error
 
+# These are disabled due to https://github.com/dotnet/roslyn/issues/41640
+dotnet_diagnostic.CS1573.severity = none # Parameter 'parameter' has no matching param tag in the XML comment for 'parameter' (but other parameters do)
+dotnet_diagnostic.CS1591.severity = none # Missing XML comment for publicly visible type or member 'Type_or_Member'
+
 # Karls Analyzers
 
 dotnet_diagnostic.KP0001.severity = warning

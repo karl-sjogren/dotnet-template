@@ -9,6 +9,19 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
+    groups:
+      roslynator:
+        patterns:
+          - "Roslynator*"
+      ms-codeanalysis:
+        patterns:
+          - "Microsoft.CodeAnalysis*"
+      benchmark-dotnet:
+        patterns:
+          - "BenchmarkDotNet*"
+      entityframework-core:
+        patterns:
+          - "Microsoft.EntityFrameworkCore*"
 
   - package-ecosystem: "github-actions"
     directory: "/"

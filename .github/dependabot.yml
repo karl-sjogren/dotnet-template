@@ -13,6 +13,19 @@ updates:
     directory: "/templates/opinionated-solution/"
     schedule:
       interval: "daily"
+    groups:
+      roslynator:
+        patterns:
+          - "Roslynator*"
+      ms-codeanalysis:
+        patterns:
+          - "Microsoft.CodeAnalysis*"
+      benchmark-dotnet:
+        patterns:
+          - "BenchmarkDotNet*"
+      entityframework-core:
+        patterns:
+          - "Microsoft.EntityFrameworkCore*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
