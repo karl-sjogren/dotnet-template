@@ -6,6 +6,8 @@
     <Deterministic>true</Deterministic>
     <DeterministicSourcePaths Condition="'$(TF_BUILD)' == 'True' Or '$(CI)' == 'true'">true</DeterministicSourcePaths>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591;CS1573</NoWarn>
     <!--
       Dependabot doesn't handle lock files yet and we don't want to miss out on
       Dependabot updates. https://github.com/dependabot/dependabot-core/issues/1303
