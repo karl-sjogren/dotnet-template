@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <InternalsVisibleTo Include="$(ProjectName).Tests" />
-    <!-- Needed for Moq to work with InternalsVisibleTo -->
+    <!-- Needed for FakeItEasy to work with InternalsVisibleTo -->
     <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
   </ItemGroup>
 
