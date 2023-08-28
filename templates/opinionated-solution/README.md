@@ -17,7 +17,7 @@ It has been created with the following features:
     adds implicit usings for Moq, Xunit and Shouldly. It also adds code coverage and
     test result output for release builds.
 <!--#if (includeGithubActions)-->
-* Several GitHug Actions workflows are added.
+* Several GitHub Actions workflows are added.
   * One that runs tests and builds the project on every push except from Dependabot.
   * One that runs tests and builds the project on every pull request from Dependabot.
   * One that can be used to combine several Dependabot updates into one single pull request.
