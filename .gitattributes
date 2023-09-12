@@ -1,2 +1,7 @@
 * text=auto
+
 *.sh text eol=lf
+
+*.cs diff=csharp
+*.sln merge=union
+*.csproj merge=union
