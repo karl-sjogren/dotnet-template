@@ -1,7 +1,13 @@
 * text=auto
 
-*.sh text eol=lf
+*.sh eol=lf diff=bash
 
 *.cs diff=csharp
 *.sln merge=union
-*.csproj merge=union
+
+*.md diff=markdown
+*.css diff=css
+*.scss diff=css
+
+*.html diff=html
+*.cshtml diff=html

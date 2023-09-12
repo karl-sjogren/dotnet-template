@@ -228,5 +228,5 @@ indent_style=space
 indent_size=2
 tab_width=2
 
-[*.{ps1,sh}]
+[*.{sh}]
 end_of_line=lf
