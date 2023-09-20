@@ -223,7 +223,7 @@ indent_style=space
 indent_size=4
 tab_width=4
 
-[*.{js,mjs,json,resjson,csproj,props,scss,css}]
+[*.{js,mjs,json,resjson,csproj,props,scss,css,yml,yaml}]
 indent_style=space
 indent_size=2
 tab_width=2
