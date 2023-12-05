@@ -26,6 +26,18 @@ updates:
       entityframework-core:
         patterns:
           - "Microsoft.EntityFrameworkCore*"
+      hangfire:
+        patterns:
+          - "Hangfire*"
+      serilog:
+        patterns:
+          - "Serilog*"
+      xunit:
+        patterns:
+          - "xunit*"
+      fakeiteasy:
+        patterns:
+          - "FakeItEasy*"
 
   - package-ecosystem: "github-actions"
     directory: "/"

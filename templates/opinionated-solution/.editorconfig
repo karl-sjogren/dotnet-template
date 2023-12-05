@@ -141,7 +141,6 @@ dotnet_diagnostic.RCS0008.severity = warning
 dotnet_diagnostic.RCS0010.severity = warning
 dotnet_diagnostic.RCS1003.severity = warning
 dotnet_diagnostic.RCS1077.severity = none
-dotnet_diagnostic.RCS1035.severity = warning
 dotnet_diagnostic.RCS1037.severity = warning
 dotnet_diagnostic.RCS1057.severity = warning
 dotnet_diagnostic.RCS1080.severity = none
@@ -156,6 +155,7 @@ dotnet_diagnostic.RCS1177.severity = warning
 dotnet_diagnostic.RCS1179.severity = none
 dotnet_diagnostic.RCS1221.severity = none
 dotnet_diagnostic.RCS1224.severity = none
+dotnet_diagnostic.RCS1260.severity = warning
 dotnet_diagnostic.RCS0003.severity = warning
 dotnet_diagnostic.RCS1036.severity = warning
 dotnet_diagnostic.RCS1046.severity = warning
@@ -223,10 +223,10 @@ indent_style=space
 indent_size=4
 tab_width=4
 
-[*.{js,mjs,json,resjson,csproj,props,scss,css}]
+[*.{js,mjs,json,resjson,csproj,props,scss,css,yml,yaml}]
 indent_style=space
 indent_size=2
 tab_width=2
 
-[*.{ps1,sh}]
+[*.{sh}]
 end_of_line=lf
