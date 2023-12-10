@@ -19,10 +19,10 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install .NET 7
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
         dotnet-quality: ga
@@ -40,10 +40,10 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install .NET 7
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
         dotnet-quality: ga

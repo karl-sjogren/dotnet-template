@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Version>1.0.0</Version>
     <LangVersion>latest</LangVersion>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Deterministic>true</Deterministic>
     <DeterministicSourcePaths Condition="'$(TF_BUILD)' == 'True' Or '$(CI)' == 'true'">true</DeterministicSourcePaths>

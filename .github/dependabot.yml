@@ -42,9 +42,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
 
   - package-ecosystem: "github-actions"
-    directory: "/templates/opinionated-solution/"
+    directory: "/templates/opinionated-solution/.github/workflows/" # This needs to be specified as a full path since "/" has some special handling: https://github.com/dependabot/dependabot-core/blob/96509eb5076846056604aee7e62fb155134e4090/github_actions/lib/dependabot/github_actions/file_fetcher.rb#L36
     schedule:
-      interval: "weekly"
+      interval: "daily"

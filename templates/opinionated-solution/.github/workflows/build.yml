@@ -45,7 +45,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Cache NuGet packages on Windows
       uses: actions/cache@v3
@@ -57,7 +57,7 @@ jobs:
           ${{ runner.os }}-nuget-
 
     - name: Install .NET 7
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
         dotnet-quality: ga
@@ -86,7 +86,7 @@ jobs:
     # While we don't use sources directly in this job the test reporter wants to check
     # some files through git so we need the sources.
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Download .NET tests results
       uses: actions/download-artifact@v3
@@ -106,7 +106,7 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v2.26.0
+      uses: dawidd6/action-download-artifact@v2.28.0
       with:
         # Optional, GitHub token, a Personal Access Token with `public_repo` scope if needed
         # Required, if the artifact is from a different repo
@@ -121,7 +121,7 @@ jobs:
         if_no_artifact_found: ignore
 
     - name: Install .NET 7
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
         dotnet-quality: ga
@@ -155,7 +155,7 @@ jobs:
         path: coverage-history
 
     - name: Publish code coverage summary to run
-      uses: LouisBrunner/checks-action@v1.6.0
+      uses: LouisBrunner/checks-action@v1.6.2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}
@@ -170,10 +170,10 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install .NET 7
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
         dotnet-quality: ga
