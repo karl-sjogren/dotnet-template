@@ -45,7 +45,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Cache NuGet packages on Windows
       uses: actions/cache@v3
@@ -86,7 +86,7 @@ jobs:
     # While we don't use sources directly in this job the test reporter wants to check
     # some files through git so we need the sources.
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Download .NET tests results
       uses: actions/download-artifact@v3
@@ -170,7 +170,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install .NET 7
       uses: actions/setup-dotnet@v3
