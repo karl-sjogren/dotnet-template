@@ -42,9 +42,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
 
   - package-ecosystem: "github-actions"
     directory: "/templates/opinionated-solution/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
