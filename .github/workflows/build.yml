@@ -39,11 +39,10 @@ jobs:
     - name: Checkout sources
       uses: actions/checkout@v4
 
-    - name: Install .NET 7
+    - name: Install .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 7.0.x
-        dotnet-quality: ga
+        global-json-file: global.json
 
     - name: Restore NuGet packages
       run: dotnet restore --verbosity minimal
@@ -74,11 +73,10 @@ jobs:
         name: packages
         path: ./artifacts/
 
-    - name: Install .NET 7
+    - name: Install .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 7.0.x
-        dotnet-quality: ga
+        global-json-file: global.json
 
     - name: Publish package to NuGet.org
       env:
