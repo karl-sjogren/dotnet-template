@@ -39,6 +39,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo
             });
+            let dependencies = new Set();
             let branchesAndPRStrings = [];
             let baseBranch = null;
             let baseBranchSHA = null;
@@ -75,12 +76,24 @@ jobs:
                     statusOK = false;
                   }
                 }
+
                 if (statusOK) {
                   console.log('Adding branch to array: ' + branch);
-                  const prString = '#' + pull['number'] + ' ' + pull['title'];
+                  const title = pull['title'] + '';
+                  const prString = '#' + pull['number'] + ' ' + title;
                   branchesAndPRStrings.push({ branch, prString });
                   baseBranch = pull['base']['ref'];
                   baseBranchSHA = pull['base']['sha'];
+
+
+                  const regex = /(?:Bump\s)(?:the\s)?(.*?)\s(?:from|group)/g;
+                  const match = regex.exec(title);
+                  if(!!match) {
+                    const dependency = match[1];
+                    console.log('Adding dependency to array: ' + dependency);
+                    dependencies.add(dependency);
+                  }
+
                 }
               }
             }
@@ -131,7 +144,7 @@ jobs:
             await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: 'Combined PR',
+              title: 'Combined PR with updates for ' + [...dependencies].join(', '),
               head: '${{ github.event.inputs.combineBranchName }}',
               base: baseBranch,
               body: body
