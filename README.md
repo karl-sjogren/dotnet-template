@@ -1,4 +1,4 @@
-# Karls Opinionated Templates
+# Karls Opinionated Templates [![NuGet version (Karls.Templates)](https://img.shields.io/nuget/v/Karls.Templates.svg?style=flat-square)](https://www.nuget.org/packages/Karls.Templates/)
 
 This repository contains a collection of templates for the
 [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new)
@@ -43,3 +43,7 @@ To see available options, run this.
 ```bash
 dotnet new karls-solution --help
 ```
+
+## References
+
+Includes an adapted version of <https://github.com/hrvey/combine-prs-workflow/>
