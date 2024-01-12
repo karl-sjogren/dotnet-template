@@ -54,7 +54,7 @@ jobs:
       run: dotnet pack Karls.Templates.csproj --configuration Release --output artifacts
 
     - name: Upload packages
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: packages
         path: artifacts/*.nupkg
@@ -68,7 +68,7 @@ jobs:
 
     steps:
     - name: Download artiifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: packages
         path: ./artifacts/
