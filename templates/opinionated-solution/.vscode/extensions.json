@@ -1,6 +1,10 @@
 {
-    "recommendations": [
-        "ms-dotnettools.csharp",
-        "editorconfig.editorconfig"
-    ]
+  "recommendations": [
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.csdevkit",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "github.vscode-github-actions",
+    "editorconfig.editorconfig"
+  ]
 }
