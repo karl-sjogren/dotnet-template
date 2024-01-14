@@ -22,3 +22,10 @@ It has been created with the following features:
   * One that runs tests and builds the project on every pull request from Dependabot.
   * One that can be used to combine several Dependabot updates into one single pull request.
 <!--#endif-->
+<!--#if (addFrontendProject)-->
+* A frontend project is added with the following features:
+  * Yarn 4 with zero installs.
+  * Vite (<https://vitejs.dev/>) for building and Vitest (<https://vitest.dev/>) for testing.
+  * Sass for styling via postcss. Setup with cssnano and autoprefixer.
+  * Linting using ESLint and Stylelint with a bunch of plugins.
+<!--#endif-->

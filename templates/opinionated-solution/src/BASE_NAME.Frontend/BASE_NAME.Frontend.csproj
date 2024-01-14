@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- This file serves no purpose except to hide some folders from Visual Studio -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="node_modules\**" />
+    <Compile Remove="node_modules\**" />
+    <None Remove="node_modules\**" />
+  </ItemGroup>
+</Project>

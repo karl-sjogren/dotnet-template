@@ -39,3 +39,43 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
+#if (addFrontendProject)
+
+  - package-ecosystem: "npm"
+    directory: "/src/BASE_NAME.Frontend/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+      esbuild:
+        patterns:
+          - "esbuild"
+          - "esbuild-*"
+      vite:
+        patterns:
+          - "vite"
+          - "vite-*"
+      vitetest:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/dom"
+          - "eslint-plugin-testing-library"
+          - "jsdom-testing-mocks"
+      postcss:
+        patterns:
+          - "postcss"
+          - "postcss-*"
+          - "autoprefixer"
+          - "cssnano"
+          - "sass"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-*"
+#endif
