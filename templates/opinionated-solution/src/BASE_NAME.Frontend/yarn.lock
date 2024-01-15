@@ -1512,7 +1512,6 @@ __metadata:
     vite: "npm:^5.0.11"
     vite-plugin-mkcert: "npm:^1.17.2"
     vitest: "npm:^1.2.0"
-    wdio: "npm:^6.0.1"
     webdriverio: "npm:^8.27.2"
   languageName: unknown
   linkType: soft
@@ -2354,13 +2353,6 @@ __metadata:
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
   checksum: 9973af10727ad4b44f26703bf3e9fdc323528660a7590efe3aa9ad5042b4584c0deed84ba443f61c9d6f02dade54a5a5d3c95e306a1e1630f8374ae6db16c06d
-  languageName: node
-  linkType: hard
-
-"commander@npm:^8.2.0":
-  version: 8.3.0
-  resolution: "commander@npm:8.3.0"
-  checksum: 6b7b5d334483ce24bd73c5dac2eab901a7dbb25fd983ea24a1eeac6e7166bb1967f641546e8abf1920afbde86a45fbfe5812fbc69d0dc451bb45ca416a12a3a3
   languageName: node
   linkType: hard
 
@@ -7907,20 +7899,6 @@ __metadata:
   bin:
     wait-port: bin/wait-port.js
   checksum: c73aeaba7f60804885ac1185c6a0d3a250ddd9af6270c7f01a71a09eba2ad435cbfea16ab450fcc54c271d8cf3c6e1d78e03c93ce6c3ebc5ff8b0daa46c2d546
-  languageName: node
-  linkType: hard
-
-"wdio@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "wdio@npm:6.0.1"
-  dependencies:
-    chalk: "npm:^4.1.2"
-    commander: "npm:^8.2.0"
-    cross-spawn: "npm:^7.0.3"
-    semver: "npm:^7.3.5"
-  bin:
-    wdio: bin/wdio.js
-  checksum: cab78edde53a99293ad0a23cc28da1faf63a78d3f0f28474cc54c3a9cc924fe1dc818c29bbf5fef7d3778900179cc9f1b3870d8dee9d616004c538f6c0ba6507
   languageName: node
   linkType: hard
 

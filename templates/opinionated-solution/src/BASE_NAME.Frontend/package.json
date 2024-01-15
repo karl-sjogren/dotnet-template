@@ -9,7 +9,8 @@
     "lint:css": "stylelint (styles|static)/**/*.{scss,css}",
     "lint:js": "eslint scripts/**/*.{js,mjs}",
     "test": "vitest run",
-    "test:browser": "vitest run --browser.name=chrome --browser.headless",
+    "test:chrome": "vitest run --browser.name=chrome --browser.headless",
+    "test:safari": "vitest run --browser.name=safari",
     "test:ui": "vitest --ui",
     "test:watch": "vitest --coverage",
     "test:coverage-report": "vitest run --coverage && npx --yes open-cli ./coverage/index.html",
@@ -45,7 +46,6 @@
     "vite": "^5.0.11",
     "vite-plugin-mkcert": "^1.17.2",
     "vitest": "^1.2.0",
-    "wdio": "^6.0.1",
     "webdriverio": "^8.27.2"
   }
 }
