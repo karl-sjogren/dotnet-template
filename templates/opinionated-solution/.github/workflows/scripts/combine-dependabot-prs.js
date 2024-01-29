@@ -94,17 +94,9 @@ module.exports = async ({ github, context, core }, inputs) => {
       const title = `${pull['title']}`;
       const prString = `#${pull['number']} ${title}`;
 
-      branchesAndPRStrings.push({ branch, prString });
+      branchesAndPRStrings.push({ branch, prString, title });
       baseBranch = pull['base']['ref'];
       baseBranchSHA = pull['base']['sha'];
-
-      const regex = /(?:Bump\s)(?:the\s)?(.*?)\s(?:from|group)/g;
-      const match = regex.exec(title);
-      if(!!match) {
-        const dependency = match[1];
-        console.log(`Adding dependency to array: ${dependency}.`);
-        dependencies.add(dependency);
-      }
     }
   }
 
@@ -128,7 +120,7 @@ module.exports = async ({ github, context, core }, inputs) => {
 
   const combinedPRs = [];
   const mergeFailedPRs = [];
-  for(const { branch, prString } of branchesAndPRStrings) {
+  for(const { branch, prString, title } of branchesAndPRStrings) {
     try {
       await github.rest.repos.merge({
         owner: context.repo.owner,
@@ -139,6 +131,14 @@ module.exports = async ({ github, context, core }, inputs) => {
 
       console.log(`Merged branch ${branch}.`);
       combinedPRs.push(prString);
+
+      const regex = /(?:Bump\s)(?:the\s)?(.*?)\s(?:from|group)/g;
+      const match = regex.exec(title);
+      if(!!match) {
+        const dependency = match[1];
+        console.log(`Adding dependency name to array: ${dependency}.`);
+        dependencies.add(dependency);
+      }
     } catch(error) {
       console.log(`Failed to merge branch ${branch}.`);
       mergeFailedPRs.push(prString);
@@ -160,8 +160,10 @@ module.exports = async ({ github, context, core }, inputs) => {
   if(dependencies.size > 1) {
     const dependenciesArray = [...dependencies];
     dependenciesDisplay = dependenciesArray.slice(0, -1).join(', ') + ' and ' + dependenciesArray.slice(-1);
-  } else {
+  } else if(dependencies.size == 1) {
     dependenciesDisplay = [...dependencies][0];
+  } else {
+    dependenciesDisplay = 'unknown dependencies';
   }
 
   await github.rest.pulls.create({
