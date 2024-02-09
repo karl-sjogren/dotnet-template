@@ -28,6 +28,7 @@ env:
   DOTNET_GENERATE_ASPNET_CERTIFICATE: false
   NUGET_CERT_REVOCATION_MODE: offline
   NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+  PUBLISH_CODECOV: github.event_name == 'pull_request' || startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/main')
 
 jobs:
 
@@ -141,6 +142,8 @@ jobs:
 
     - name: Upload to Codecov
       uses: codecov/codecov-action@v4
+      # To save on uploads, only upload coverage from the main branches and PRs
+      if: env.PUBLISH_CODECOV
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         file: coverage-report/Cobertura.xml
