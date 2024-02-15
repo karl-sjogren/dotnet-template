@@ -25,6 +25,9 @@ updates:
       entityframework-core:
         patterns:
           - "Microsoft.EntityFrameworkCore*"
+      aspnetcore:
+        patterns:
+          - "Microsoft.AspNetCore*"
       hangfire:
         patterns:
           - "Hangfire*"
