@@ -42,6 +42,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="8.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="8.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="FakeItEasy" Version="8.0.0" />
     <PackageReference Include="FakeItEasy.Analyzer.CSharp" Version="6.1.1">
