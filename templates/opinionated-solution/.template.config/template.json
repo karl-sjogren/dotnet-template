@@ -11,7 +11,7 @@
   "shortName": "karls-solution",
   "tags": {
     "language": "C#",
-    "type": "project"
+    "type": "solution"
   },
   "sourceName": "BASE_NAME",
   "preferNameDirectory": true,

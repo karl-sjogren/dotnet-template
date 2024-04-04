@@ -19,9 +19,15 @@ updates:
       benchmark-dotnet:
         patterns:
           - "BenchmarkDotNet*"
+      automapper:
+        patterns:
+          - "AutoMapper*"
       entityframework-core:
         patterns:
           - "Microsoft.EntityFrameworkCore*"
+      aspnetcore:
+        patterns:
+          - "Microsoft.AspNetCore*"
       hangfire:
         patterns:
           - "Hangfire*"
