@@ -20,14 +20,36 @@
     {
       "modifiers": [
         {
+          "exclude": [
+            "src/BASE_NAME.Frontend/.yarn/cache/**",
+            "src/BASE_NAME.Frontend/.yarn/install-state.gz",
+            "src/BASE_NAME.Frontend/coverage/**",
+            "src/BASE_NAME.Frontend/junit.xml"
+          ]
+        },
+        {
           "condition": "(!includeGithubActions)",
           "exclude": [
-            ".github/**"
+            ".github/workflows/**"
+          ]
+        },
+        {
+          "condition": "(!addFrontendProject)",
+          "exclude": [
+            "src/BASE_NAME.Frontend/**",
+            ".github/workflows/dependabot-npm-and-yarn.yml",
+            ".stylelintrc"
           ]
         }
       ]
     }
   ],
+  "constraints": {
+    "LTS ": {
+       "type": "sdk-version",
+       "args": [ "8.0.*" ]
+    }
+  },
   "symbols": {
     "skipRestore": {
       "type": "parameter",
@@ -40,6 +62,12 @@
       "datatype": "bool",
       "description": "If set to false, skips adding dependabot settings and basic GitHub actions.",
       "defaultValue": "true"
+    },
+    "addFrontendProject": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If set to true, adds a Vite based frontend project (includes Yarn, Vite, Vitest, Eslint, etc).",
+      "defaultValue": "false"
     }
   },
   "primaryOutputs": [
