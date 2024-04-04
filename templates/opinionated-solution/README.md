@@ -27,5 +27,5 @@ It has been created with the following features:
   * Yarn 4 with zero installs.
   * Vite (<https://vitejs.dev/>) for building and Vitest (<https://vitest.dev/>) for testing.
   * Sass for styling via postcss. Setup with cssnano and autoprefixer.
-  * Linting using ESLint and Stylelint with a bunch of plugins.
+  * Linting using ESLint and Stylelint with a bunch of plugins and rules.
 <!--#endif-->
