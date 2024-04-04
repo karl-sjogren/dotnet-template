@@ -1,6 +1,5 @@
 /* eslint-disable jsdoc/check-tag-names */
 
 /**
- * @jest-environment jsdom
+ * @vitest-environment jsdom
  */
-import '@testing-library/jest-dom';
