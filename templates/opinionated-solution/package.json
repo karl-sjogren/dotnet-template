@@ -5,11 +5,8 @@
   "scripts": {
     "push-release": "git checkout main && git push && git checkout develop && git push && git push --tags --no-verify",
     "update-packages": "dotnet outdated --upgrade --version-lock Major"
+  },
+  "devDependencies": {
+    "@types/github-script": "github:actions/github-script"
   }
-//#if (includeGithubActions)
-,
-"devDependencies": {
-  "@types/github-script": "github:actions/github-script"
-}
-//#endif
 }
