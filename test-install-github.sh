@@ -7,4 +7,4 @@ cd ../dotnet-template-test-output-github/
 dotnet build
 dotnet test
 
-cd /../dotnet-template/
+cd ../dotnet-template/
