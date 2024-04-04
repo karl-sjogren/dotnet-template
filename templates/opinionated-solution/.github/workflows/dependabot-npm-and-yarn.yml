@@ -1,0 +1,65 @@
+name: '[Dependabot NPM and Yarn] Build Frontend'
+
+on:
+  push:
+    branches:
+      - 'dependabot/npm_and_yarn/**'
+
+jobs:
+  frontend-test:
+    name: Frontend tests
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # This is needed to pass linting
+    - name: Set GIT to use CRLF
+      run: |
+        git config --global core.autocrlf true
+        git config --global core.eol crlf
+
+    - name: Checkout sources
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        check-latest: true
+
+    - name: Run Yarn
+      run: yarn --immutable --immutable-cache
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Run frontend linting
+      run: |
+        yarn lint:js
+        yarn lint:css
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Run frontend tests
+      run: yarn test:ci
+      working-directory: ./src/BASE_NAME.Frontend/
+
+  frontend-build:
+    name: Frontend build
+    runs-on: ubuntu-latest
+    needs: [ frontend-test ]
+
+    steps:
+    - name: Checkout sources
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        check-latest: true
+
+    - name: Run Yarn
+      run: yarn --immutable --immutable-cache
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Build Frontend
+      run: yarn build
+      working-directory: ./src/BASE_NAME.Frontend/

@@ -1,4 +1,4 @@
-/* global __dirname */
+/* global __dirname, process */
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import mkcert from 'vite-plugin-mkcert';
@@ -6,6 +6,7 @@ import browserslist from 'browserslist';
 import { resolveToEsbuildTarget } from 'esbuild-plugin-browserslist';
 import copy from 'rollup-plugin-copy';
 import { visualizer } from 'rollup-plugin-visualizer'; // eslint-disable-line no-unused-vars
+import { codecovVitePlugin } from '@codecov/vite-plugin';
 
 const esBuildTarget = resolveToEsbuildTarget(browserslist(), {
   printUnknownTargets: false
@@ -19,6 +20,11 @@ export default defineConfig({
       targets: [
         { src: 'static/**/*', dest: resolve(__dirname, '../BASE_NAME.Web/wwwroot/static') }
       ]
+    }),
+    codecovVitePlugin({
+      enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
+      bundleName: 'script-bundle',
+      uploadToken: process.env.CODECOV_TOKEN
     })
   ],
   build: {

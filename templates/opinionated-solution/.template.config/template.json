@@ -30,13 +30,14 @@
         {
           "condition": "(!includeGithubActions)",
           "exclude": [
-            ".github/**"
+            ".github/workflows/**"
           ]
         },
         {
           "condition": "(!addFrontendProject)",
           "exclude": [
             "src/BASE_NAME.Frontend/**",
+            ".github/workflows/dependabot-npm-and-yarn.yml",
             ".stylelintrc"
           ]
         }
