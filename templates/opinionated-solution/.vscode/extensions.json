@@ -7,7 +7,7 @@
     "github.vscode-github-actions",
     "editorconfig.editorconfig",
     //#if (addFrontendProject)
-    "zixuanchen.vitest-explorer",
+    "vitest.explorer",
     "sibiraj-s.vscode-scss-formatter",
     "mrmlnc.vscode-scss",
     "stylelint.vscode-stylelint",
