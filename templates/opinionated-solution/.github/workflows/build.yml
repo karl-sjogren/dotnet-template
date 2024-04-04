@@ -28,27 +28,94 @@ env:
   DOTNET_GENERATE_ASPNET_CERTIFICATE: false
   NUGET_CERT_REVOCATION_MODE: offline
   NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+  PUBLISH_CODECOV: github.event_name == 'pull_request' || startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/main')
 
 jobs:
+#if (addFrontendProject)
+  frontend-test:
+    name: Frontend tests
+    runs-on: ubuntu-latest
+
+    steps:
+    # This is needed to pass linting consistently
+    - name: Set GIT to use CRLF
+      run: |
+        git config --global core.autocrlf true
+        git config --global core.eol crlf
+
+    - name: Checkout sources
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        check-latest: true
+
+    - name: Run Yarn
+      run: yarn --immutable --immutable-cache
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Run frontend linting
+      run: |
+        yarn lint:js
+        yarn lint:css
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Run frontend tests
+      run: yarn test:ci
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: frontend-test-results
+        path: |
+          ./src/BASE_NAME.Frontend/test-results/junit.xml
+          ./src/BASE_NAME.Frontend/coverage/cobertura-coverage.xml
+
+  frontend-build:
+    name: Frontend build
+    runs-on: ubuntu-latest
+    needs: [ frontend-test ]
+
+    steps:
+    - name: Checkout sources
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+        check-latest: true
+
+    - name: Run Yarn
+      run: yarn --immutable --immutable-cache
+      working-directory: ./src/BASE_NAME.Frontend/
+
+    - name: Build Frontend
+      run: yarn build
+      working-directory: ./src/BASE_NAME.Frontend/
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: frontend-artifacts
+        path: ./src/BASE_NAME.Web/wwwroot/
+#endif
 
   net-test:
     name: .NET tests
-    if: ${{ github.actor != 'dependabot[bot]' }}
-
-    strategy:
-      matrix:
-        os: [
-          ubuntu-latest,
-          windows-latest
-        ]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout sources
       uses: actions/checkout@v4
 
     - name: Cache NuGet packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/.nuget/packages
         key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/*.Build.props') }}
@@ -68,7 +135,6 @@ jobs:
 
     - name: Upload test results
       uses: actions/upload-artifact@v4
-      if: matrix.os == 'ubuntu-latest'
       with:
         name: net-test-results
         path: |
@@ -78,7 +144,12 @@ jobs:
   test-and-coverage-results:
     name: Publish test and coverage results
     runs-on: ubuntu-latest
+
+#if addFrontendProject
+    needs: [ net-test, frontend-test ]
+#else
     needs: [ net-test ]
+#endif
 
     steps:
     # While we don't use sources directly in this job the test reporter wants to check
@@ -104,12 +175,8 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v3.0.0
+      uses: dawidd6/action-download-artifact@v3.1.4
       with:
-        # Optional, GitHub token, a Personal Access Token with `public_repo` scope if needed
-        # Required, if the artifact is from a different repo
-        # Required, if the repo is private a Personal Access Token with `repo` scope is needed
-        # github_token: ${{secrets.GITHUB_TOKEN}}
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
         name: coverage-history
@@ -140,7 +207,9 @@ jobs:
         path: coverage-report
 
     - name: Upload to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
+      # To save on uploads, only upload coverage from the main branches and PRs
+      if: env.PUBLISH_CODECOV
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         file: coverage-report/Cobertura.xml
@@ -152,7 +221,7 @@ jobs:
         path: coverage-history
 
     - name: Publish code coverage summary to run
-      uses: LouisBrunner/checks-action@v1.6.2
+      uses: LouisBrunner/checks-action@v2.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}
@@ -163,7 +232,12 @@ jobs:
   net-build:
     name: .NET build
     runs-on: ubuntu-latest
+
+#if addFrontendProject
+    needs: [ net-test, frontend-test ]
+#else
     needs: [ net-test ]
+#endif
 
     steps:
     - name: Checkout sources

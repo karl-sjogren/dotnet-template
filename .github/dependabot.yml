@@ -26,6 +26,9 @@ updates:
       entityframework-core:
         patterns:
           - "Microsoft.EntityFrameworkCore*"
+      aspnetcore:
+        patterns:
+          - "Microsoft.AspNetCore*"
       hangfire:
         patterns:
           - "Hangfire*"
@@ -38,6 +41,42 @@ updates:
       fakeiteasy:
         patterns:
           - "FakeItEasy*"
+
+  - package-ecosystem: "npm"
+    directory: "/templates/opinionated-solution/src/BASE_NAME.Frontend/"
+    schedule:
+      interval: "daily"
+    groups:
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+      esbuild:
+        patterns:
+          - "esbuild"
+          - "esbuild-*"
+      vite:
+        patterns:
+          - "vite"
+          - "vite-*"
+      vitetest:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/dom"
+          - "eslint-plugin-testing-library"
+          - "jsdom-testing-mocks"
+      postcss:
+        patterns:
+          - "postcss"
+          - "postcss-*"
+          - "autoprefixer"
+          - "cssnano"
+          - "sass"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-*"
 
   - package-ecosystem: "github-actions"
     directory: "/"

@@ -1,0 +1,8 @@
+defaults
+safari >= 15
+firefox >= 103
+ios_saf >= 15
+not op_mini all
+not and_uc > 0
+not kaios > 0
+not and_qq > 0

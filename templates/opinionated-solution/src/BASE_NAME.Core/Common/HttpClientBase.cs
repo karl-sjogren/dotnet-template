@@ -36,7 +36,7 @@ public abstract class HttpClientBase {
         if(response.StatusCode == HttpStatusCode.ServiceUnavailable)
             throw new HttpServiceUnavailableException(errorMessage, $"503 Service Unavailable was returned for call to {response.RequestMessage?.RequestUri}.");
 
-        throw new HttpStatusCodeException(response.StatusCode, errorMessage, $"A non-successful status code was returned for call to {response.RequestMessage?.RequestUri}.");
+        throw new HttpStatusCodeException(response.StatusCode, errorMessage, $"A non-successful status code ({response.StatusCode}) was returned for call to {response.RequestMessage?.RequestUri}.");
     }
 
     protected virtual async Task<string> GetErrorMessageAsync(HttpResponseMessage response, CancellationToken cancellationToken) {

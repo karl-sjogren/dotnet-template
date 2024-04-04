@@ -1,7 +1,9 @@
-name: '[Dependabot] Build and publish application'
+name: '[Dependabot NuGet] Build .NET'
 
 on:
-  pull_request:
+  push:
+    branches:
+      - 'dependabot/nuget/**'
 
 env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
@@ -15,7 +17,6 @@ jobs:
   net-test:
     name: .NET tests
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
 
     steps:
     - name: Checkout sources
