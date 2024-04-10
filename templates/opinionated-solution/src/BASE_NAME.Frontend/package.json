@@ -17,7 +17,7 @@
     "test:ci": "vitest run --reporter=junit --coverage --outputFile=test-results/junit.xml"
   },
   "devDependencies": {
-    "@codecov/vite-plugin": "^0.0.1-beta.5",
+    "@codecov/vite-plugin": "^0.0.1-beta.6",
     "@stylistic/eslint-plugin-js": "^1.7.0",
     "@stylistic/stylelint-plugin": "^2.1.1",
     "@testing-library/dom": "^10.0.0",
