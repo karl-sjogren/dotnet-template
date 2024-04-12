@@ -54,18 +54,21 @@
     "skipRestore": {
       "type": "parameter",
       "datatype": "bool",
+      "displayName": "Skip restore",
       "description": "If specified, skips the automatic restore of the project on create.",
       "defaultValue": "false"
     },
     "includeGithubActions": {
       "type": "parameter",
       "datatype": "bool",
+      "displayName": "Include GitHub Actions",
       "description": "If set to false, skips adding dependabot settings and basic GitHub actions.",
       "defaultValue": "true"
     },
     "addFrontendProject": {
       "type": "parameter",
       "datatype": "bool",
+      "displayName": "Add frontend project",
       "description": "If set to true, adds a Vite based frontend project (includes Yarn, Vite, Vitest, Eslint, etc).",
       "defaultValue": "false"
     }

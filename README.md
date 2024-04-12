@@ -30,12 +30,27 @@ dotnet new update
 ### Opinionated Solution
 
 This template creates a solution with a single Core project (+tests) and
-some default settings based on my own preferences. It can also include some
-Github Actions/Dependabot specific stuff if passed the `--includeGithubActions`
-flag.
+some default settings based on my own preferences.
 
 ```bash
 dotnet new karls-solution -n Company.CoolProject
+```
+
+Since version 1.4.0 a flag can be passed to also generate a frontend
+project based on Vite and other tools. To have this just pass
+`--addFrontendProject` when creating the project.
+
+```bash
+dotnet new karls-solution -n CoolProject --addFrontendProject
+```
+
+The project per default includes a set of Github Actions workflows.
+If another CI tool is to be used these can be skipped by setting
+`includeGithubActions` to `false`. This will still add a depenadbot
+configuration though since I host all my projects on Github.
+
+```bash
+dotnet new karls-solution -n CoolProject --includeGithubActions=false
 ```
 
 To see available options, run this.
