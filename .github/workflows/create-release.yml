@@ -1,0 +1,19 @@
+name: 'Create release from tag'
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  tagged-release:
+    name: 'Create release'
+
+    runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          make_latest: true
