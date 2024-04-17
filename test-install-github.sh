@@ -4,9 +4,6 @@ dotnet new karls-solution -o ../dotnet-template-test-output-github -n TestSoluti
 dotnet new uninstall ./templates/opinionated-solution
 
 cd ../dotnet-template-test-output-github/
-git init
-git add .
-git commit -m "Initial commit"
 dotnet build
 dotnet test
 
