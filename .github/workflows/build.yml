@@ -69,6 +69,12 @@ jobs:
         type: [base, frontend, github]
 
     steps:
+      # This is needed to pass linting
+      - name: Set GIT to use CRLF
+        run: |
+          git config --global core.autocrlf true
+          git config --global core.eol crlf
+
       - name: Checkout sources
         uses: actions/checkout@v4
   
