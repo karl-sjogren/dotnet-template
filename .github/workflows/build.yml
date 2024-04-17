@@ -58,11 +58,31 @@ jobs:
       with:
         name: packages
         path: artifacts/*.nupkg
-          
+
+  integration-tests:
+    name: Integration tests
+    needs: net-build
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        type: [base, frontend, github]
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+  
+      - name: Install .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Create ${{ matrix.type }} solution
+        run: ./test-install-${{ matrix.type }}.sh
 
   publish:
     name: NuGet Publish
-    needs: net-build
+    needs: integration-tests
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
