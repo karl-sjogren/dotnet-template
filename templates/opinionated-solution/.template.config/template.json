@@ -25,7 +25,8 @@
             "src/BASE_NAME.Frontend/.yarn/install-state.gz",
             "src/BASE_NAME.Frontend/coverage/**",
             "src/BASE_NAME.Frontend/junit.xml",
-            "src/BASE_NAME.Web/**"
+            "src/BASE_NAME.Web/**",
+            "**/yarn-error.log"
           ]
         },
         {
