@@ -1,5 +1,5 @@
 import js from '@eslint/js';
-import globals from 'globals'
+import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
 import testingLibrary from 'eslint-plugin-testing-library';
 import compat from 'eslint-plugin-compat';
@@ -67,7 +67,7 @@ const testConfig = {
     'testing-library/no-wait-for-multiple-assertions': 'off',
     'testing-library/no-node-access': 'off'
   }
-}
+};
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
