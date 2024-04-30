@@ -1,5 +1,6 @@
+
 import js from '@eslint/js';
-import globals from 'globals'
+import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
 import testingLibrary from 'eslint-plugin-testing-library';
 import compat from 'eslint-plugin-compat';
@@ -7,8 +8,13 @@ import stylisticJs from '@stylistic/eslint-plugin-js';
 import vitest from 'eslint-plugin-vitest';
 
 /** @type {import('eslint').Linter.FlatConfig} */
+const ignorePatterns = {
+  ignores: ['node_modules/', '**/.*', '.eslintcache'],
+};
+
+/** @type {import('eslint').Linter.FlatConfig} */
 const baseConfig = {
-  files: ['scripts/*.{js,mjs}'],
+  files: ['scripts/*.{js,mjs}', '*.{js,mjs}'],
   languageOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -67,10 +73,11 @@ const testConfig = {
     'testing-library/no-wait-for-multiple-assertions': 'off',
     'testing-library/no-node-access': 'off'
   }
-}
+};
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
+  ignorePatterns,
   baseConfig,
   testConfig
 ];
