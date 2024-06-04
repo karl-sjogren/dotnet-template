@@ -9,6 +9,7 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591;CS1573</NoWarn>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <!--
       Dependabot doesn't handle lock files yet and we don't want to miss out on
       Dependabot updates. https://github.com/dependabot/dependabot-core/issues/1303
