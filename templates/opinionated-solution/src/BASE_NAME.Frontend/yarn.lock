@@ -99,26 +99,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codecov/bundler-plugin-core@npm:^0.0.1-beta.6":
-  version: 0.0.1-beta.6
-  resolution: "@codecov/bundler-plugin-core@npm:0.0.1-beta.6"
+"@codecov/bundler-plugin-core@npm:^0.0.1-beta.8":
+  version: 0.0.1-beta.8
+  resolution: "@codecov/bundler-plugin-core@npm:0.0.1-beta.8"
   dependencies:
     chalk: "npm:4.1.2"
     semver: "npm:^7.5.4"
-    unplugin: "npm:^1.6.0"
+    unplugin: "npm:^1.10.1"
     zod: "npm:^3.22.4"
-  checksum: 10/087d2acfc8741fbf266c03d5249843140be73dce5d6adb427fa57deddc9f3f57a371797e6829fa92fbf7b891fcc975ef24965c7484bd2fd5d556d06b30238f7d
+  checksum: 10/9606c9c9038eed056609bebfb169376c38ff51c4e3ed4294b254b667114442985a8ed56dee84f5fddffb6fdc5a18ac7af9b190d684e0615f097c08e39369a2eb
   languageName: node
   linkType: hard
 
-"@codecov/vite-plugin@npm:^0.0.1-beta.6":
-  version: 0.0.1-beta.6
-  resolution: "@codecov/vite-plugin@npm:0.0.1-beta.6"
+"@codecov/vite-plugin@npm:^0.0.1-beta.8":
+  version: 0.0.1-beta.8
+  resolution: "@codecov/vite-plugin@npm:0.0.1-beta.8"
   dependencies:
-    "@codecov/bundler-plugin-core": "npm:^0.0.1-beta.6"
+    "@codecov/bundler-plugin-core": "npm:^0.0.1-beta.8"
+    unplugin: "npm:^1.10.1"
   peerDependencies:
     vite: 4.x || 5.x
-  checksum: 10/ebb4f79caa42f60e8a5961d2afd58293cbf1dfc685c9dcfc1d70e2b679505d7697fd2dee2df84815e0a89dc0761e865ab147894fb0de7e9ae015c79030e84e73
+  checksum: 10/03bf000625cf4986c94fd22ab0fa3931628d80a1fabc4f8bd2853fb1874fef73d14f9fb5cb168b1d72429ba17bc7881df368fba0098ff4bde617eab2ef2f92ca
   languageName: node
   linkType: hard
 
@@ -1572,7 +1573,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
-    "@codecov/vite-plugin": "npm:^0.0.1-beta.6"
+    "@codecov/vite-plugin": "npm:^0.0.1-beta.8"
     "@stylistic/eslint-plugin-js": "npm:^2.1.0"
     "@stylistic/stylelint-plugin": "npm:^2.1.2"
     "@testing-library/dom": "npm:^10.1.0"
@@ -7527,7 +7528,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^1.6.0":
+"unplugin@npm:^1.10.1":
   version: 1.10.1
   resolution: "unplugin@npm:1.10.1"
   dependencies:
