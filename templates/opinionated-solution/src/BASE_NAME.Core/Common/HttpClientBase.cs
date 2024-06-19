@@ -16,25 +16,31 @@ public abstract class HttpClientBase {
     protected HttpClient HttpClient { get; }
 
     protected virtual async Task EnsureSuccessStatusCodeAsync(HttpResponseMessage response, CancellationToken cancellationToken) {
-        if(response.IsSuccessStatusCode)
+        if(response.IsSuccessStatusCode) {
             return;
+        }
 
         var errorMessage = await GetErrorMessageAsync(response, cancellationToken);
 
-        if(response.StatusCode == HttpStatusCode.BadRequest)
+        if(response.StatusCode == HttpStatusCode.BadRequest) {
             throw new HttpBadRequestException(errorMessage, $"400 Bad Request was returned for call to {response.RequestMessage?.RequestUri}.");
+        }
 
-        if(response.StatusCode == HttpStatusCode.Unauthorized)
+        if(response.StatusCode == HttpStatusCode.Unauthorized) {
             throw new HttpUnauthorizedException(errorMessage, $"401 Unauthorized was returned for call to {response.RequestMessage?.RequestUri}.");
+        }
 
-        if(response.StatusCode == HttpStatusCode.NotFound)
+        if(response.StatusCode == HttpStatusCode.NotFound) {
             throw new HttpNotFoundException(errorMessage, $"404 Not Found was returned for call to {response.RequestMessage?.RequestUri}.");
+        }
 
-        if(response.StatusCode == HttpStatusCode.InternalServerError)
+        if(response.StatusCode == HttpStatusCode.InternalServerError) {
             throw new HttpInternalServerErrorException(errorMessage, $"500 Internal Server Error was returned for call to {response.RequestMessage?.RequestUri}.");
+        }
 
-        if(response.StatusCode == HttpStatusCode.ServiceUnavailable)
+        if(response.StatusCode == HttpStatusCode.ServiceUnavailable) {
             throw new HttpServiceUnavailableException(errorMessage, $"503 Service Unavailable was returned for call to {response.RequestMessage?.RequestUri}.");
+        }
 
         throw new HttpStatusCodeException(response.StatusCode, errorMessage, $"A non-successful status code ({response.StatusCode}) was returned for call to {response.RequestMessage?.RequestUri}.");
     }
