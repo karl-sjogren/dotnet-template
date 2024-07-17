@@ -59,7 +59,7 @@ updates:
         patterns:
           - "vite"
           - "vite-*"
-      vitetest:
+      vitest:
         patterns:
           - "vitest"
           - "@vitest/*"
