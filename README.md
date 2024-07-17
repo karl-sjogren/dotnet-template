@@ -5,7 +5,7 @@ This repository contains a collection of templates for the
 command based on my own preferences.
 
 This might not be overly useful for you, but it was a fun experiment and this
-repo at lest shows of some of the features available when creating your own
+repo at least shows of some of the features available when creating your own
 templates.
 
 ## Installing
