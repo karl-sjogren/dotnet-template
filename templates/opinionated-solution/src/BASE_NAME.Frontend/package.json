@@ -27,7 +27,7 @@
     "autoprefixer": "^10.4.20",
     "browserslist": "^4.23.3",
     "cssnano": "^7.0.5",
-    "esbuild": "^0.23.0",
+    "esbuild": "^0.23.1",
     "esbuild-plugin-browserslist": "^0.14.0",
     "eslint": "^9.9.1",
     "eslint-plugin-compat": "^6.0.0",
@@ -47,6 +47,6 @@
     "vite": "^5.4.2",
     "vite-plugin-mkcert": "^1.17.6",
     "vitest": "^2.0.5",
-    "webdriverio": "^8.39.1"
+    "webdriverio": "^9.0.7"
   }
 }
