@@ -19,7 +19,7 @@
   "devDependencies": {
     "@codecov/vite-plugin": "^0.0.1-beta.10",
     "@stylistic/eslint-plugin-js": "^2.7.2",
-    "@stylistic/stylelint-plugin": "^2.1.2",
+    "@stylistic/stylelint-plugin": "^3.0.1",
     "@testing-library/dom": "^10.4.0",
     "@vitest/browser": "^2.0.5",
     "@vitest/coverage-v8": "^2.0.5",
@@ -36,7 +36,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^25.0.0",
     "jsdom-testing-mocks": "^1.13.1",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.44",
     "postcss-scss": "^4.0.9",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-visualizer": "^5.12.0",
