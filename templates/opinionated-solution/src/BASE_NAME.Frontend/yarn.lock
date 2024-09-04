@@ -2034,7 +2034,7 @@ __metadata:
     stylelint: "npm:^16.8.2"
     stylelint-config-standard: "npm:^36.0.1"
     stylelint-config-standard-scss: "npm:^13.1.0"
-    vite: "npm:^5.4.2"
+    vite: "npm:^5.4.3"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^2.0.5"
     webdriverio: "npm:^9.0.7"
@@ -6659,7 +6659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.44":
+"postcss@npm:^8.4.43, postcss@npm:^8.4.44":
   version: 8.4.44
   resolution: "postcss@npm:8.4.44"
   dependencies:
@@ -8281,13 +8281,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.4.2":
-  version: 5.4.2
-  resolution: "vite@npm:5.4.2"
+"vite@npm:^5.4.3":
+  version: 5.4.3
+  resolution: "vite@npm:5.4.3"
   dependencies:
     esbuild: "npm:^0.21.3"
     fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.41"
+    postcss: "npm:^8.4.43"
     rollup: "npm:^4.20.0"
   peerDependencies:
     "@types/node": ^18.0.0 || >=20.0.0
@@ -8320,7 +8320,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/c449f9295060fa88c9b5cc1bd17c2de198deae596b7da1250db9662fb15e7b21e0dbe9a40a9106fb7438b1231494b169457e809ecbb65e732648d87dd284ab23
+  checksum: 10/864bf64fe57bd26b1527ea6d8dac2f4f8b834791f836590043463c0ded6a150a9407ffac6a859abc34ec013ecfcd23f405c20aa76f4ad99deab1176d5f017574
   languageName: node
   linkType: hard
 
