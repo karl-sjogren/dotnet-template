@@ -12,6 +12,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@actions/core@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "@actions/core@npm:1.10.1"
+  dependencies:
+    "@actions/http-client": "npm:^2.0.1"
+    uuid: "npm:^8.3.2"
+  checksum: 10/d32af783ecb07f25a0f190112ee8e749a4c4cb88327d6df756ea1dcee146ab413c0e651a9c949294f8202ced1436c049d7b469485431a5cc4491d66926ec8323
+  languageName: node
+  linkType: hard
+
+"@actions/github@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@actions/github@npm:6.0.0"
+  dependencies:
+    "@actions/http-client": "npm:^2.2.0"
+    "@octokit/core": "npm:^5.0.1"
+    "@octokit/plugin-paginate-rest": "npm:^9.0.0"
+    "@octokit/plugin-rest-endpoint-methods": "npm:^10.0.0"
+  checksum: 10/81831a78377175d8825fc0b94247ff366c0e87ad1dfa48df9b30b8659506f216dcf1e2d3124fcd318839b92c24ba20165e238b3cc11a34db89c69c40825e9ccf
+  languageName: node
+  linkType: hard
+
+"@actions/http-client@npm:^2.0.1, @actions/http-client@npm:^2.2.0":
+  version: 2.2.3
+  resolution: "@actions/http-client@npm:2.2.3"
+  dependencies:
+    tunnel: "npm:^0.0.6"
+    undici: "npm:^5.25.4"
+  checksum: 10/0c0a540c79e50f795d214f696710bb9c50bdf5bb1458be288140f2aae3686adec73fdb464c43da5ef94f985ac7736273efef21cb5ba5a3b09e85b403d852c04b
+  languageName: node
+  linkType: hard
+
 "@ampproject/remapping@npm:^2.3.0":
   version: 2.3.0
   resolution: "@ampproject/remapping@npm:2.3.0"
@@ -152,27 +184,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codecov/bundler-plugin-core@npm:^0.0.1-beta.10":
-  version: 0.0.1-beta.10
-  resolution: "@codecov/bundler-plugin-core@npm:0.0.1-beta.10"
+"@codecov/bundler-plugin-core@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@codecov/bundler-plugin-core@npm:1.0.0"
   dependencies:
+    "@actions/core": "npm:^1.10.1"
+    "@actions/github": "npm:^6.0.0"
     chalk: "npm:4.1.2"
     semver: "npm:^7.5.4"
     unplugin: "npm:^1.10.1"
     zod: "npm:^3.22.4"
-  checksum: 10/28577314e21818720429741e950e47e769d5e1c7ad711cdb96ef21ce58ec70f83659b4a95f5cc9e24a7cb1e90585576b89f901265b724f9dcf060c8d931e83c7
+  checksum: 10/143acd2b393c18a5ca5fbd7b52f31af001253be3d4a17a4ad1630bf54f28cf74e47f7db543cc53af05de20308bebead717d61b48786a6f8dde965394102b5eb4
   languageName: node
   linkType: hard
 
-"@codecov/vite-plugin@npm:^0.0.1-beta.10":
-  version: 0.0.1-beta.10
-  resolution: "@codecov/vite-plugin@npm:0.0.1-beta.10"
+"@codecov/vite-plugin@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@codecov/vite-plugin@npm:1.0.0"
   dependencies:
-    "@codecov/bundler-plugin-core": "npm:^0.0.1-beta.10"
+    "@codecov/bundler-plugin-core": "npm:^1.0.0"
     unplugin: "npm:^1.10.1"
   peerDependencies:
     vite: 4.x || 5.x
-  checksum: 10/4f6faa84d379c350fbc04686a6d4e1837c59d2fd9a169e993563a6fad15c03fefe1a0378f3b5b8d6c024299562ec3a65ce59120c25c828eb3abd83ccf3df7847
+  checksum: 10/e2b03e64ece2d38f922dd5b1bbd3f19963425f72a67124ffbe911fa8fa24c208d4c9eec5cb036203ce19e8752a172e6adbd48c02a6f76a0c273ff5294ff3509a
   languageName: node
   linkType: hard
 
@@ -805,6 +839,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/busboy@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "@fastify/busboy@npm:2.1.1"
+  checksum: 10/2bb8a7eca8289ed14c9eb15239bc1019797454624e769b39a0b90ed204d032403adc0f8ed0d2aef8a18c772205fa7808cf5a1b91f21c7bfc7b6032150b1062c5
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1018,7 +1059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^5.0.2":
+"@octokit/core@npm:^5.0.1, @octokit/core@npm:^5.0.2":
   version: 5.2.0
   resolution: "@octokit/core@npm:5.2.0"
   dependencies:
@@ -1054,6 +1095,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/openapi-types@npm:^20.0.0":
+  version: 20.0.0
+  resolution: "@octokit/openapi-types@npm:20.0.0"
+  checksum: 10/9f60572af1201dd92626c412253d83d986b8ab1956250b95f417013ee8e7baf25870eeb801d16672cabc2c420544bc9c2f0a979e07603ff5997eff038c71a8c3
+  languageName: node
+  linkType: hard
+
 "@octokit/openapi-types@npm:^22.2.0":
   version: 22.2.0
   resolution: "@octokit/openapi-types@npm:22.2.0"
@@ -1069,6 +1117,17 @@ __metadata:
   peerDependencies:
     "@octokit/core": 5
   checksum: 10/82f5bcc3a536a44bed0a205c8301176c0d210b7a1c6d035a79b31a102e2e02f46234a38629cc984a21be544194ac69151814e9a909416aa7389cdffd1297bcd9
+  languageName: node
+  linkType: hard
+
+"@octokit/plugin-paginate-rest@npm:^9.0.0":
+  version: 9.2.1
+  resolution: "@octokit/plugin-paginate-rest@npm:9.2.1"
+  dependencies:
+    "@octokit/types": "npm:^12.6.0"
+  peerDependencies:
+    "@octokit/core": 5
+  checksum: 10/1528ab17eedb6705e30ad8576493f06b40f29a87c920a4affeb9715fe5f386e064b79eadd401c0cd1e7ec22287a461da4f5353a4ee57bc614fd890b0aa139d77
   languageName: node
   linkType: hard
 
@@ -1089,6 +1148,17 @@ __metadata:
   peerDependencies:
     "@octokit/core": ^5
   checksum: 10/9eccc1a22aa0b65f3f9378f26a74c386683db420c33202998918df1eef492e93212e1849e1d85530f425602663cfc2bfbf385a30991b8a04470334c74ba2386b
+  languageName: node
+  linkType: hard
+
+"@octokit/plugin-rest-endpoint-methods@npm:^10.0.0":
+  version: 10.4.1
+  resolution: "@octokit/plugin-rest-endpoint-methods@npm:10.4.1"
+  dependencies:
+    "@octokit/types": "npm:^12.6.0"
+  peerDependencies:
+    "@octokit/core": 5
+  checksum: 10/1090fc5a1bebb7b48c512e178f8ad69a3ef8332e583274972f3a3035e9be9200093e22a5dbfe0f71aa1a7a8817e54bb915af3c2a3f88db1311a2873cef176552
   languageName: node
   linkType: hard
 
@@ -1124,6 +1194,15 @@ __metadata:
     "@octokit/plugin-request-log": "npm:^4.0.0"
     "@octokit/plugin-rest-endpoint-methods": "npm:13.2.2"
   checksum: 10/a5d557323f3ebcf813bf0965f04084dc52e71525315f865646e084713099a2baa340752caebafb17595b31c5011df0f42a15359e145046d85b5051af37a516f9
+  languageName: node
+  linkType: hard
+
+"@octokit/types@npm:^12.6.0":
+  version: 12.6.0
+  resolution: "@octokit/types@npm:12.6.0"
+  dependencies:
+    "@octokit/openapi-types": "npm:^20.0.0"
+  checksum: 10/19b77a8d25af2a5df4561f8750f807edfc9fca5b07cfa9fb21dce4665e1b188c966688f5ed5e08089404428100dfe44ad353f8d8532f1d30fe47e61c5faa1440
   languageName: node
   linkType: hard
 
@@ -2033,7 +2112,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
-    "@codecov/vite-plugin": "npm:^0.0.1-beta.10"
+    "@codecov/vite-plugin": "npm:^1.0.0"
     "@stylistic/eslint-plugin-js": "npm:^2.7.2"
     "@stylistic/stylelint-plugin": "npm:^3.0.1"
     "@testing-library/dom": "npm:^10.4.0"
@@ -8096,6 +8175,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tunnel@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "tunnel@npm:0.0.6"
+  checksum: 10/cf1ffed5e67159b901a924dbf94c989f20b2b3b65649cfbbe4b6abb35955ce2cf7433b23498bdb2c5530ab185b82190fce531597b3b4a649f06a907fc8702405
+  languageName: node
+  linkType: hard
+
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -8154,6 +8240,15 @@ __metadata:
   version: 6.19.8
   resolution: "undici-types@npm:6.19.8"
   checksum: 10/cf0b48ed4fc99baf56584afa91aaffa5010c268b8842f62e02f752df209e3dea138b372a60a963b3b2576ed932f32329ce7ddb9cb5f27a6c83040d8cd74b7a70
+  languageName: node
+  linkType: hard
+
+"undici@npm:^5.25.4":
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
+  dependencies:
+    "@fastify/busboy": "npm:^2.0.0"
+  checksum: 10/a666a9f5ac4270c659fafc33d78b6b5039a0adbae3e28f934774c85dcc66ea91da907896f12b414bd6f578508b44d5dc206fa636afa0e49a4e1c9e99831ff065
   languageName: node
   linkType: hard
 
@@ -8294,6 +8389,15 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10/474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 10/9a5f7aa1d6f56dd1e8d5f2478f855f25c645e64e26e347a98e98d95781d5ed20062d6cca2eecb58ba7c84bc3910be95c0451ef4161906abaab44f9cb68ffbdd1
   languageName: node
   linkType: hard
 
