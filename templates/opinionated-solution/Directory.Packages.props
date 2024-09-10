@@ -3,7 +3,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <GlobalPackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.4" />
+    <GlobalPackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25" />
     <GlobalPackageReference Include="Karls.Analyzers" Version="0.3.0" />
     <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.12.4" />
     <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="4.12.4" />
