@@ -1504,16 +1504,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^2.7.2":
-  version: 2.7.2
-  resolution: "@stylistic/eslint-plugin-js@npm:2.7.2"
+"@stylistic/eslint-plugin-js@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "@stylistic/eslint-plugin-js@npm:2.8.0"
   dependencies:
-    "@types/eslint": "npm:^9.6.1"
     eslint-visitor-keys: "npm:^4.0.0"
     espree: "npm:^10.1.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10/8c7c048c2b1bc2ecec842854f479617e1ef748159a6ce6bb3ceb2c6673115e83b101fcbc67ac12a877adbbde5bd749df8ef87cd16435db40219574200be3880e
+  checksum: 10/596fcadddff407c30a3e682fe6aa8a683f8ec678aee2a85a6e8da7551dfe18eeed115c67375dfd177b787496e93c97080d84002b4415a1446660ab270d63c897
   languageName: node
   linkType: hard
 
@@ -1595,17 +1594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^9.6.1":
-  version: 9.6.1
-  resolution: "@types/eslint@npm:9.6.1"
-  dependencies:
-    "@types/estree": "npm:*"
-    "@types/json-schema": "npm:*"
-  checksum: 10/719fcd255760168a43d0e306ef87548e1e15bffe361d5f4022b0f266575637acc0ecb85604ac97879ee8ae83c6a6d0613b0ed31d0209ddf22a0fe6d608fc56fe
-  languageName: node
-  linkType: hard
-
-"@types/estree@npm:*, @types/estree@npm:1.0.5, @types/estree@npm:^1.0.0":
+"@types/estree@npm:1.0.5, @types/estree@npm:^1.0.0":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
   checksum: 10/7de6d928dd4010b0e20c6919e1a6c27b61f8d4567befa89252055fad503d587ecb9a1e3eab1b1901f923964d7019796db810b7fd6430acb26c32866d126fd408
@@ -1631,7 +1620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.15":
+"@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10/1a3c3e06236e4c4aab89499c428d585527ce50c24fe8259e8b3926d3df4cfbbbcf306cfc73ddfb66cbafc973116efd15967020b0f738f63e09e64c7d260519e7
@@ -2125,7 +2114,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.1.0"
-    "@stylistic/eslint-plugin-js": "npm:^2.7.2"
+    "@stylistic/eslint-plugin-js": "npm:^2.8.0"
     "@stylistic/stylelint-plugin": "npm:^3.0.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^2.0.5"
