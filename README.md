@@ -1,4 +1,5 @@
-# Karls Opinionated Templates [![NuGet version (Karls.Templates)](https://img.shields.io/nuget/v/Karls.Templates.svg?style=flat-square)](https://www.nuget.org/packages/Karls.Templates/)
+# Karls Opinionated Templates [![NuGet version (Karls.Templates)](https://img.shields.io/nuget/v/Karls.Templates.svg?style=flat-square)](https://www.nuget.org/packages/Karls.Templates/) ![MIT License](https://img.shields.io/github/license/karl-sjogren/dotnet-template)
+
 
 This repository contains a collection of templates for the
 [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new)
