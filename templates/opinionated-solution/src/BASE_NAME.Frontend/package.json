@@ -29,7 +29,7 @@
     "cssnano": "^7.0.6",
     "esbuild": "^0.23.1",
     "esbuild-plugin-browserslist": "^0.14.0",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "eslint-plugin-compat": "^6.0.1",
     "eslint-plugin-jsdoc": "^50.2.4",
     "eslint-plugin-testing-library": "^6.3.0",
