@@ -1266,13 +1266,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@stylistic/stylelint-plugin@npm:3.0.1"
+"@stylistic/stylelint-plugin@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@stylistic/stylelint-plugin@npm:3.1.0"
   dependencies:
-    "@csstools/css-parser-algorithms": "npm:^3.0.0"
-    "@csstools/css-tokenizer": "npm:^3.0.0"
-    "@csstools/media-query-list-parser": "npm:^3.0.0"
+    "@csstools/css-parser-algorithms": "npm:^3.0.1"
+    "@csstools/css-tokenizer": "npm:^3.0.1"
+    "@csstools/media-query-list-parser": "npm:^3.0.1"
     is-plain-object: "npm:^5.0.0"
     postcss-selector-parser: "npm:^6.1.2"
     postcss-value-parser: "npm:^4.2.0"
@@ -1280,7 +1280,7 @@ __metadata:
     stylelint: "npm:^16.8.2"
   peerDependencies:
     stylelint: ^16.8.0
-  checksum: 10/e2882e7f4c7b3c4a279a2eb24376fc817f634c1ba93ecc1b5c83f492daa4c2ed7a10e9354ede407fb6f56e38616e21954cad993dde9ac9d8bbf08bbee436b833
+  checksum: 10/395fbb35e86163820bce20ffa1df8c8f49cfb15a8c8c7fa53627e1273b1abdff8ab52e811290e2059025288fdb2b79a17a23547ae5cdc1f6c7847d65c26b9b42
   languageName: node
   linkType: hard
 
@@ -1890,7 +1890,7 @@ __metadata:
   dependencies:
     "@codecov/vite-plugin": "npm:^1.2.0"
     "@stylistic/eslint-plugin-js": "npm:^2.8.0"
-    "@stylistic/stylelint-plugin": "npm:^3.0.1"
+    "@stylistic/stylelint-plugin": "npm:^3.1.0"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^2.1.1"
     "@vitest/coverage-v8": "npm:^2.1.1"
