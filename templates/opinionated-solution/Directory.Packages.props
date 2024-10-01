@@ -1,8 +1,6 @@
 <Project>
-  <PropertyGroup>
-  </PropertyGroup>
 
-  <ItemGroup>
+<ItemGroup>
     <GlobalPackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25" />
     <GlobalPackageReference Include="Karls.Analyzers" Version="0.3.0" />
     <GlobalPackageReference Include="Roslynator.Analyzers" Version="4.12.6" />
@@ -25,4 +23,5 @@
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
     <PackageVersion Include="xunit" Version="2.9.2" />
   </ItemGroup>
+
 </Project>
