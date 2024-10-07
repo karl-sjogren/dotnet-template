@@ -1261,15 +1261,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "@stylistic/eslint-plugin-js@npm:2.8.0"
+"@stylistic/eslint-plugin-js@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "@stylistic/eslint-plugin-js@npm:2.9.0"
   dependencies:
-    eslint-visitor-keys: "npm:^4.0.0"
-    espree: "npm:^10.1.0"
+    eslint-visitor-keys: "npm:^4.1.0"
+    espree: "npm:^10.2.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10/596fcadddff407c30a3e682fe6aa8a683f8ec678aee2a85a6e8da7551dfe18eeed115c67375dfd177b787496e93c97080d84002b4415a1446660ab270d63c897
+  checksum: 10/f8766d38d27ff44e259998868acf1989a4a21e16938c060e7bdb17b9c1b5e9a0a00193879e676eef5a0fd066a4752ec1889bdd1a42c18c33d360ae6bf6eb073a
   languageName: node
   linkType: hard
 
@@ -1912,7 +1912,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.2.0"
-    "@stylistic/eslint-plugin-js": "npm:^2.8.0"
+    "@stylistic/eslint-plugin-js": "npm:^2.9.0"
     "@stylistic/stylelint-plugin": "npm:^3.1.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^2.1.2"
@@ -3747,6 +3747,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-visitor-keys@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "eslint-visitor-keys@npm:4.1.0"
+  checksum: 10/3fb5bd1b2f36db89d0ac57ddd66d36ccd3b1e3cddb2a55a0f9f6f1c85268cfcc1cc32e7eda4990e3423107a120dd254fb6cb52d6154cf81d344d8c3fa671f7c2
+  languageName: node
+  linkType: hard
+
 "eslint@npm:^9.11.1":
   version: 9.11.1
   resolution: "eslint@npm:9.11.1"
@@ -3818,6 +3825,17 @@ __metadata:
     acorn-jsx: "npm:^5.3.2"
     eslint-visitor-keys: "npm:^4.0.0"
   checksum: 10/a673aa39a19a51763d92272f8f3772ae3d4b10624740bb72d5f273b631b43f1a5a32b385c1da6ae6bc10be05a5913bc4679ebd22a09c7b336a745204834806ea
+  languageName: node
+  linkType: hard
+
+"espree@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "espree@npm:10.2.0"
+  dependencies:
+    acorn: "npm:^8.12.0"
+    acorn-jsx: "npm:^5.3.2"
+    eslint-visitor-keys: "npm:^4.1.0"
+  checksum: 10/365076a963ca84244c1e2d36e4f812362d21cfa7e7df10d67f7b82b759467796df81184721d153c4e235d9ef5eb5b4d044167dd66be3be00f53a21a515b1bfb1
   languageName: node
   linkType: hard
 
