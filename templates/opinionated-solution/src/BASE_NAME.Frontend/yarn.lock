@@ -2012,10 +2012,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/protocols@npm:9.0.8":
-  version: 9.0.8
-  resolution: "@wdio/protocols@npm:9.0.8"
-  checksum: 10/db2668ec95fd5b3af7ba967ca171817f73ce0de9a1c9c51963c25d2228268e7159a602c1945c8e75e33c1266d74c896b125d1d7d1acb731ebe7497b04436d135
+"@wdio/protocols@npm:9.2.0":
+  version: 9.2.0
+  resolution: "@wdio/protocols@npm:9.2.0"
+  checksum: 10/16efe996b7f54a9bde6dbb4c904f080efa234324684a122d1376ffc53d9937ce469d56a4f6eab9eb6cbba929baefce1135103e29697cb13fe0c883892dd9553c
   languageName: node
   linkType: hard
 
@@ -2099,7 +2099,7 @@ __metadata:
     vite: "npm:^5.4.8"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^2.1.2"
-    webdriverio: "npm:^9.1.5"
+    webdriverio: "npm:^9.2.1"
   languageName: unknown
   linkType: soft
 
@@ -8500,32 +8500,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.1.5":
-  version: 9.1.5
-  resolution: "webdriver@npm:9.1.5"
+"webdriver@npm:9.2.0":
+  version: 9.2.0
+  resolution: "webdriver@npm:9.2.0"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
     "@wdio/config": "npm:9.1.3"
     "@wdio/logger": "npm:9.1.3"
-    "@wdio/protocols": "npm:9.0.8"
+    "@wdio/protocols": "npm:9.2.0"
     "@wdio/types": "npm:9.1.3"
     "@wdio/utils": "npm:9.1.3"
     deepmerge-ts: "npm:^7.0.3"
     ws: "npm:^8.8.0"
-  checksum: 10/eef827ea6c2896a2c75925c76e14d267f42014183990b0de1933246a45275419a8556473b3fc316750bc2381763a8edaf72a32069e18acc2be17ccd5d8f42f09
+  checksum: 10/07810f4f81e2256256f679c48443755fb607c687bd090db845247ce2ee459c9bf44bd0405f49ca8a2cc6edb8a9a90109f3a4945296be6fe3a8b6d6eabfc6214f
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.1.5":
-  version: 9.1.5
-  resolution: "webdriverio@npm:9.1.5"
+"webdriverio@npm:^9.2.1":
+  version: 9.2.1
+  resolution: "webdriverio@npm:9.2.1"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
     "@wdio/config": "npm:9.1.3"
     "@wdio/logger": "npm:9.1.3"
-    "@wdio/protocols": "npm:9.0.8"
+    "@wdio/protocols": "npm:9.2.0"
     "@wdio/repl": "npm:9.0.8"
     "@wdio/types": "npm:9.1.3"
     "@wdio/utils": "npm:9.1.3"
@@ -8547,13 +8547,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.1.5"
+    webdriver: "npm:9.2.0"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/9f528bfa35714c0238580a682a832198c2a0244483b0b3d115fb5d58fe57576a8070df09d1a8d6dbdecd4a4b5bf3be9819e06434a63debf234ec9b0bc30e8d84
+  checksum: 10/4a7a710c4ae0201c288212c310763fd10c2031ab39d7d401b1870530a5e5c0bf3098f8bd8009d2af54596bf1aa90c96cc74a71a318d22e757f29c23330c859ef
   languageName: node
   linkType: hard
 
