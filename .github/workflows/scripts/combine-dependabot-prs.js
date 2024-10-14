@@ -132,12 +132,24 @@ module.exports = async ({ github, context, core }, inputs) => {
       console.log(`Merged branch ${branch}.`);
       combinedPRs.push(prString);
 
-      const regex = /(?:Bump\s)(?:the\s)?(.*?)\s(?:from|group)/g;
-      const match = regex.exec(title);
-      if(!!match) {
-        const dependency = match[1];
+      const singleNameRegex = /(?:Bump\s)(?:the\s)?(.*?)\s(?:from|group)/gi;
+      const singleNameMatch = singleNameRegex.exec(title);
+      if(!!singleNameMatch) {
+        const dependency = singleNameMatch[1];
         console.log(`Adding dependency name to array: ${dependency}.`);
         dependencies.add(dependency);
+      }
+
+      const multiNameRegex = /Bump\s([^\s]*?)(?:,\s([^\s]*?))?(?:,\s([^\s]*?))?(?:,\s([^\s]*?))?(?:,\s([^\s]*?))?(?:,\s([^\s]*?))?(?:,\s([^\s]*?))?\sand\s([^\s]*?)$/gi;
+      const multiNameMatch = multiNameRegex.exec(title);
+      if(!!multiNameMatch) {
+        for(let i = 1; i < multiNameMatch.length; i++) {
+          const dependency = multiNameMatch[i];
+          if(!!dependency) {
+            console.log(`Adding dependency name to array: ${dependency}.`);
+            dependencies.add(dependency);
+          }
+        }
       }
     } catch(error) {
       console.log(`Failed to merge branch ${branch}.`);
