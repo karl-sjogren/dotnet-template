@@ -1941,7 +1941,7 @@ __metadata:
     vite: "npm:^5.4.8"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^2.1.2"
-    webdriverio: "npm:^9.1.3"
+    webdriverio: "npm:^9.1.5"
   languageName: unknown
   linkType: soft
 
@@ -8284,9 +8284,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.1.3":
-  version: 9.1.3
-  resolution: "webdriver@npm:9.1.3"
+"webdriver@npm:9.1.5":
+  version: 9.1.5
+  resolution: "webdriver@npm:9.1.5"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
@@ -8297,13 +8297,13 @@ __metadata:
     "@wdio/utils": "npm:9.1.3"
     deepmerge-ts: "npm:^7.0.3"
     ws: "npm:^8.8.0"
-  checksum: 10/229b8b2b18c237fc868fc0b5e939f9bd5484cb53037ebf15df31b0487c81ed43dc6f05253e85034fbf92da664da6bf5b3b0fc943034e26d923720d282c3b83a8
+  checksum: 10/eef827ea6c2896a2c75925c76e14d267f42014183990b0de1933246a45275419a8556473b3fc316750bc2381763a8edaf72a32069e18acc2be17ccd5d8f42f09
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.1.3":
-  version: 9.1.3
-  resolution: "webdriverio@npm:9.1.3"
+"webdriverio@npm:^9.1.5":
+  version: 9.1.5
+  resolution: "webdriverio@npm:9.1.5"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
@@ -8331,13 +8331,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.1.3"
+    webdriver: "npm:9.1.5"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/45205f1f13e8a4e278c9c445318a008959dd02314bf3126003878d6899c37a8dd35284edb6f1ee407ffc92db0f6bf0360ef7cde9acb6657f20a016a492aa48dc
+  checksum: 10/9f528bfa35714c0238580a682a832198c2a0244483b0b3d115fb5d58fe57576a8070df09d1a8d6dbdecd4a4b5bf3be9819e06434a63debf234ec9b0bc30e8d84
   languageName: node
   linkType: hard
 
