@@ -47,6 +47,6 @@
     "vite": "^5.4.8",
     "vite-plugin-mkcert": "^1.17.6",
     "vitest": "^2.1.2",
-    "webdriverio": "^9.1.5"
+    "webdriverio": "^9.2.4"
   }
 }
