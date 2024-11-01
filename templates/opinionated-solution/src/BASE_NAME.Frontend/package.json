@@ -21,9 +21,9 @@
     "@stylistic/eslint-plugin-js": "^2.9.0",
     "@stylistic/stylelint-plugin": "^3.1.1",
     "@testing-library/dom": "^10.4.0",
-    "@vitest/browser": "^2.1.2",
-    "@vitest/coverage-v8": "^2.1.2",
-    "@vitest/ui": "^2.1.2",
+    "@vitest/browser": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.4",
+    "@vitest/ui": "^2.1.4",
     "autoprefixer": "^10.4.20",
     "browserslist": "^4.24.2",
     "cssnano": "^7.0.6",
@@ -32,7 +32,7 @@
     "eslint": "^9.13.0",
     "eslint-plugin-compat": "^6.0.1",
     "eslint-plugin-jsdoc": "^50.4.3",
-    "eslint-plugin-testing-library": "^6.3.0",
+    "eslint-plugin-testing-library": "^6.4.0",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^25.0.1",
     "jsdom-testing-mocks": "^1.13.1",
@@ -46,7 +46,7 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "vite": "^5.4.10",
     "vite-plugin-mkcert": "^1.17.6",
-    "vitest": "^2.1.2",
+    "vitest": "^2.1.4",
     "webdriverio": "^9.2.6"
   }
 }
