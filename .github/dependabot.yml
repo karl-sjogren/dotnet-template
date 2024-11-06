@@ -42,6 +42,16 @@ updates:
         patterns:
           - "FakeItEasy*"
 
+  - package-ecosystem: "dotnet-sdk"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "dotnet-sdk"
+    directory: "/templates/opinionated-solution/"
+    schedule:
+      interval: "daily"
+
   - package-ecosystem: "npm"
     directory: "/templates/opinionated-solution/src/BASE_NAME.Frontend/"
     schedule:
