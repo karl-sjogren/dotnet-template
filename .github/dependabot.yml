@@ -41,6 +41,9 @@ updates:
       fakeiteasy:
         patterns:
           - "FakeItEasy*"
+      testable-io:
+        patterns:
+          - "TestableIO*"
 
 #  - package-ecosystem: "dotnet-sdk"
 #    directory: "/global.json"
