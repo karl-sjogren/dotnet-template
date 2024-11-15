@@ -48,8 +48,8 @@
   ],
   "constraints": {
     "LTS ": {
-       "type": "sdk-version",
-       "args": [ "8.0.*" ]
+      "type": "sdk-version",
+      "args": [ "9.0.*" ]
     }
   },
   "symbols": {
