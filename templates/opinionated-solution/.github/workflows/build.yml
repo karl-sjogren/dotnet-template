@@ -211,7 +211,7 @@ jobs:
       if: env.PUBLISH_CODECOV
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        file: coverage-report/Cobertura.xml
+        files: coverage-report/Cobertura.xml
 
     - name: Upload coverage history
       uses: actions/upload-artifact@v4
