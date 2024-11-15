@@ -100,7 +100,7 @@ jobs:
           global.json
         sparse-checkout-cone-mode: false
 
-    - name: Download artiifacts
+    - name: Download artifacts
       uses: actions/download-artifact@v4
       with:
         name: packages
