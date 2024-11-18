@@ -160,9 +160,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codecov/bundler-plugin-core@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@codecov/bundler-plugin-core@npm:1.2.1"
+"@codecov/bundler-plugin-core@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@codecov/bundler-plugin-core@npm:1.3.0"
   dependencies:
     "@actions/core": "npm:^1.10.1"
     "@actions/github": "npm:^6.0.0"
@@ -170,19 +170,19 @@ __metadata:
     semver: "npm:^7.5.4"
     unplugin: "npm:^1.10.1"
     zod: "npm:^3.22.4"
-  checksum: 10/7c49e6b0b68ad165a1f037700bdcfdc14c94e51fc307dc0cad18972539dc523074f8dd5e522e58b062f8651fac285160503e9b8b107e0a523793add32ba54da4
+  checksum: 10/328a0d69ccbc4d1b31ca6cd83c88e9c50567e59ec39ac0beecf953fc7e8abcfe6ce53dc86057a598b043c5edba493137415cc39f96ff1de49b941324d2e9f3c6
   languageName: node
   linkType: hard
 
-"@codecov/vite-plugin@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@codecov/vite-plugin@npm:1.2.1"
+"@codecov/vite-plugin@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@codecov/vite-plugin@npm:1.3.0"
   dependencies:
-    "@codecov/bundler-plugin-core": "npm:^1.2.1"
+    "@codecov/bundler-plugin-core": "npm:^1.3.0"
     unplugin: "npm:^1.10.1"
   peerDependencies:
     vite: 4.x || 5.x
-  checksum: 10/c11bed86357a6a4a346f1ac869eb6bf7aa099979a13e763bd9b18c4059ce6aca47ddf89c747938949c0a2a0cc5c2ea6d7285997b629332b5474aa1c5671c3af2
+  checksum: 10/bff96ca58414fd185fd3e132da16690dc52adea0c6570d4f5bb986cbe42dabf19a7cdaf528e52e615aa109b614c2aa5c5bd12a8a9f98d47497eb9654efd78316
   languageName: node
   linkType: hard
 
@@ -662,11 +662,11 @@ __metadata:
   linkType: hard
 
 "@eslint/plugin-kit@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@eslint/plugin-kit@npm:0.2.0"
+  version: 0.2.3
+  resolution: "@eslint/plugin-kit@npm:0.2.3"
   dependencies:
     levn: "npm:^0.4.1"
-  checksum: 10/ebb363174397341dea47dc35fc206e24328083e4f0fa1c539687dbb7f94bef77e43faa12867d032e6eea5ac980ea8fbb6b1d844186e422d327c04088041b99f3
+  checksum: 10/0d0653ef840823fd5c0354ef8f1937e7763dbe830173eb6d2d55a19374bf04a06dff0e5214330c10a9425cf38655f632bb0d7d0666249b366e506ae291d82f7e
   languageName: node
   linkType: hard
 
@@ -2008,7 +2008,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
-    "@codecov/vite-plugin": "npm:^1.2.1"
+    "@codecov/vite-plugin": "npm:^1.3.0"
     "@stylistic/eslint-plugin-js": "npm:^2.10.1"
     "@stylistic/stylelint-plugin": "npm:^3.1.1"
     "@testing-library/dom": "npm:^10.4.0"
@@ -2031,7 +2031,7 @@ __metadata:
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.12.0"
-    sass: "npm:^1.80.7"
+    sass: "npm:^1.81.0"
     stylelint: "npm:^16.10.0"
     stylelint-config-standard: "npm:^36.0.1"
     stylelint-config-standard-scss: "npm:^13.1.0"
@@ -7121,9 +7121,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.80.7":
-  version: 1.80.7
-  resolution: "sass@npm:1.80.7"
+"sass@npm:^1.81.0":
+  version: 1.81.0
+  resolution: "sass@npm:1.81.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7134,7 +7134,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/617966d361968d6354bc17c0e2a66c6e0d822684b3694590441035e4966418304bbd4912ff4ee55e7a5751f94624057cd99ebc27964b102619e4e755b1f94f0e
+  checksum: 10/f5acce5c3bb4bde6851def112e094eed20ed062e195350cea42e98bee317cf0dbcf8a6ee44222f8826437f81562fb87b840728612b0301851f7bc6d853d9142c
   languageName: node
   linkType: hard
 
