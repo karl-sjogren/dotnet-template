@@ -2022,7 +2022,7 @@ __metadata:
     esbuild-plugin-browserslist: "npm:^0.15.0"
     eslint: "npm:^9.15.0"
     eslint-plugin-compat: "npm:^6.0.1"
-    eslint-plugin-jsdoc: "npm:^50.5.0"
+    eslint-plugin-jsdoc: "npm:^50.6.0"
     eslint-plugin-testing-library: "npm:^6.5.0"
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^25.0.1"
@@ -2038,7 +2038,7 @@ __metadata:
     vite: "npm:^5.4.11"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^2.1.5"
-    webdriverio: "npm:^9.2.14"
+    webdriverio: "npm:^9.4.1"
   languageName: unknown
   linkType: soft
 
@@ -3789,9 +3789,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^50.5.0":
-  version: 50.5.0
-  resolution: "eslint-plugin-jsdoc@npm:50.5.0"
+"eslint-plugin-jsdoc@npm:^50.6.0":
+  version: 50.6.0
+  resolution: "eslint-plugin-jsdoc@npm:50.6.0"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.49.0"
     are-docs-informative: "npm:^0.0.2"
@@ -3806,7 +3806,7 @@ __metadata:
     synckit: "npm:^0.9.1"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/4abe3ac34ad0d3bf34238968b6961c4ea9ec8eb058046f554cf60a702a91ac294eda8e475cadeaa1951e1a5317dd055543407787b04256fbd0728454af7e2ad0
+  checksum: 10/295df63b2d0300a072f4349b15eaf3279080ed13147752e21ce145ed31ed111a15c406e44650726a9e5bcf6bf248e5714ec3962e7e4f7b4bbd4cc3cd0cf16db2
   languageName: node
   linkType: hard
 
@@ -8135,6 +8135,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici@npm:^6.20.1":
+  version: 6.21.0
+  resolution: "undici@npm:6.21.0"
+  checksum: 10/c8ff80dcadfcf613e7fe697c37519fca070fcf1cfccc69ffb6a7080a22e225eb79d232e9f70e32b099b3e67ac4216e8fd615e188cfb792e09df9233471ec17e0
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^2.0.0":
   version: 2.0.1
   resolution: "unique-filename@npm:2.0.1"
@@ -8485,9 +8492,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.2.8":
-  version: 9.2.8
-  resolution: "webdriver@npm:9.2.8"
+"webdriver@npm:9.4.1":
+  version: 9.4.1
+  resolution: "webdriver@npm:9.4.1"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
@@ -8497,14 +8504,15 @@ __metadata:
     "@wdio/types": "npm:9.2.2"
     "@wdio/utils": "npm:9.2.8"
     deepmerge-ts: "npm:^7.0.3"
+    undici: "npm:^6.20.1"
     ws: "npm:^8.8.0"
-  checksum: 10/7e96b1ed247683ba8f0db4c67562f65c82c4fe5e0d05051de990325e72b51d1b37141280d34693e99a6d23a304059e39fcaa5b41469171832f80425bcb2426fc
+  checksum: 10/b1ce603674035077980784fbcf19b1be40cd38a39b5bd564c5f4a6e6670096512aca0e377b7fc6dafff86168ea1ab31b32c2607f1d037d556c5220bdebdb7a30
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.2.14":
-  version: 9.2.14
-  resolution: "webdriverio@npm:9.2.14"
+"webdriverio@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "webdriverio@npm:9.4.1"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
@@ -8532,13 +8540,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.2.8"
+    webdriver: "npm:9.4.1"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/5880d41bba72b5f5c7232240d610cab80256ea27d340d7f8afebf4796adcae9c2cc003c27fcf99a1c9daf76f0c5f3b0657b47a1f5bffd3b51c0ea7c7159c762a
+  checksum: 10/f89127946697a3ff067d9d0df3f2c706a2828e0fb3e7cb75361f7cf266062f265f0334292d19d453f96ad5bc8bda091deb05619b4581d3b16a3c1c3864c4fd83
   languageName: node
   linkType: hard
 
