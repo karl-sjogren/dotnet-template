@@ -2184,7 +2184,7 @@ __metadata:
     eslint: "npm:^9.16.0"
     eslint-plugin-compat: "npm:^6.0.1"
     eslint-plugin-jsdoc: "npm:^50.6.0"
-    eslint-plugin-testing-library: "npm:^7.1.0"
+    eslint-plugin-testing-library: "npm:^7.1.1"
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^25.0.1"
     jsdom-testing-mocks: "npm:^1.13.1"
@@ -3971,15 +3971,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "eslint-plugin-testing-library@npm:7.1.0"
+"eslint-plugin-testing-library@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "eslint-plugin-testing-library@npm:7.1.1"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.15.0"
     "@typescript-eslint/utils": "npm:^8.15.0"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/c250daad343514e107efcd7011cbb41e0e4ccd8c16cef1a1ba3612ad28970d431f81109bb38b6c2c3d6cb4217587aeb6c60f89d0faae6931065ef858dd2ba641
+  checksum: 10/48a7a7f93afd16f9cf9cccaf7a1e7ba2e2ea9072d598558ce758d396c7a4d6a71e49b4ec654feef67350141f4f2737d7460c07dbfaed4eb60a09d1c7ceb11558
   languageName: node
   linkType: hard
 
