@@ -1568,15 +1568,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^2.11.0":
-  version: 2.11.0
-  resolution: "@stylistic/eslint-plugin-js@npm:2.11.0"
+"@stylistic/eslint-plugin-js@npm:^2.12.0":
+  version: 2.12.0
+  resolution: "@stylistic/eslint-plugin-js@npm:2.12.0"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10/b07c740b080c395b5fb0dfaefe8de8e5a3cffd6ad47917d7c293430f2d4610c80ee192847e6615880ec162220032a4d8262e6a3178e25e77d2d75a95f3940b07
+  checksum: 10/e9188af68a1499418b4a543b975d2ed862812bc7271ac63e8c37e97157ab7afd4c35b2798875a1c6ecd284113bdc8bddb9ff716f89a802b7c9818e5aaf612acc
   languageName: node
   linkType: hard
 
@@ -2170,7 +2170,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.5.1"
-    "@stylistic/eslint-plugin-js": "npm:^2.11.0"
+    "@stylistic/eslint-plugin-js": "npm:^2.12.0"
     "@stylistic/stylelint-plugin": "npm:^3.1.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^2.1.8"
