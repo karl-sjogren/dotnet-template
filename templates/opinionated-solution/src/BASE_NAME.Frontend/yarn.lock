@@ -1568,15 +1568,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^2.11.0":
-  version: 2.11.0
-  resolution: "@stylistic/eslint-plugin-js@npm:2.11.0"
+"@stylistic/eslint-plugin-js@npm:^2.12.1":
+  version: 2.12.1
+  resolution: "@stylistic/eslint-plugin-js@npm:2.12.1"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10/b07c740b080c395b5fb0dfaefe8de8e5a3cffd6ad47917d7c293430f2d4610c80ee192847e6615880ec162220032a4d8262e6a3178e25e77d2d75a95f3940b07
+  checksum: 10/77bb7d539a191048f183205458508fc3d86779e763cd820b9d925193d1d10fc0d0d567f1f8827aa1ba90729d96e2c4d12176cda9733ca0a4c6a4aff6fa74598c
   languageName: node
   linkType: hard
 
@@ -2170,7 +2170,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.5.1"
-    "@stylistic/eslint-plugin-js": "npm:^2.11.0"
+    "@stylistic/eslint-plugin-js": "npm:^2.12.1"
     "@stylistic/stylelint-plugin": "npm:^3.1.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^2.1.8"
@@ -2183,7 +2183,7 @@ __metadata:
     esbuild-plugin-browserslist: "npm:^0.15.0"
     eslint: "npm:^9.16.0"
     eslint-plugin-compat: "npm:^6.0.1"
-    eslint-plugin-jsdoc: "npm:^50.6.0"
+    eslint-plugin-jsdoc: "npm:^50.6.1"
     eslint-plugin-testing-library: "npm:^7.1.1"
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^25.0.1"
@@ -3950,9 +3950,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^50.6.0":
-  version: 50.6.0
-  resolution: "eslint-plugin-jsdoc@npm:50.6.0"
+"eslint-plugin-jsdoc@npm:^50.6.1":
+  version: 50.6.1
+  resolution: "eslint-plugin-jsdoc@npm:50.6.1"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.49.0"
     are-docs-informative: "npm:^0.0.2"
@@ -3967,7 +3967,7 @@ __metadata:
     synckit: "npm:^0.9.1"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/295df63b2d0300a072f4349b15eaf3279080ed13147752e21ce145ed31ed111a15c406e44650726a9e5bcf6bf248e5714ec3962e7e4f7b4bbd4cc3cd0cf16db2
+  checksum: 10/53fceff38a5317bb7c42c15a622100515aec89aea0d2bbf07e7d2d07eacdaa10ce625232a1bc7c1497f7bbe044675123d30cd3e123fa52fe5c7a9c336a59709c
   languageName: node
   linkType: hard
 
