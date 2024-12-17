@@ -52,6 +52,9 @@
       "args": [ "9.0.*" ]
     }
   },
+  "guids": [
+    "56b5d934-22d2-4d76-a1d4-9298a6bb4ab8"
+  ],
   "symbols": {
     "skipRestore": {
       "type": "parameter",
