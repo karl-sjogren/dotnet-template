@@ -12,12 +12,14 @@
   <ItemGroup>
     <Using Include="FakeItEasy"/>
     <Using Include="Microsoft.Extensions.Logging.Abstractions"/>
+    <Using Include="Microsoft.Extensions.Time.Testing"/>
     <Using Include="Shouldly"/>
     <Using Include="Xunit"/>
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Resources/**/*" />
+    <Content Include="../xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,7 +50,7 @@
     </PackageReference>
     <PackageReference Include="Shouldly" />
     <PackageReference Include="TestableIO.System.IO.Abstractions.TestingHelpers" />
-    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.v3" />
     <PackageReference Include="xunit.runner.visualstudio">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
