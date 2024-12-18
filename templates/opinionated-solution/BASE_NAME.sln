@@ -17,6 +17,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BASE_NAME.Frontend", "src\BASE_NAME.Frontend\BASE_NAME.Frontend.csproj", "{42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4}"
 EndProject
 #endif
+#if (includeBenchmarkProject)
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{32396585-F3DF-4216-81DF-6131E1FF498F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BASE_NAME.Benchmarks", "benchmarks\BASE_NAME.Benchmarks\BASE_NAME.Benchmarks.csproj", "{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7}"
+EndProject
+#endif
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +51,12 @@ Global
 		{42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4}.Release|Any CPU.Build.0 = Release|Any CPU
 #endif
+#if (includeBenchmarkProject)
+		{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7}.Release|Any CPU.Build.0 = Release|Any CPU
+#endif
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C53909E3-1076-402E-981D-477C340599E7} = {362B8B37-5E5D-4E36-B272-17E0D985B7A0}
@@ -51,6 +64,9 @@ Global
 		{23CAAE77-3BA6-47E6-BE31-048D000E3FAC} = {982AABDB-799C-4A5A-817B-421D100AAE99}
 #if (addFrontendProject)
 		{42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4} = {362B8B37-5E5D-4E36-B272-17E0D985B7A0}
+#endif
+#if (includeBenchmarkProject)
+		{7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7} = {32396585-F3DF-4216-81DF-6131E1FF498F}
 #endif
 	EndGlobalSection
 EndGlobal
