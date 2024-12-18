@@ -1,21 +1,24 @@
 using System.Diagnostics;
 using System.Reflection;
 using System.Text;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace BASE_NAME.TestHelpers;
 
 public static class Resources {
+    private static readonly JsonSerializerOptions _serializerOptions = new(JsonSerializerDefaults.Web);
+
     public static string GetString(string name, Encoding? encoding = null) {
         return GetStringAsync(name, encoding).GetAwaiter().GetResult();
     }
 
     public static async Task<string> GetStringAsync(string name, Encoding? encoding = null) {
         var assembly = GetTestAssembly();
-        using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
+        await using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
 
-        if(resourceStream == null)
+        if(resourceStream == null) {
             throw new InvalidOperationException($"Failed to load resource stream {assembly.GetName().Name}.Resources." + name);
+        }
 
         using var reader = new StreamReader(resourceStream, encoding ?? Encoding.UTF8);
         return await reader.ReadToEndAsync();
@@ -27,10 +30,11 @@ public static class Resources {
 
     public static async Task<Stream> GetStreamAsync(string name) {
         var assembly = GetTestAssembly();
-        using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
+        await using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
 
-        if(resourceStream == null)
+        if(resourceStream == null) {
             throw new InvalidOperationException($"Failed to load resource stream {assembly.GetName().Name}.Resources." + name);
+        }
 
         var ms = new MemoryStream();
         await resourceStream.CopyToAsync(ms);
@@ -42,9 +46,9 @@ public static class Resources {
         return GetTypedFromJsonAsync<T?>(name).GetAwaiter().GetResult();
     }
 
-    public static async Task<T?> GetTypedFromJsonAsync<T>(string name) {
+    public static async Task<T?> GetTypedFromJsonAsync<T>(string name, JsonSerializerOptions? options = null) {
         var assembly = GetTestAssembly();
-        using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
+        await using var resourceStream = assembly!.GetManifestResourceStream($"{assembly.GetName().Name}.Resources.{name}");
 
         if(resourceStream == null) {
             throw new InvalidOperationException($"Resource with {name} could not be found.");
@@ -52,7 +56,7 @@ public static class Resources {
 
         using var reader = new StreamReader(resourceStream, Encoding.UTF8);
         var json = await reader.ReadToEndAsync();
-        return JsonConvert.DeserializeObject<T>(json);
+        return JsonSerializer.Deserialize<T>(json, options ?? _serializerOptions);
     }
 
     internal static string[] GetResourcesNames() {
@@ -68,20 +72,24 @@ public static class Resources {
         var assembly = assemblies.FirstOrDefault(assembly => {
             var assemblyName = assembly?.GetName()?.Name;
 
-            if(string.IsNullOrEmpty(assemblyName))
+            if(string.IsNullOrEmpty(assemblyName)) {
                 return false;
+            }
 
-            if(!assemblyName.StartsWith("BASE_NAME.", StringComparison.Ordinal))
+            if(!assemblyName.StartsWith("BASE_NAME.", StringComparison.Ordinal)) {
                 return false;
+            }
 
-            if(assemblyName == "BASE_NAME.TestHelpers")
+            if(assemblyName == "BASE_NAME.TestHelpers") {
                 return false;
+            }
 
             return true;
         });
 
-        if(assembly == null)
+        if(assembly == null) {
             throw new InvalidOperationException("Failed to find test assembly.");
+        }
 
         return assembly;
     }

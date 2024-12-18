@@ -36,6 +36,20 @@
           ]
         },
         {
+          "condition": "(!includeBenchmarkProject)",
+          "exclude": [
+            "benchmarks/**"
+          ]
+        },
+        {
+          "condition": "(!includeHttpClientSetup)",
+          "exclude": [
+            "src/BASE_NAME.Core/Common/HttpClientBase.cs",
+            "src/BASE_NAME.Core/Exceptions/Http*",
+            "test/BASE_NAME.TestHelpers/Http/**"
+          ]
+        },
+        {
           "condition": "(!addFrontendProject)",
           "exclude": [
             "src/BASE_NAME.Frontend/**",
@@ -61,7 +75,9 @@
     "982AABDB-799C-4A5A-817B-421D100AAE99",
     "6E055661-9DD9-47EA-BFA4-E20862522A9C",
     "23CAAE77-3BA6-47E6-BE31-048D000E3FAC",
-    "42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4"
+    "42D2B2C1-C0EA-40B8-9A50-6FE4C43C79C4",
+    "7DC3C50C-8B09-4DB3-B4FA-3D26E87810E7",
+    "32396585-F3DF-4216-81DF-6131E1FF498F"
   ],
   "symbols": {
     "skipRestore": {
@@ -84,6 +100,20 @@
       "displayName": "Add frontend project",
       "description": "If set to true, adds a Vite based frontend project (includes Yarn, Vite, Vitest, Eslint, etc).",
       "defaultValue": "false"
+    },
+    "includeHttpClientSetup": {
+      "type": "parameter",
+      "datatype": "bool",
+      "displayName": "Include HttpClient setup",
+      "description": "If set to true, adds a base class for HttpClient with better error handling and testability.",
+      "defaultValue": "false"
+    },
+    "includeBenchmarkProject": {
+      "type": "parameter",
+      "datatype": "bool",
+      "displayName": "Include benchmark project",
+      "description": "If set to true, adds a benchmark project based on BenchmarkDotNet.",
+      "defaultValue": "true"
     }
   },
   "primaryOutputs": [
