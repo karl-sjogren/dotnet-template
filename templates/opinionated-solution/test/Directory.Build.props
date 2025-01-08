@@ -15,6 +15,7 @@
     <Using Include="Microsoft.Extensions.Time.Testing"/>
     <Using Include="Shouldly"/>
     <Using Include="Xunit"/>
+    <Using Include="BASE_NAME.TestHelpers.XUnitCancellationTokenHelper" Global="True" Static="True" />
   </ItemGroup>
 
   <ItemGroup>
