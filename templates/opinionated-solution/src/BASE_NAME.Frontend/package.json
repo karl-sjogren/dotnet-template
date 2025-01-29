@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@codecov/vite-plugin": "^1.8.0",
-    "@stylistic/eslint-plugin-js": "^2.13.0",
+    "@stylistic/eslint-plugin-js": "^3.0.1",
     "@stylistic/stylelint-plugin": "^3.1.1",
     "@testing-library/dom": "^10.4.0",
     "@vitest/browser": "^3.0.3",
