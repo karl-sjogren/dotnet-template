@@ -1351,15 +1351,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "@stylistic/eslint-plugin-js@npm:2.13.0"
+"@stylistic/eslint-plugin-js@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@stylistic/eslint-plugin-js@npm:3.0.1"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=8.40.0"
-  checksum: 10/8b3c6227e1cfd2e2aefe48115c8939627e86da6b39f72bc8b988d0f1ed680dbee850d046132821352631e37fdfdd6579ff5526a11565caacecb8b3529c7ebf90
+  checksum: 10/591d3767a8c3a7d206c92a8a0b70759fba987550a1308d1fb0060b73e375fb23f372d4ff3e118fc69585067b15ee280d999b6c0245b9715746b875108acd6af1
   languageName: node
   linkType: hard
 
@@ -1844,17 +1844,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:9.6.4":
-  version: 9.6.4
-  resolution: "@wdio/config@npm:9.6.4"
+"@wdio/config@npm:9.7.2":
+  version: 9.7.2
+  resolution: "@wdio/config@npm:9.7.2"
   dependencies:
     "@wdio/logger": "npm:9.4.4"
     "@wdio/types": "npm:9.6.3"
-    "@wdio/utils": "npm:9.6.4"
+    "@wdio/utils": "npm:9.7.2"
     deepmerge-ts: "npm:^7.0.3"
     glob: "npm:^10.2.2"
     import-meta-resolve: "npm:^4.0.0"
-  checksum: 10/848eeec598bc455e4f06cf8e14f2d509190f3d9cc357f9d34ef8275f2dcdf6a628ec9aecf3d99f79dd43bd758f1f8805db3915ec15086f04ffd195e7cf9a41f2
+  checksum: 10/292bf975ce7477fbe4c263b62daca908e735966cf15460b45eb92571997f09207797c7f87905b032cced8199b120085d5c32f151ab25213c597eea1fb736f3b9
   languageName: node
   linkType: hard
 
@@ -1907,9 +1907,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/utils@npm:9.6.4":
-  version: 9.6.4
-  resolution: "@wdio/utils@npm:9.6.4"
+"@wdio/utils@npm:9.7.2":
+  version: 9.7.2
+  resolution: "@wdio/utils@npm:9.7.2"
   dependencies:
     "@puppeteer/browsers": "npm:^2.2.0"
     "@wdio/logger": "npm:9.4.4"
@@ -1924,7 +1924,7 @@ __metadata:
     safaridriver: "npm:^1.0.0"
     split2: "npm:^4.2.0"
     wait-port: "npm:^1.1.0"
-  checksum: 10/161b103d50b479217720306761de9a8ce7e2a8483ab4ebd2a5e9e3eec033817befb37251cff69bc1212ebeb3362475006a021bc11192a61c112da6ca8a9287e5
+  checksum: 10/b758cbe2ded0441f74a465300182010d5ed61cbc39e4d52149114cacff732262de4822d679faadc65b6820b169005f248f64dede3d0d8d70b9c7efda9599e9f9
   languageName: node
   linkType: hard
 
@@ -1940,7 +1940,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.8.0"
-    "@stylistic/eslint-plugin-js": "npm:^2.13.0"
+    "@stylistic/eslint-plugin-js": "npm:^3.0.1"
     "@stylistic/stylelint-plugin": "npm:^3.1.1"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.0.3"
@@ -1953,7 +1953,7 @@ __metadata:
     esbuild-plugin-browserslist: "npm:^0.15.0"
     eslint: "npm:^9.19.0"
     eslint-plugin-compat: "npm:^6.0.2"
-    eslint-plugin-jsdoc: "npm:^50.6.2"
+    eslint-plugin-jsdoc: "npm:^50.6.3"
     eslint-plugin-testing-library: "npm:^7.1.1"
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^26.0.0"
@@ -1963,13 +1963,13 @@ __metadata:
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.14.0"
     sass: "npm:^1.83.4"
-    stylelint: "npm:^16.13.2"
+    stylelint: "npm:^16.14.1"
     stylelint-config-standard: "npm:^37.0.0"
     stylelint-config-standard-scss: "npm:^14.0.0"
     vite: "npm:^6.0.11"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^3.0.3"
-    webdriverio: "npm:^9.7.0"
+    webdriverio: "npm:^9.7.2"
   languageName: unknown
   linkType: soft
 
@@ -3668,9 +3668,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^50.6.2":
-  version: 50.6.2
-  resolution: "eslint-plugin-jsdoc@npm:50.6.2"
+"eslint-plugin-jsdoc@npm:^50.6.3":
+  version: 50.6.3
+  resolution: "eslint-plugin-jsdoc@npm:50.6.3"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.49.0"
     are-docs-informative: "npm:^0.0.2"
@@ -3685,7 +3685,7 @@ __metadata:
     synckit: "npm:^0.9.1"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/604e0ccaa4c43a9c95f072dca3833b2e7274ee89d481247d4beccffc7c6bbb4062169271cedc79e839ed3b770699bf20f13c4e92e006ae5d64f8012bfdfa1cb2
+  checksum: 10/2c8fa8f493730e326d53bfdaccdb4d8502ee836cd7893f56cf9b12d36831a0cd8c3e9740fe0a7fc67232d1fb6866c17385b2d89b7ce56543056403b982b5f1a6
   languageName: node
   linkType: hard
 
@@ -4614,10 +4614,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"htmlfy@npm:^0.5.0":
-  version: 0.5.1
-  resolution: "htmlfy@npm:0.5.1"
-  checksum: 10/845407ce1383be3bb16035f3390b229015291c5828a14e0dcc6325e784a8bbf0ed6617cc148593abc60ae45ff7dacced77cc8d489f874049cfa6e20b35b7fd10
+"htmlfy@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "htmlfy@npm:0.6.0"
+  checksum: 10/6c645f7a927f1914836ffa757492d1ca0efd6a9f58fec6673ac86efae3187a2b81f28517aa9e2772efd085647d981b62ab1d6914011197a5dc1a885372a55ae3
   languageName: node
   linkType: hard
 
@@ -4750,7 +4750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^7.0.1":
+"ignore@npm:^7.0.3":
   version: 7.0.3
   resolution: "ignore@npm:7.0.3"
   checksum: 10/ce5e812af3acd6607a3fe0a9f9b5f01d53f009a5ace8cbf5b6491d05a481b55d65186e6a7eaa13126e93f15276bcf3d1e8d6ff3ce5549c312f9bb313fff33365
@@ -7600,9 +7600,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^16.13.2":
-  version: 16.13.2
-  resolution: "stylelint@npm:16.13.2"
+"stylelint@npm:^16.14.1":
+  version: 16.14.1
+  resolution: "stylelint@npm:16.14.1"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.4"
     "@csstools/css-tokenizer": "npm:^3.0.3"
@@ -7622,7 +7622,7 @@ __metadata:
     globby: "npm:^11.1.0"
     globjoin: "npm:^0.1.4"
     html-tags: "npm:^3.3.1"
-    ignore: "npm:^7.0.1"
+    ignore: "npm:^7.0.3"
     imurmurhash: "npm:^0.1.4"
     is-plain-object: "npm:^5.0.0"
     known-css-properties: "npm:^0.35.0"
@@ -7631,7 +7631,7 @@ __metadata:
     micromatch: "npm:^4.0.8"
     normalize-path: "npm:^3.0.0"
     picocolors: "npm:^1.1.1"
-    postcss: "npm:^8.4.49"
+    postcss: "npm:^8.5.1"
     postcss-resolve-nested-selector: "npm:^0.1.6"
     postcss-safe-parser: "npm:^7.0.1"
     postcss-selector-parser: "npm:^7.0.0"
@@ -7644,7 +7644,7 @@ __metadata:
     write-file-atomic: "npm:^5.0.1"
   bin:
     stylelint: bin/stylelint.mjs
-  checksum: 10/98385b53d3c822b3b764fe8ff2f7212717127ab40ca9fd34a83bc6e27b5240d4ea02f959e01d4eaf91c87480a0c787b07b837883d4b3ec44133cc7ca03c79b47
+  checksum: 10/2c0c95e5ee77d946efdbe58573da75ff4b12bc89c220e78b69f0c2f94251f5e5a1096f5ab583f28f56ae14f298b1335e212d52fe066719d63b8a41d6cc8083b6
   languageName: node
   linkType: hard
 
@@ -8380,43 +8380,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.7.0":
-  version: 9.7.0
-  resolution: "webdriver@npm:9.7.0"
+"webdriver@npm:9.7.2":
+  version: 9.7.2
+  resolution: "webdriver@npm:9.7.2"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
-    "@wdio/config": "npm:9.6.4"
+    "@wdio/config": "npm:9.7.2"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/types": "npm:9.6.3"
-    "@wdio/utils": "npm:9.6.4"
+    "@wdio/utils": "npm:9.7.2"
     deepmerge-ts: "npm:^7.0.3"
     undici: "npm:^6.20.1"
     ws: "npm:^8.8.0"
-  checksum: 10/2b1d91117af5707c76f38f21a1ca0f5e252b8b77359252f02cdd2b7fd99b6d4b6a16ecc0209a9d47dc76ca62ac2d7ee890e2a86217267d4ae0f33bb51134285c
+  checksum: 10/6602de15be45280fa63d62d98940c9f186434793d1caa14585d5ad01433b48c4e504389763d35c4d618e87493998c7f5788d47321c0ec3e4bad5d2071784e004
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.7.0":
-  version: 9.7.0
-  resolution: "webdriverio@npm:9.7.0"
+"webdriverio@npm:^9.7.2":
+  version: 9.7.2
+  resolution: "webdriverio@npm:9.7.2"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
-    "@wdio/config": "npm:9.6.4"
+    "@wdio/config": "npm:9.7.2"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/repl": "npm:9.4.4"
     "@wdio/types": "npm:9.6.3"
-    "@wdio/utils": "npm:9.6.4"
+    "@wdio/utils": "npm:9.7.2"
     archiver: "npm:^7.0.1"
     aria-query: "npm:^5.3.0"
     cheerio: "npm:^1.0.0-rc.12"
     css-shorthand-properties: "npm:^1.1.1"
     css-value: "npm:^0.0.1"
     grapheme-splitter: "npm:^1.0.4"
-    htmlfy: "npm:^0.5.0"
+    htmlfy: "npm:^0.6.0"
     import-meta-resolve: "npm:^4.0.0"
     is-plain-obj: "npm:^4.1.0"
     jszip: "npm:^3.10.1"
@@ -8428,13 +8428,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.7.0"
+    webdriver: "npm:9.7.2"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/a529474a28da0e37a7c2cca7f7aec123c2519dca2ccb5fd80957b7ae2ecfb687be6395d227c031e965e27b6065c33a4158d7bb806cc18594d427c74c2bec5a73
+  checksum: 10/7a4dc5dc65a544b9c580060e3ff4d7498974d8a74738d68d80fd96010b98f9d27335b4f9bc7680b2557a9d804138c4c2e9147b3083071266d544c62b13da8156
   languageName: node
   linkType: hard
 
