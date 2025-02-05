@@ -1363,9 +1363,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@stylistic/stylelint-plugin@npm:3.1.1"
+"@stylistic/stylelint-plugin@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "@stylistic/stylelint-plugin@npm:3.1.2"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.1"
     "@csstools/css-tokenizer": "npm:^3.0.1"
@@ -1377,7 +1377,7 @@ __metadata:
     stylelint: "npm:^16.8.2"
   peerDependencies:
     stylelint: ^16.8.0
-  checksum: 10/a7276c74a69b7c37e1db15fb8d0c7eeb5bce40f346a50c94d4a712c1100d83a9969dc1bc64494436bbb6c946ed606ccbd87a7c3fe697f2accb5504ead89c83d8
+  checksum: 10/4aca6afe46d5663eb0bad895d684138cba63c8275e43c3e2b536e43a39f323a6ee5050e92455fc4b03fa8be3bec9b8f6578c821a3b68aee9e2db41914b54cd88
   languageName: node
   linkType: hard
 
@@ -1941,7 +1941,7 @@ __metadata:
   dependencies:
     "@codecov/vite-plugin": "npm:^1.8.0"
     "@stylistic/eslint-plugin-js": "npm:^3.0.1"
-    "@stylistic/stylelint-plugin": "npm:^3.1.1"
+    "@stylistic/stylelint-plugin": "npm:^3.1.2"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.0.4"
     "@vitest/coverage-v8": "npm:^3.0.4"
