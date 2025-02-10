@@ -5,35 +5,24 @@ import jsdoc from 'eslint-plugin-jsdoc';
 import testingLibrary from 'eslint-plugin-testing-library';
 import compat from 'eslint-plugin-compat';
 import stylisticJs from '@stylistic/eslint-plugin-js';
-import vitest from 'eslint-plugin-vitest';
+import vitest from '@vitest/eslint-plugin';
 
-/** @type {import('eslint').Linter.FlatConfig} */
-const ignorePatterns = {
-  ignores: ['node_modules/', '**/.*', '.eslintcache'],
-};
-
-/** @type {import('eslint').Linter.FlatConfig} */
+/** @type {import('eslint').Linter.Config} */
 const baseConfig = {
-  files: ['scripts/*.{js,mjs}', '*.{js,mjs}'],
   languageOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
     globals: {
       ...globals.browser
     }
   },
   plugins: {
     jsdoc,
-    compat,
     '@stylistic/js': stylisticJs
   },
   rules: {
-    ...js.configs.recommended.rules,
-    ...jsdoc.configs.recommended.rules,
-    ...compat.configs.recommended.rules,
     'eqeqeq': 'error',
     'no-extra-boolean-cast': 'off',
     'no-var': 'error',
+    'no-unused-vars': ['error'],
     '@stylistic/js/indent': ['error', 2, { 'SwitchCase': 1 }],
     '@stylistic/js/linebreak-style': ['error', 'windows'],
     '@stylistic/js/quotes': ['error', 'single', { 'allowTemplateLiterals': true }],
@@ -58,15 +47,12 @@ const baseConfig = {
 };
 
 const testConfig = {
-  ...baseConfig,
   files: ['scripts/*.spec.{js,mjs}'],
   plugins: {
-    ...baseConfig.plugins,
     'testing-library': testingLibrary,
     vitest
   },
   rules: {
-    ...baseConfig.rules,
     ...vitest.configs.recommended.rules,
     ...testingLibrary.configs.dom.rules,
     'vitest/no-disabled-tests': 'off',
@@ -75,9 +61,11 @@ const testConfig = {
   }
 };
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
-  ignorePatterns,
+  js.configs.recommended,
+  jsdoc.configs['flat/recommended'],
+  compat.configs['flat/recommended'],
   baseConfig,
   testConfig
 ];
