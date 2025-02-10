@@ -1937,9 +1937,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.1.27":
-  version: 1.1.27
-  resolution: "@vitest/eslint-plugin@npm:1.1.27"
+"@vitest/eslint-plugin@npm:^1.1.28":
+  version: 1.1.28
+  resolution: "@vitest/eslint-plugin@npm:1.1.28"
   peerDependencies:
     "@typescript-eslint/utils": ">= 8.0"
     eslint: ">= 8.57.0"
@@ -1950,7 +1950,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10/a2c5e79c449adc9929df4b38ff86f00e8ed16cb1c9c869410c56046681412d7eb07b0957ad90f48e44aaf8572534f2a54924b96057a77ecfc1276c4be6efafa7
+  checksum: 10/35398a2d69fa176638e66e1854ec7dcc71e6689138b5b2382f23fbd51307af7048db632935049e8585d419bb387911df3d1bca817845cc7db0ef2b84a37c4a06
   languageName: node
   linkType: hard
 
@@ -2153,7 +2153,7 @@ __metadata:
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.0.5"
     "@vitest/coverage-v8": "npm:^3.0.5"
-    "@vitest/eslint-plugin": "npm:^1.1.27"
+    "@vitest/eslint-plugin": "npm:^1.1.28"
     "@vitest/ui": "npm:^3.0.5"
     autoprefixer: "npm:^10.4.20"
     browserslist: "npm:^4.24.4"
