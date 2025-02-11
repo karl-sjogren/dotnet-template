@@ -173,30 +173,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codecov/bundler-plugin-core@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@codecov/bundler-plugin-core@npm:1.8.0"
+"@codecov/bundler-plugin-core@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@codecov/bundler-plugin-core@npm:1.9.0"
   dependencies:
     "@actions/core": "npm:^1.10.1"
     "@actions/github": "npm:^6.0.0"
-    "@sentry/core": "npm:^8.42.0"
     chalk: "npm:4.1.2"
     semver: "npm:^7.5.4"
     unplugin: "npm:^1.10.1"
     zod: "npm:^3.22.4"
-  checksum: 10/b463b1f8af6ef1ca7764dfb3487f4759768eeef3192a7cbb5a26893a9eb9c26ba743b1a1bcd7d4586835d17c07327e960c385ff9fa874016f7d720986212c1e6
+  checksum: 10/e159a18c1d6955ec579750fdd34a73d5e0e6d6fa7e8946004cab9b63d5da215cef52b7c8d67d11757a0aa41c868756d18beecca50cf683b967fde2d7b9a3f769
   languageName: node
   linkType: hard
 
-"@codecov/vite-plugin@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@codecov/vite-plugin@npm:1.8.0"
+"@codecov/vite-plugin@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@codecov/vite-plugin@npm:1.9.0"
   dependencies:
-    "@codecov/bundler-plugin-core": "npm:^1.8.0"
+    "@codecov/bundler-plugin-core": "npm:^1.9.0"
     unplugin: "npm:^1.10.1"
   peerDependencies:
     vite: 4.x || 5.x || 6.x
-  checksum: 10/4a59d936f47ba6f1b0b40cc4db634fa3645499827aa41eab1dcdafb61c3b1aa625dc022d4c1d4f637f03c5dc2431f9d9611997d82ecba9ba544a9ffaa60d89ee
+  checksum: 10/7f291210e8066dafe518f047e53e68d434d701d1bd10dec0c5f141247509ff826f209ca4326c0b27496fa1b4e6534227bff6e83e9992867290cd7fd998ea4fad
   languageName: node
   linkType: hard
 
@@ -1535,13 +1534,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:^8.42.0":
-  version: 8.54.0
-  resolution: "@sentry/core@npm:8.54.0"
-  checksum: 10/192c26a07527196e9b322306fa96a4ed5518420caa869cd506c8a0ea92e00431dd95da226327c18fbb42547cc904226aba1283c6ff2d69e85a06dd12cf4eb369
-  languageName: node
-  linkType: hard
-
 "@stylistic/eslint-plugin-js@npm:^3.1.0":
   version: 3.1.0
   resolution: "@stylistic/eslint-plugin-js@npm:3.1.0"
@@ -2147,7 +2139,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
-    "@codecov/vite-plugin": "npm:^1.8.0"
+    "@codecov/vite-plugin": "npm:^1.9.0"
     "@stylistic/eslint-plugin-js": "npm:^3.1.0"
     "@stylistic/stylelint-plugin": "npm:^3.1.2"
     "@testing-library/dom": "npm:^10.4.0"
