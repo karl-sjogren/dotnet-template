@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.5.3</PackageVersion>
+    <PackageVersion>1.5.4</PackageVersion>
     <PackageId>Karls.Templates</PackageId>
     <Title>Karls Templates</Title>
     <Authors>Karl-Johan Sjögren</Authors>
