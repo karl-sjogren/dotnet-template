@@ -1143,13 +1143,13 @@ __metadata:
   linkType: hard
 
 "@octokit/request-error@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "@octokit/request-error@npm:5.1.0"
+  version: 5.1.1
+  resolution: "@octokit/request-error@npm:5.1.1"
   dependencies:
     "@octokit/types": "npm:^13.1.0"
     deprecation: "npm:^2.0.0"
     once: "npm:^1.4.0"
-  checksum: 10/d03f9f7a408af673cd991eeb450b6f4a5cee6c368f6349eb0211dfc0404fddfcff8b5225ef186020a2a1829adba0aa8c9174155b49ab2ed00a94fb9a886a1dd3
+  checksum: 10/6ad98626407ba57bb33fa197611be74bee1dd9abc8d5d845648d6a2a04aa6840c0eb7f4be341d55dfcab5bc19181ad5fd25194869a7aaac6245f74b3a14d9662
   languageName: node
   linkType: hard
 
@@ -1534,15 +1534,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@stylistic/eslint-plugin-js@npm:3.1.0"
+"@stylistic/eslint-plugin-js@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@stylistic/eslint-plugin-js@npm:4.0.0"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
-    eslint: ">=8.40.0"
-  checksum: 10/68f0a5ea7b9cafd2e6281a25a59848d89ab7a066562698991ab4bafc8bd4006f39ca0a4a86416294603ae47a639d7fe8427a26ce61a6e3c9c83c43416415bf1c
+    eslint: ">=9.0.0"
+  checksum: 10/4c27c39e401aa06b1e8220dcde096c84a16cc3a0ec2caa1edd9a3f6b55c8475f2d305b1aa662c0ed08fccc8847c907b3fa9fc8facb8ca1037bacead248dc4c30
   languageName: node
   linkType: hard
 
@@ -2140,7 +2140,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.9.0"
-    "@stylistic/eslint-plugin-js": "npm:^3.1.0"
+    "@stylistic/eslint-plugin-js": "npm:^4.0.0"
     "@stylistic/stylelint-plugin": "npm:^3.1.2"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.0.5"
@@ -2163,7 +2163,7 @@ __metadata:
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.14.0"
-    sass: "npm:^1.84.0"
+    sass: "npm:^1.85.0"
     stylelint: "npm:^16.14.1"
     stylelint-config-standard: "npm:^37.0.0"
     stylelint-config-standard-scss: "npm:^14.0.0"
@@ -2172,7 +2172,7 @@ __metadata:
     vite: "npm:^6.1.0"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^3.0.5"
-    webdriverio: "npm:^9.9.0"
+    webdriverio: "npm:^9.9.3"
   languageName: unknown
   linkType: soft
 
@@ -7369,9 +7369,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.84.0":
-  version: 1.84.0
-  resolution: "sass@npm:1.84.0"
+"sass@npm:^1.85.0":
+  version: 1.85.0
+  resolution: "sass@npm:1.85.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7382,7 +7382,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/e0c093f13800276f7441c6925aa707dbba59a7ecd6e21925f1e04980970c3fb18b1cc5e7193f9bbed569a87dfb41ed780f5c6153f0b3def3e0ae1ccf80cf282e
+  checksum: 10/4af4627505087b692a29c575f346b12e30a3f58dd0254832ebc9ccff456e6f8a2c16d1f9b45d83d6aaae867e6fb54b98c485ddf79a226e328d595b54725c7f84
   languageName: node
   linkType: hard
 
@@ -8714,9 +8714,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.9.0":
-  version: 9.9.0
-  resolution: "webdriver@npm:9.9.0"
+"webdriver@npm:9.9.1":
+  version: 9.9.1
+  resolution: "webdriver@npm:9.9.1"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
@@ -8728,13 +8728,13 @@ __metadata:
     deepmerge-ts: "npm:^7.0.3"
     undici: "npm:^6.20.1"
     ws: "npm:^8.8.0"
-  checksum: 10/2086c3a344ebb62f40ca6e759c0af2d72c19e7da013fef37e756b53d5ab0a26e470b5452ef7afeac5cc98b8086c65901ebf01ad2c37c9dfaf1499dc4d23a5500
+  checksum: 10/fc87d693f6d15abc2e547087ab0270d5dbd51909563241e3f026119840e1f5d5240dbe7037b3186c043eea5021693d7975c7d86ab6c034f85c325d6b320f96d4
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.9.0":
-  version: 9.9.0
-  resolution: "webdriverio@npm:9.9.0"
+"webdriverio@npm:^9.9.3":
+  version: 9.9.3
+  resolution: "webdriverio@npm:9.9.3"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
@@ -8760,13 +8760,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.9.0"
+    webdriver: "npm:9.9.1"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/b9f4f23c4835f58f371683808e66851b156e36c2918c73ea8144941a941deaaf4ad0cabce74740e6ac28bdd9fc8a313224e42d3aea1005d865ca051f16fe165f
+  checksum: 10/d4b7697823e48d3e0038629f68e01f799c0f0fb508e5d63b58a4a0b5895d1bd0fee921ff0e6533b563ce9321592f91951cc467ad432a8458a552eef6256c7dc9
   languageName: node
   linkType: hard
 
