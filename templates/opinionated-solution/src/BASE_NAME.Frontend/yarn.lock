@@ -1534,15 +1534,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin-js@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@stylistic/eslint-plugin-js@npm:4.0.0"
+"@stylistic/eslint-plugin-js@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@stylistic/eslint-plugin-js@npm:4.0.1"
   dependencies:
     eslint-visitor-keys: "npm:^4.2.0"
     espree: "npm:^10.3.0"
   peerDependencies:
     eslint: ">=9.0.0"
-  checksum: 10/4c27c39e401aa06b1e8220dcde096c84a16cc3a0ec2caa1edd9a3f6b55c8475f2d305b1aa662c0ed08fccc8847c907b3fa9fc8facb8ca1037bacead248dc4c30
+  checksum: 10/62a9cb7cce8fc1734d65a9f059c977392c89ffa5b406c96686a4a7ee07633e0bb01f65d27daef3a97a77419bdcd943febe74fa00745c6da6b69b6024628e7d80
   languageName: node
   linkType: hard
 
@@ -2140,7 +2140,7 @@ __metadata:
   resolution: "BASE_NAME.frontend@workspace:."
   dependencies:
     "@codecov/vite-plugin": "npm:^1.9.0"
-    "@stylistic/eslint-plugin-js": "npm:^4.0.0"
+    "@stylistic/eslint-plugin-js": "npm:^4.0.1"
     "@stylistic/stylelint-plugin": "npm:^3.1.2"
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.0.6"
@@ -2159,7 +2159,7 @@ __metadata:
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^26.0.0"
     jsdom-testing-mocks: "npm:^1.13.1"
-    postcss: "npm:^8.5.2"
+    postcss: "npm:^8.5.3"
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.14.0"
@@ -2169,7 +2169,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:^14.0.0"
     typescript: "npm:^5.7.3"
     undici: "npm:^7"
-    vite: "npm:^6.1.0"
+    vite: "npm:^6.1.1"
     vite-plugin-mkcert: "npm:^1.17.6"
     vitest: "npm:^3.0.6"
     webdriverio: "npm:^9.9.3"
@@ -6904,14 +6904,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.2":
-  version: 8.5.2
-  resolution: "postcss@npm:8.5.2"
+"postcss@npm:^8.5.3":
+  version: 8.5.3
+  resolution: "postcss@npm:8.5.3"
   dependencies:
     nanoid: "npm:^3.3.8"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10/e08c2be3cf461cc63cf4c8e97bb3d5185e196ee0a9b75879cf130590f32bc38c7829c6c4e260158e214fb68a828a95bdac84c8f17fefba993d3ced686643c3e2
+  checksum: 10/6d7e21a772e8b05bf102636918654dac097bac013f0dc8346b72ac3604fc16829646f94ea862acccd8f82e910b00e2c11c1f0ea276543565d278c7ca35516a7c
   languageName: node
   linkType: hard
 
@@ -8580,7 +8580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0 || ^6.0.0, vite@npm:^6.1.0":
+"vite@npm:^5.0.0 || ^6.0.0":
   version: 6.1.0
   resolution: "vite@npm:6.1.0"
   dependencies:
@@ -8629,6 +8629,58 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10/5de360ac0ecb3cac85f796ec97d5347e2c8102a8845309af87f52296279464a6d5b880beb740bc42740936ec9de8bf0acce6a6ed3b3b24a733162a5d63d9f46b
+  languageName: node
+  linkType: hard
+
+"vite@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "vite@npm:6.1.1"
+  dependencies:
+    esbuild: "npm:^0.24.2"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.5.2"
+    rollup: "npm:^4.30.1"
+  peerDependencies:
+    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
+    jiti: ">=1.21.0"
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    sass-embedded: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.16.0
+    tsx: ^4.8.1
+    yaml: ^2.4.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    jiti:
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+    tsx:
+      optional: true
+    yaml:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/3e70efdb4a87d0ccd1d5f019522cebd3e0e9e173df01dc58f50781a152f19a20c8e6597a3d50b79612309f925a3bd4aa0916ae0cfd2cf57e0e27750d441ec3cb
   languageName: node
   linkType: hard
 
