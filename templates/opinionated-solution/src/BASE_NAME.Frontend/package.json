@@ -50,6 +50,6 @@
     "vite": "^6.2.0",
     "vite-plugin-mkcert": "^1.17.6",
     "vitest": "^3.0.7",
-    "webdriverio": "^9.9.3"
+    "webdriverio": "^9.10.1"
   }
 }
