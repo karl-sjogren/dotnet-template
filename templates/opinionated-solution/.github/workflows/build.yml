@@ -174,7 +174,7 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v8
+      uses: dawidd6/action-download-artifact@v9
       with:
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
@@ -192,7 +192,7 @@ jobs:
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@v5
       with:
-        reports: '../**/{coverage.cobertura,cobertura-coverage}.xml'
+        reports: '../**/coverage.cobertura.xml;../**/cobertura-coverage.xml'
         targetdir: 'coverage-report'
         historydir: 'coverage-history'
         reporttypes: 'Html;MarkdownSummary;MarkdownDeltaSummary;Cobertura'
@@ -251,7 +251,7 @@ jobs:
       run: dotnet restore --verbosity minimal
 
     - name: Publish application
-      run: dotnet publish -o ./artifacts -c Release
+      run: dotnet publish --output ./artifacts --configuration Release
       working-directory: ./
 
     - name: Upload build artifacts
