@@ -1991,17 +1991,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:9.10.1":
-  version: 9.10.1
-  resolution: "@wdio/config@npm:9.10.1"
+"@wdio/config@npm:9.11.0":
+  version: 9.11.0
+  resolution: "@wdio/config@npm:9.11.0"
   dependencies:
     "@wdio/logger": "npm:9.4.4"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.10.1"
+    "@wdio/utils": "npm:9.11.0"
     deepmerge-ts: "npm:^7.0.3"
     glob: "npm:^10.2.2"
     import-meta-resolve: "npm:^4.0.0"
-  checksum: 10/8df66090a0a4365a0721d5f5555d7d71ed500c9c3a9c20275c0a2ca773f0a2f741c437c63872013a03c2a0eeab4139b65baf78efdbd47966974b296aa7b7b7a5
+  checksum: 10/de14f542db1f1aca237b09d098b92ae1c981c7e1ed30bb392769943aa94479f271101b414c370e5dcbbe19ffaf32ebafd86e31565ef49a30b1dd5c3a37daa6e8
   languageName: node
   linkType: hard
 
@@ -2054,9 +2054,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/utils@npm:9.10.1":
-  version: 9.10.1
-  resolution: "@wdio/utils@npm:9.10.1"
+"@wdio/utils@npm:9.11.0":
+  version: 9.11.0
+  resolution: "@wdio/utils@npm:9.11.0"
   dependencies:
     "@puppeteer/browsers": "npm:^2.2.0"
     "@wdio/logger": "npm:9.4.4"
@@ -2071,7 +2071,7 @@ __metadata:
     safaridriver: "npm:^1.0.0"
     split2: "npm:^4.2.0"
     wait-port: "npm:^1.1.0"
-  checksum: 10/ea837798d11d42ea9f16c9dd8bf8aa5f7260d7b49a99afe0b4e6e1bc27d37704963209db1df3ebc646d09026c35f31da879c7ef7bcd33cb7ad48e3cb9ca2f052
+  checksum: 10/b8e09e1887add8757eb74a2f1a75e28de5378c1d81174724b44282283bb26584faa3ff5a376d1f35efacb49a57a2c530b92ecbd18e5bda9aa83ea3d27c8b7bfa
   languageName: node
   linkType: hard
 
@@ -2119,7 +2119,7 @@ __metadata:
     vite: "npm:^6.2.1"
     vite-plugin-mkcert: "npm:^1.17.7"
     vitest: "npm:^3.0.8"
-    webdriverio: "npm:^9.10.1"
+    webdriverio: "npm:^9.11.0"
   languageName: unknown
   linkType: soft
 
@@ -8729,36 +8729,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.10.1":
-  version: 9.10.1
-  resolution: "webdriver@npm:9.10.1"
+"webdriver@npm:9.11.0":
+  version: 9.11.0
+  resolution: "webdriver@npm:9.11.0"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
-    "@wdio/config": "npm:9.10.1"
+    "@wdio/config": "npm:9.11.0"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.10.1"
+    "@wdio/utils": "npm:9.11.0"
     deepmerge-ts: "npm:^7.0.3"
     undici: "npm:^6.20.1"
     ws: "npm:^8.8.0"
-  checksum: 10/203103f2462fc61f3910037234b345353ce17dc4e61ab997495649122da535ed367e59402417a898ff8341b3ff542b323bd4cb057a958b1adc306613d33d979e
+  checksum: 10/47ebcffdfb3bc3d85141a41da9ea512b298a641e1d9e27d1fd1dfe026c92eafa6313ce60875d15088ce53bce6d0b01f22b62139338f185efcb60761dc85cc932
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.10.1":
-  version: 9.10.1
-  resolution: "webdriverio@npm:9.10.1"
+"webdriverio@npm:^9.11.0":
+  version: 9.11.0
+  resolution: "webdriverio@npm:9.11.0"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
-    "@wdio/config": "npm:9.10.1"
+    "@wdio/config": "npm:9.11.0"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/repl": "npm:9.4.4"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.10.1"
+    "@wdio/utils": "npm:9.11.0"
     archiver: "npm:^7.0.1"
     aria-query: "npm:^5.3.0"
     cheerio: "npm:^1.0.0-rc.12"
@@ -8775,13 +8775,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.10.1"
+    webdriver: "npm:9.11.0"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/81a39271c4f3ebf43a42c766be689a7f1d10f41d8ec369a447979fb8812eacc520d6bc33ab41057a2aae3a42e8ca8eb5cf19c6b3b5e8816a67752cac16aeb302
+  checksum: 10/8813890dae14cd0e82fd342113f7605f0f065fa7500f23ad8699c56d3bf2e256b16b5193cfe832833f0c28e576a2ee4722418a88e331cc4513b0b3a9e34ec483
   languageName: node
   linkType: hard
 
