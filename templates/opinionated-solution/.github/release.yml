@@ -1,11 +1,11 @@
 changelog:
   categories:
-    - title: 👷 Issues
+    - title: ":shipit: Pull requests"
       labels:
         - '*'
       exclude:
         labels:
           - dependencies
-    - title: 👒 Dependency updates
+    - title: "📦 Dependency updates"
       labels:
         - dependencies

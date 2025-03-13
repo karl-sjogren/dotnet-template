@@ -178,12 +178,19 @@ module.exports = async ({ github, context, core }, inputs) => {
     dependenciesDisplay = 'unknown dependencies';
   }
 
-  await github.rest.pulls.create({
+  const pullRequest = await github.rest.pulls.create({
     owner: context.repo.owner,
     repo: context.repo.repo,
     title: `Combined PR with updates for ${dependenciesDisplay}`,
     head: inputs.combineBranchName,
     base: baseBranch,
     body: body
+  });
+
+  await github.rest.issues.addLabels({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: pullRequest.data.number,
+    labels: ['dependencies']
   });
 }
