@@ -2297,11 +2297,11 @@ __metadata:
     stylelint-config-standard: "npm:^37.0.0"
     stylelint-config-standard-scss: "npm:^14.0.0"
     typescript: "npm:^5.8.2"
-    undici: "npm:^7"
+    undici: "npm:^7.5.0"
     vite: "npm:^6.2.1"
     vite-plugin-mkcert: "npm:^1.17.7"
     vitest: "npm:^3.0.8"
-    webdriverio: "npm:^9.11.0"
+    webdriverio: "npm:^9.12.0"
   languageName: unknown
   linkType: soft
 
@@ -8642,10 +8642,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^7":
-  version: 7.4.0
-  resolution: "undici@npm:7.4.0"
-  checksum: 10/b2f659f2e2cdad422ad9ae6aff2bbba2669c0707708eed9cb56d85bcaf554c4e61be5fd437e58bb181d5ee6cd6c87def393fcfccd1633cc8ff2aa6b744abe520
+"undici@npm:^7.5.0":
+  version: 7.5.0
+  resolution: "undici@npm:7.5.0"
+  checksum: 10/66b84d69f7648c2fef5d213492d037ef337c74c817c61589aa6abf51bff75ad9c97aba55139724471e967e3efcbce3e9748a72271db4d3421bdfc0ee8143dbe9
   languageName: node
   linkType: hard
 
@@ -9023,9 +9023,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.11.0":
-  version: 9.11.0
-  resolution: "webdriverio@npm:9.11.0"
+"webdriverio@npm:^9.12.0":
+  version: 9.12.0
+  resolution: "webdriverio@npm:9.12.0"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
@@ -9057,7 +9057,7 @@ __metadata:
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/8813890dae14cd0e82fd342113f7605f0f065fa7500f23ad8699c56d3bf2e256b16b5193cfe832833f0c28e576a2ee4722418a88e331cc4513b0b3a9e34ec483
+  checksum: 10/369482c99b2429f100716267b36eb8319fc28e9619c18cce052c4656ccbdad2a80969b945b870e96ae808e811648fc5d566a4ac56b9cd8ff953b5158de4bbdbb
   languageName: node
   linkType: hard
 
