@@ -1,0 +1,11 @@
+changelog:
+  categories:
+    - title: 👷 Issues
+      labels:
+        - '*'
+      exclude:
+        labels:
+          - dependencies
+    - title: 👒 Dependency updates
+      labels:
+        - dependencies
