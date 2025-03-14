@@ -108,7 +108,7 @@
   },
   "primaryOutputs": [
     {
-      "path": "BASE_NAME.sln"
+      "path": "BASE_NAME.slnx"
     }
   ],
   "postActions": [
