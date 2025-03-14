@@ -233,5 +233,5 @@ indent_style=space
 indent_size=2
 tab_width=2
 
-[*.{sh}]
+[*.sh]
 end_of_line=lf
