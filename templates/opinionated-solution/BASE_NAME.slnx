@@ -1,0 +1,17 @@
+<Solution>
+<!--#if (includeBenchmarkProject) -->
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/BASE_NAME.Benchmarks/BASE_NAME.Benchmarks.csproj" />
+  </Folder>
+<!--#endif -->
+  <Folder Name="/src/">
+    <Project Path="src/BASE_NAME.Core/BASE_NAME.Core.csproj" />
+<!--#if (addFrontendProject) -->
+    <Project Path="src/BASE_NAME.Frontend/BASE_NAME.Frontend.csproj" />
+<!--#endif -->
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/BASE_NAME.Core.Tests/BASE_NAME.Core.Tests.csproj" />
+    <Project Path="test/BASE_NAME.TestHelpers/BASE_NAME.TestHelpers.csproj" />
+  </Folder>
+</Solution>
