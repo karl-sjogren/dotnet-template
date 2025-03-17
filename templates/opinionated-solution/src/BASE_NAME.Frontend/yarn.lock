@@ -2298,8 +2298,8 @@ __metadata:
     stylelint-config-standard-scss: "npm:^14.0.0"
     typescript: "npm:^5.8.2"
     undici: "npm:^7.5.0"
-    vite: "npm:^6.2.1"
-    vite-plugin-mkcert: "npm:^1.17.7"
+    vite: "npm:^6.2.2"
+    vite-plugin-mkcert: "npm:^1.17.8"
     vitest: "npm:^3.0.8"
     webdriverio: "npm:^9.12.0"
   languageName: unknown
@@ -2633,14 +2633,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.8.1":
-  version: 1.8.2
-  resolution: "axios@npm:1.8.2"
+"axios@npm:^1.8.3":
+  version: 1.8.3
+  resolution: "axios@npm:1.8.3"
   dependencies:
     follow-redirects: "npm:^1.15.6"
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 10/d4328758128d0602cc809a8e7627622cb7839b379eae5e4d6b9d603dd4d5fb89159985630243ec107cf5c675cd8825dba737a319dff9499f3b7688d9a69ec9ed
+  checksum: 10/050f911cadd6d47a38ddbf91d2f8da2c34661dda8077e7ad6546e8178701125366fddbba07211a648b6815cf6c2c3c91c0a65d8b968e3d1a6054a21141ff9c01
   languageName: node
   linkType: hard
 
@@ -8799,16 +8799,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-mkcert@npm:^1.17.7":
-  version: 1.17.7
-  resolution: "vite-plugin-mkcert@npm:1.17.7"
+"vite-plugin-mkcert@npm:^1.17.8":
+  version: 1.17.8
+  resolution: "vite-plugin-mkcert@npm:1.17.8"
   dependencies:
-    axios: "npm:^1.8.1"
+    axios: "npm:^1.8.3"
     debug: "npm:^4.4.0"
     picocolors: "npm:^1.1.1"
   peerDependencies:
     vite: ">=3"
-  checksum: 10/81e410fe97017ffc369e1647940fd5117eff85aa498aa51fa639472e3e39a530168dc296eae03fece556a54d3e2affe9233d1146cb2d520241bb0d4bec1bd63f
+  checksum: 10/7b26333c737ecdd5e1f3663202938839dc07e897f553f8d82597830db3d8a6d40b7d07e1b51e6bae2d7b02c28650589c55984dea63b2dec1f2f41eb650875c64
   languageName: node
   linkType: hard
 
@@ -8864,9 +8864,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "vite@npm:6.2.1"
+"vite@npm:^6.2.2":
+  version: 6.2.2
+  resolution: "vite@npm:6.2.2"
   dependencies:
     esbuild: "npm:^0.25.0"
     fsevents: "npm:~2.3.3"
@@ -8912,7 +8912,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/a37cbc33a3d9746434e8e96614dd6d8d45d821e61e9d266f389808da290b3128ac93ba0059ab09a098cdeab8b790d6d3ae7cdd5e1ce7d55c31b8bece650b3790
+  checksum: 10/30896cbdbc082131cca3a343461ada8c2e8c30eed640dfaca39fd44b2f2fa4a1a312fe298e037063106af09f3026239be822a6b2f49e3d8239b8a64e86e83193
   languageName: node
   linkType: hard
 
