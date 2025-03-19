@@ -2280,7 +2280,7 @@ __metadata:
     browserslist: "npm:^4.24.4"
     cssnano: "npm:^7.0.6"
     esbuild: "npm:^0.25.1"
-    esbuild-plugin-browserslist: "npm:^0.16.0"
+    esbuild-plugin-browserslist: "npm:^1.0.0"
     eslint: "npm:^9.22.0"
     eslint-plugin-compat: "npm:^6.0.2"
     eslint-plugin-jsdoc: "npm:^50.6.6"
@@ -3858,16 +3858,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-plugin-browserslist@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "esbuild-plugin-browserslist@npm:0.16.0"
+"esbuild-plugin-browserslist@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "esbuild-plugin-browserslist@npm:1.0.0"
   dependencies:
     debug: "npm:^4.4.0"
-    zod: "npm:^3.24.1"
+    zod: "npm:^3.24.2"
   peerDependencies:
     browserslist: ^4.21.8
-    esbuild: ~0.25.0
-  checksum: 10/9f3986901521627270a74500a77a3ddf3599016729de6ebe04e675230188a0e5dd3f5c6a5a1ab781a0b9cb54952df0edb066a3a5737166ef8e8d9db4a2eb44ab
+    esbuild: ~0.25.1
+  checksum: 10/f9bd6a15f5b6e7931614d8351e9ab07755c8ef9c513b8806a2ee3096866e875266f96e9fdbbdee5611831269aa9774c593f7bc139d8b9e712f4e4f726db9f36f
   languageName: node
   linkType: hard
 
@@ -9352,7 +9352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.24.1":
+"zod@npm:^3.24.2":
   version: 3.24.2
   resolution: "zod@npm:3.24.2"
   checksum: 10/604c62a8cf8e330d78b106a557f4b44f5d14845d20b1360a423ccc09b58cb8525ccf7e4b40cf1bd4852d22393d2c67774b5817ec5a2fedab25f543b36ed15943
