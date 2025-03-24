@@ -29,10 +29,10 @@
     "browserslist": "^4.24.4",
     "cssnano": "^7.0.6",
     "esbuild": "^0.25.1",
-    "esbuild-plugin-browserslist": "^0.16.0",
+    "esbuild-plugin-browserslist": "^1.0.0",
     "eslint": "^9.22.0",
     "eslint-plugin-compat": "^6.0.2",
-    "eslint-plugin-jsdoc": "^50.6.6",
+    "eslint-plugin-jsdoc": "^50.6.8",
     "eslint-plugin-testing-library": "^7.1.1",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^26.0.0",
@@ -41,7 +41,7 @@
     "postcss-scss": "^4.0.9",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-visualizer": "^5.14.0",
-    "sass": "^1.85.1",
+    "sass": "^1.86.0",
     "stylelint": "^16.16.0",
     "stylelint-config-standard": "^37.0.0",
     "stylelint-config-standard-scss": "^14.0.0",
@@ -50,6 +50,6 @@
     "vite": "^6.2.2",
     "vite-plugin-mkcert": "^1.17.8",
     "vitest": "^3.0.8",
-    "webdriverio": "^9.12.0"
+    "webdriverio": "^9.12.1"
   }
 }

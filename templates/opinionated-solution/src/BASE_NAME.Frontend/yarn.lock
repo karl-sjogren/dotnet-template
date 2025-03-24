@@ -2173,17 +2173,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:9.11.0":
-  version: 9.11.0
-  resolution: "@wdio/config@npm:9.11.0"
+"@wdio/config@npm:9.12.1":
+  version: 9.12.1
+  resolution: "@wdio/config@npm:9.12.1"
   dependencies:
     "@wdio/logger": "npm:9.4.4"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.11.0"
+    "@wdio/utils": "npm:9.12.1"
     deepmerge-ts: "npm:^7.0.3"
     glob: "npm:^10.2.2"
     import-meta-resolve: "npm:^4.0.0"
-  checksum: 10/de14f542db1f1aca237b09d098b92ae1c981c7e1ed30bb392769943aa94479f271101b414c370e5dcbbe19ffaf32ebafd86e31565ef49a30b1dd5c3a37daa6e8
+  checksum: 10/96f9f3d85f7c1cd3646ed44a2111cecafa0e3f8ae757de73d28fd8c58023316a87e65acb7afbbfcdedecc54fa037e156ad5ae88da7999550859317eda38ea4fe
   languageName: node
   linkType: hard
 
@@ -2236,9 +2236,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/utils@npm:9.11.0":
-  version: 9.11.0
-  resolution: "@wdio/utils@npm:9.11.0"
+"@wdio/utils@npm:9.12.1":
+  version: 9.12.1
+  resolution: "@wdio/utils@npm:9.12.1"
   dependencies:
     "@puppeteer/browsers": "npm:^2.2.0"
     "@wdio/logger": "npm:9.4.4"
@@ -2253,7 +2253,7 @@ __metadata:
     safaridriver: "npm:^1.0.0"
     split2: "npm:^4.2.0"
     wait-port: "npm:^1.1.0"
-  checksum: 10/b8e09e1887add8757eb74a2f1a75e28de5378c1d81174724b44282283bb26584faa3ff5a376d1f35efacb49a57a2c530b92ecbd18e5bda9aa83ea3d27c8b7bfa
+  checksum: 10/7b6df4e31453470ebbec3a084511745e76ae7d7e12bfecaebda9efe20849b9e84b5c6144c37ad044e0e2044df7e93b44b7bc2fb53475285e9eed40d034fbc723
   languageName: node
   linkType: hard
 
@@ -2280,10 +2280,10 @@ __metadata:
     browserslist: "npm:^4.24.4"
     cssnano: "npm:^7.0.6"
     esbuild: "npm:^0.25.1"
-    esbuild-plugin-browserslist: "npm:^0.16.0"
+    esbuild-plugin-browserslist: "npm:^1.0.0"
     eslint: "npm:^9.22.0"
     eslint-plugin-compat: "npm:^6.0.2"
-    eslint-plugin-jsdoc: "npm:^50.6.6"
+    eslint-plugin-jsdoc: "npm:^50.6.8"
     eslint-plugin-testing-library: "npm:^7.1.1"
     eslint-plugin-vitest: "npm:^0.5.4"
     jsdom: "npm:^26.0.0"
@@ -2292,7 +2292,7 @@ __metadata:
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.14.0"
-    sass: "npm:^1.85.1"
+    sass: "npm:^1.86.0"
     stylelint: "npm:^16.16.0"
     stylelint-config-standard: "npm:^37.0.0"
     stylelint-config-standard-scss: "npm:^14.0.0"
@@ -2301,7 +2301,7 @@ __metadata:
     vite: "npm:^6.2.2"
     vite-plugin-mkcert: "npm:^1.17.8"
     vitest: "npm:^3.0.8"
-    webdriverio: "npm:^9.12.0"
+    webdriverio: "npm:^9.12.1"
   languageName: unknown
   linkType: soft
 
@@ -3858,16 +3858,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-plugin-browserslist@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "esbuild-plugin-browserslist@npm:0.16.0"
+"esbuild-plugin-browserslist@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "esbuild-plugin-browserslist@npm:1.0.0"
   dependencies:
     debug: "npm:^4.4.0"
-    zod: "npm:^3.24.1"
+    zod: "npm:^3.24.2"
   peerDependencies:
     browserslist: ^4.21.8
-    esbuild: ~0.25.0
-  checksum: 10/9f3986901521627270a74500a77a3ddf3599016729de6ebe04e675230188a0e5dd3f5c6a5a1ab781a0b9cb54952df0edb066a3a5737166ef8e8d9db4a2eb44ab
+    esbuild: ~0.25.1
+  checksum: 10/f9bd6a15f5b6e7931614d8351e9ab07755c8ef9c513b8806a2ee3096866e875266f96e9fdbbdee5611831269aa9774c593f7bc139d8b9e712f4e4f726db9f36f
   languageName: node
   linkType: hard
 
@@ -4200,9 +4200,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^50.6.6":
-  version: 50.6.6
-  resolution: "eslint-plugin-jsdoc@npm:50.6.6"
+"eslint-plugin-jsdoc@npm:^50.6.8":
+  version: 50.6.8
+  resolution: "eslint-plugin-jsdoc@npm:50.6.8"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.49.0"
     are-docs-informative: "npm:^0.0.2"
@@ -4217,7 +4217,7 @@ __metadata:
     synckit: "npm:^0.9.1"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
-  checksum: 10/31bbc433e013dd518e2d7084e746fb05507a1d1a693b713f5520fe224eb37e99c7cdd607677be7e8b92b2be0aa027e6d7512bed66fa7eeebc4125ec5d0d101db
+  checksum: 10/326fb3f4c4d42bdaaea62222f34752d7f93003d21b5228b087312666aee176b672d965c27e164837ac3bc9785647e7fda430f5155c13ca4e98409cc246c2d239
   languageName: node
   linkType: hard
 
@@ -7602,9 +7602,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.85.1":
-  version: 1.85.1
-  resolution: "sass@npm:1.85.1"
+"sass@npm:^1.86.0":
+  version: 1.86.0
+  resolution: "sass@npm:1.86.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7615,7 +7615,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/2803b8d4d256a5ab6e7711776714e5bfaee957bd47d05489994d1d88e38307dc76f15ec8e35708d6f5701cf981a48cd005db574063242fcceaf056123ad644d5
+  checksum: 10/d943e114340781d1d77bf8dc09c7daa8e1310bbdcdcf9cdd798e3d67c339132b19f6a88838800d11f48fc32e6726266fb87528d4aa087682a95abe690af1009c
   languageName: node
   linkType: hard
 
@@ -8998,36 +8998,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:9.11.0":
-  version: 9.11.0
-  resolution: "webdriver@npm:9.11.0"
+"webdriver@npm:9.12.1":
+  version: 9.12.1
+  resolution: "webdriver@npm:9.12.1"
   dependencies:
     "@types/node": "npm:^20.1.0"
     "@types/ws": "npm:^8.5.3"
-    "@wdio/config": "npm:9.11.0"
+    "@wdio/config": "npm:9.12.1"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.11.0"
+    "@wdio/utils": "npm:9.12.1"
     deepmerge-ts: "npm:^7.0.3"
     undici: "npm:^6.20.1"
     ws: "npm:^8.8.0"
-  checksum: 10/47ebcffdfb3bc3d85141a41da9ea512b298a641e1d9e27d1fd1dfe026c92eafa6313ce60875d15088ce53bce6d0b01f22b62139338f185efcb60761dc85cc932
+  checksum: 10/a7f1dd59341c6a08fe4ee829440f707f2cf66f0ab805bdbcffd093804bbd0b874c1c6042497fc9dfeb139e7f2719e57fd533a7433b43a993dcb4d724938eb34a
   languageName: node
   linkType: hard
 
-"webdriverio@npm:^9.12.0":
-  version: 9.12.0
-  resolution: "webdriverio@npm:9.12.0"
+"webdriverio@npm:^9.12.1":
+  version: 9.12.1
+  resolution: "webdriverio@npm:9.12.1"
   dependencies:
     "@types/node": "npm:^20.11.30"
     "@types/sinonjs__fake-timers": "npm:^8.1.5"
-    "@wdio/config": "npm:9.11.0"
+    "@wdio/config": "npm:9.12.1"
     "@wdio/logger": "npm:9.4.4"
     "@wdio/protocols": "npm:9.7.0"
     "@wdio/repl": "npm:9.4.4"
     "@wdio/types": "npm:9.10.1"
-    "@wdio/utils": "npm:9.11.0"
+    "@wdio/utils": "npm:9.12.1"
     archiver: "npm:^7.0.1"
     aria-query: "npm:^5.3.0"
     cheerio: "npm:^1.0.0-rc.12"
@@ -9044,13 +9044,13 @@ __metadata:
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.3"
     urlpattern-polyfill: "npm:^10.0.0"
-    webdriver: "npm:9.11.0"
+    webdriver: "npm:9.12.1"
   peerDependencies:
     puppeteer-core: ^22.3.0
   peerDependenciesMeta:
     puppeteer-core:
       optional: true
-  checksum: 10/369482c99b2429f100716267b36eb8319fc28e9619c18cce052c4656ccbdad2a80969b945b870e96ae808e811648fc5d566a4ac56b9cd8ff953b5158de4bbdbb
+  checksum: 10/c953228508209bdcf5e0283e05754443656e6dcfc7ec63274f9c74e7085069a4098adea0dec9381e178c4a96c58644d0726b9dce146b7748d6c4923525cc37ee
   languageName: node
   linkType: hard
 
@@ -9352,7 +9352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.24.1":
+"zod@npm:^3.24.2":
   version: 3.24.2
   resolution: "zod@npm:3.24.2"
   checksum: 10/604c62a8cf8e330d78b106a557f4b44f5d14845d20b1360a423ccc09b58cb8525ccf7e4b40cf1bd4852d22393d2c67774b5817ec5a2fedab25f543b36ed15943
