@@ -6,5 +6,6 @@
     "**/obj": true,
     "**/tmp": true,
     "**/.yarn/cache": true
-  }
+  },
+  "dotnet.defaultSolution": "Karls.Templates.slnx",
 }

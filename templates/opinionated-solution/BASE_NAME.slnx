@@ -1,12 +1,12 @@
 <Solution>
-<!--#if (includeBenchmarkProject) -->
+<!--#if includeBenchmarkProject -->
   <Folder Name="/benchmarks/">
     <Project Path="benchmarks/BASE_NAME.Benchmarks/BASE_NAME.Benchmarks.csproj" />
   </Folder>
 <!--#endif -->
   <Folder Name="/src/">
     <Project Path="src/BASE_NAME.Core/BASE_NAME.Core.csproj" />
-<!--#if (addFrontendProject) -->
+<!--#if addFrontendProject -->
     <Project Path="src/BASE_NAME.Frontend/BASE_NAME.Frontend.csproj" />
 <!--#endif -->
   </Folder>
