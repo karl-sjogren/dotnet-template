@@ -2124,6 +2124,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:^14.0.0"
     typescript: "npm:^5.8.2"
     undici: "npm:^7.6.0"
+    vite: "npm:^6.2.3"
     vite-plugin-mkcert: "npm:^1.17.8"
     vitest: "npm:^3.0.9"
     webdriverio: "npm:^9.12.1"
@@ -8512,7 +8513,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.0.0 || ^6.0.0":
+"vite@npm:^5.0.0 || ^6.0.0, vite@npm:^6.2.3":
   version: 6.2.3
   resolution: "vite@npm:6.2.3"
   dependencies:
