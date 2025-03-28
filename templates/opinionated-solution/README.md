@@ -4,6 +4,8 @@ This project was scaffolded using Karls Opinionated Solution Template.
 
 It has been created with the following features:
 
+* A solution file in .slnx format.
+  * This requires a fairly recent version of Visual Studio / Rider / ReSharper.
 * Source code goes in the `src` folder.
 * Tests go in the `tests` folder.
 * An editor config file is added with Karls preferred settings.
