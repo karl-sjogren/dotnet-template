@@ -2118,7 +2118,7 @@ __metadata:
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^5.14.0"
-    sass: "npm:^1.86.1"
+    sass: "npm:^1.86.3"
     stylelint: "npm:^16.18.0"
     stylelint-config-standard: "npm:^38.0.0"
     stylelint-config-standard-scss: "npm:^14.0.0"
@@ -7320,9 +7320,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.86.1":
-  version: 1.86.1
-  resolution: "sass@npm:1.86.1"
+"sass@npm:^1.86.3":
+  version: 1.86.3
+  resolution: "sass@npm:1.86.3"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7333,7 +7333,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/81f6815a3d7598655a5ade51605d712dc7608ff40e91c4a4f8e8ce9740e6c94de08b3375d0f2f610f9d0c08106bc3a1a6a16eb18510f47bd02d9868e0c0ee109
+  checksum: 10/97c1c06aa6eab34b732fc1ce0c6816c0d63c4b68e1f5927981fdeba6d5b69765c318e455db2111f4ee616ae0b5015cc5c25f05db68ad03a052fd043ec97624c1
   languageName: node
   linkType: hard
 
