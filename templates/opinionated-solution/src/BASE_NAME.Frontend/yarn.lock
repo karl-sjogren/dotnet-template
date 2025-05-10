@@ -2149,7 +2149,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:^14.0.0"
     typescript: "npm:^5.8.3"
     undici: "npm:^7.8.0"
-    vite: "npm:^6.3.2"
+    vite: "npm:^6.3.4"
     vite-plugin-mkcert: "npm:^1.17.8"
     vitest: "npm:^3.1.2"
     webdriverio: "npm:^9.12.7"
@@ -4536,18 +4536,6 @@ __metadata:
   dependencies:
     pend: "npm:~1.2.0"
   checksum: 10/db3e34fa483b5873b73f248e818f8a8b59a6427fd8b1436cd439c195fdf11e8659419404826059a642b57d18075c856d06d6a50a1413b714f12f833a9341ead3
-  languageName: node
-  linkType: hard
-
-"fdir@npm:^6.4.3":
-  version: 6.4.3
-  resolution: "fdir@npm:6.4.3"
-  peerDependencies:
-    picomatch: ^3 || ^4
-  peerDependenciesMeta:
-    picomatch:
-      optional: true
-  checksum: 10/8e6d20f4590dc168de1374a9cadaa37e20ca6e0b822aa247c230e7ea1d9e9674a68cd816146435e4ecc98f9285091462ab7e5e56eebc9510931a1794e4db68b2
   languageName: node
   linkType: hard
 
@@ -8663,16 +8651,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12":
-  version: 0.2.12
-  resolution: "tinyglobby@npm:0.2.12"
-  dependencies:
-    fdir: "npm:^6.4.3"
-    picomatch: "npm:^4.0.2"
-  checksum: 10/4ad28701fa9118b32ef0e27f409e0a6c5741e8b02286d50425c1f6f71e6d6c6ded9dd5bbbbb714784b08623c4ec4d150151f1d3d996cfabe0495f908ab4f7002
-  languageName: node
-  linkType: hard
-
 "tinyglobby@npm:^0.2.13":
   version: 0.2.13
   resolution: "tinyglobby@npm:0.2.13"
@@ -9115,17 +9093,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.3.2":
-  version: 6.3.2
-  resolution: "vite@npm:6.3.2"
+"vite@npm:^6.3.4":
+  version: 6.3.4
+  resolution: "vite@npm:6.3.4"
   dependencies:
     esbuild: "npm:^0.25.0"
-    fdir: "npm:^6.4.3"
+    fdir: "npm:^6.4.4"
     fsevents: "npm:~2.3.3"
     picomatch: "npm:^4.0.2"
     postcss: "npm:^8.5.3"
     rollup: "npm:^4.34.9"
-    tinyglobby: "npm:^0.2.12"
+    tinyglobby: "npm:^0.2.13"
   peerDependencies:
     "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
     jiti: ">=1.21.0"
@@ -9166,7 +9144,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/05ea5e03d86d950e53af6b11e444b31846bccdc44e45b8d693d06eba7d3a4fe2e8003a6948cdbcf7e54779f7ca851f29e96be6369e9c9413d34de7539ad6af8c
+  checksum: 10/347579b6571e591c1e4f54262e631f02e952e548171af09042aeffb40adfa5c9b43cf05cf115f0961cc553f6b7173fb9c2ee997a688007c01b6e13779d9a2bd4
   languageName: node
   linkType: hard
 
