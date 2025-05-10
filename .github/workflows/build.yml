@@ -13,7 +13,6 @@ on:
       - 'docs/*'
       - 'scripts/*'
       - '.vscode/*'
-  pull_request:
 
 permissions:
   checks: write
@@ -48,7 +47,7 @@ jobs:
       run: dotnet restore --verbosity minimal
 
     - name: Build opinionated solution
-      run: dotnet build templates/opinionated-solution/BASE_NAME.sln --configuration Release
+      run: dotnet build templates/opinionated-solution/BASE_NAME.slnx --configuration Release
 
     - name: Pack template project
       run: dotnet pack Karls.Templates.csproj --configuration Release --output artifacts

@@ -108,7 +108,7 @@
   },
   "primaryOutputs": [
     {
-      "path": "BASE_NAME.sln"
+      "path": "BASE_NAME.slnx"
     }
   ],
   "postActions": [
@@ -125,8 +125,8 @@
       "continueOnError": true
     }
   ],
-  "SpeccialCustomOperations": {
-    "**/*.md": {
+  "SpecialCustomOperations": {
+    "**.slnx": {
       "operations": [
         {
           "type": "conditional",
@@ -137,7 +137,7 @@
             "endif": [ "#endif", "<!--#endif" ],
             "trim" : "true",
             "wholeLine": "true",
-            "actions": [ "fixPseudoNestedComments" ]
+            "evaluator": "C++"
           }
         },
         {

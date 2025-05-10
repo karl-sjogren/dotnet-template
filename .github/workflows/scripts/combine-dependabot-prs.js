@@ -1,7 +1,7 @@
 // @ts-check
 
 // Adapted version of https://github.com/hrvey/combine-prs-workflow
-// https://github.com/hrvey/combine-prs-workflow/blob/master/LICENSE
+// https://github.com/hrvey/combine-prs-workflow/blob/0db0c4b7bd918267c5b534bf1700619ab45a56a0/LICENSE
 
 // To get the below types, run `npm install --save-dev github:actions/github-script`
 /** @param {import('@types/github-script').AsyncFunctionArguments} AsyncFunctionArguments */
@@ -178,12 +178,19 @@ module.exports = async ({ github, context, core }, inputs) => {
     dependenciesDisplay = 'unknown dependencies';
   }
 
-  await github.rest.pulls.create({
+  const pullRequest = await github.rest.pulls.create({
     owner: context.repo.owner,
     repo: context.repo.repo,
     title: `Combined PR with updates for ${dependenciesDisplay}`,
     head: inputs.combineBranchName,
     base: baseBranch,
     body: body
+  });
+
+  await github.rest.issues.addLabels({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: pullRequest.data.number,
+    labels: ['dependencies']
   });
 }

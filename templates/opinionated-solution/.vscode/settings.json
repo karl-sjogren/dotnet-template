@@ -5,6 +5,8 @@
     "**/bin": true,
     "**/obj": true,
     "**/tmp": true,
-    "**/.yarn/cache": true
-  }
+    "**/.yarn/cache": true,
+    ".vs/": true
+  },
+  "dotnet.defaultSolution": "BASE_NAME.slnx",
 }
