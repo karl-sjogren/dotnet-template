@@ -2133,7 +2133,7 @@ __metadata:
     postcss: "npm:^8.5.3"
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
-    rollup-plugin-visualizer: "npm:^5.14.0"
+    rollup-plugin-visualizer: "npm:^6.0.1"
     sass: "npm:^1.89.0"
     stylelint: "npm:^16.19.1"
     stylelint-config-standard: "npm:^38.0.0"
@@ -6106,14 +6106,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open@npm:^8.4.0":
-  version: 8.4.0
-  resolution: "open@npm:8.4.0"
+"open@npm:^8.0.0":
+  version: 8.4.2
+  resolution: "open@npm:8.4.2"
   dependencies:
     define-lazy-prop: "npm:^2.0.0"
     is-docker: "npm:^2.1.1"
     is-wsl: "npm:^2.2.0"
-  checksum: 10/ccb8760068b48e277868423cdf21f4f4e5682ec86dbc3a5cf1c34ef0e8b49721ad98b3f001b4eb2cbd7df7921f84551ec5b9fecace3b3eced3e46dca1c785f03
+  checksum: 10/acd81a1d19879c818acb3af2d2e8e9d81d17b5367561e623248133deb7dd3aefaed527531df2677d3e6aaf0199f84df57b6b2262babff8bf46ea0029aac536c9
   languageName: node
   linkType: hard
 
@@ -7086,11 +7086,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "rollup-plugin-visualizer@npm:5.14.0"
+"rollup-plugin-visualizer@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "rollup-plugin-visualizer@npm:6.0.1"
   dependencies:
-    open: "npm:^8.4.0"
+    open: "npm:^8.0.0"
     picomatch: "npm:^4.0.2"
     source-map: "npm:^0.7.4"
     yargs: "npm:^17.5.1"
@@ -7104,7 +7104,7 @@ __metadata:
       optional: true
   bin:
     rollup-plugin-visualizer: dist/bin/cli.js
-  checksum: 10/c892a3d36bfa7a26507b8cc0c4c29763ec40de8585115e6655154c2ff35e4bfabc877739e1b9927bb01231b1c51d7dd6b0f2f9c5898826efcbd2dcd60c5d2b73
+  checksum: 10/804fea0b08805bed82cda8e1c487f7887b8d76c8348e89e437323373551bd72275bc53697ee92db934bb4ed841913640f34942db3e0ab5edaa3851d6f9346c01
   languageName: node
   linkType: hard
 
