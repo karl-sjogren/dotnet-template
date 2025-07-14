@@ -1832,9 +1832,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.3.3":
-  version: 1.3.3
-  resolution: "@vitest/eslint-plugin@npm:1.3.3"
+"@vitest/eslint-plugin@npm:^1.3.4":
+  version: 1.3.4
+  resolution: "@vitest/eslint-plugin@npm:1.3.4"
   dependencies:
     "@typescript-eslint/utils": "npm:^8.24.1"
   peerDependencies:
@@ -1846,7 +1846,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10/17b286de0d0715d025a35ff980f837741a7bb32a00f231cb96c61e50b8d4c73cd860abab1042808216d14d231ebb0c8e3ef85e28b17ffe50d2c0e963ce920945
+  checksum: 10/f41e1a5c020ba164a920ef873a18e2647cbe650f10cff9593cf4f39d0208a29b6ca4526f0ed9d6ed907974334bd70aca175f771fe160c5cad32559eaf6ad0b88
   languageName: node
   linkType: hard
 
@@ -2051,7 +2051,7 @@ __metadata:
     "@testing-library/dom": "npm:^10.4.0"
     "@vitest/browser": "npm:^3.2.4"
     "@vitest/coverage-v8": "npm:^3.2.4"
-    "@vitest/eslint-plugin": "npm:^1.3.3"
+    "@vitest/eslint-plugin": "npm:^1.3.4"
     "@vitest/ui": "npm:^3.2.4"
     autoprefixer: "npm:^10.4.21"
     browserslist: "npm:^4.25.1"
@@ -2061,7 +2061,7 @@ __metadata:
     eslint: "npm:^9.30.1"
     eslint-plugin-compat: "npm:^6.0.2"
     eslint-plugin-jsdoc: "npm:^51.3.4"
-    eslint-plugin-testing-library: "npm:^7.5.4"
+    eslint-plugin-testing-library: "npm:^7.6.0"
     jsdom: "npm:^26.1.0"
     jsdom-testing-mocks: "npm:^1.13.1"
     postcss: "npm:^8.5.6"
@@ -3923,15 +3923,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.5.4":
-  version: 7.5.4
-  resolution: "eslint-plugin-testing-library@npm:7.5.4"
+"eslint-plugin-testing-library@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "eslint-plugin-testing-library@npm:7.6.0"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.15.0"
     "@typescript-eslint/utils": "npm:^8.15.0"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/0d9b2ee8bd7d65dadde74e551fc45707e355647fe966a7d5ea763fa4687b32d12152970a081c5f36cde54ac07d531bb2594d4188fab7340bbd17ad620d792bcb
+  checksum: 10/ebf369f8495cbb8e38497c368a2565e92abc92145ecbfa08ce4f9a60a6a8f74f1dc5368788654bd68949abf29279efc0d31c757a1623e9f4ef35e717d58de32b
   languageName: node
   linkType: hard
 
