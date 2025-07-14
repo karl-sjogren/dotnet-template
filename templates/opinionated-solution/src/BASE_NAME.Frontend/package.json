@@ -1,6 +1,6 @@
 {
   "name": "BASE_NAME.frontend",
-  "packageManager": "yarn@4.9.1",
+  "packageManager": "yarn@4.9.2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -34,7 +34,6 @@
     "eslint-plugin-compat": "^6.0.2",
     "eslint-plugin-jsdoc": "^51.3.4",
     "eslint-plugin-testing-library": "^7.5.4",
-    "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^26.1.0",
     "jsdom-testing-mocks": "^1.13.1",
     "postcss": "^8.5.6",
