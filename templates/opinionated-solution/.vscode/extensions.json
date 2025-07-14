@@ -6,6 +6,7 @@
     "eamodio.gitlens",
     "github.vscode-github-actions",
     "editorconfig.editorconfig",
+    "aaron-bond.better-comments",
     //#if (addFrontendProject)
     "vitest.explorer",
     "sibiraj-s.vscode-scss-formatter",
