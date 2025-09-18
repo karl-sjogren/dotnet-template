@@ -32,7 +32,7 @@
     "esbuild-plugin-browserslist": "^1.0.1",
     "eslint": "^9.35.0",
     "eslint-plugin-compat": "^6.0.2",
-    "eslint-plugin-jsdoc": "^54.3.1",
+    "eslint-plugin-jsdoc": "^59.0.1",
     "eslint-plugin-testing-library": "^7.6.8",
     "jsdom": "^26.1.0",
     "jsdom-testing-mocks": "^1.15.2",
