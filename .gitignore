@@ -406,3 +406,6 @@ FodyWeavers.xsd
 
 # Test generations
 test-output/
+
+# GitHub Actions scripts stuff
+/package-lock.json
