@@ -403,3 +403,6 @@ FodyWeavers.xsd
 
 # OSX files
 .DS_Store
+
+# GitHub Actions scripts stuff
+/package-lock.json

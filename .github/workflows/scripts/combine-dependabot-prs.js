@@ -1,11 +1,11 @@
 // @ts-check
 
 // Adapted version of https://github.com/hrvey/combine-prs-workflow
-// https://github.com/hrvey/combine-prs-workflow/blob/0db0c4b7bd918267c5b534bf1700619ab45a56a0/LICENSE
+// https://github.com/hrvey/combine-prs-workflow/blob/master/LICENSE
 
 // To get the below types, run `npm install --save-dev github:actions/github-script`
-/** @param {import('@types/github-script').AsyncFunctionArguments} AsyncFunctionArguments */
-module.exports = async ({ github, context, core }, inputs) => {
+/** @param {import('github-script').AsyncFunctionArguments} AsyncFunctionArguments */
+module.exports = async ({ github, context, core }, /** @type {{ combineBranchName: string; ignoreLabel: any; }} */ inputs) => {
   try {
     const targetBranchRef = 'heads/' + inputs.combineBranchName;
     let existingBranch = null;
@@ -185,6 +185,13 @@ module.exports = async ({ github, context, core }, inputs) => {
     head: inputs.combineBranchName,
     base: baseBranch,
     body: body
+  });
+
+  await github.rest.issues.addAssignees({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: pullRequest.data.number,
+    assignees: [context.actor]
   });
 
   await github.rest.issues.addLabels({
