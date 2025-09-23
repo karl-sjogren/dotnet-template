@@ -91,6 +91,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
+    permissions:
+      id-token: write
+
     steps:
     - name: Checkout sources
       uses: actions/checkout@v5
@@ -110,8 +113,12 @@ jobs:
       with:
         global-json-file: global.json
 
+    - name: NuGet login (OIDC → temp API key)
+      uses: NuGet/login@v1
+      id: login
+      with:
+        user: ${{ secrets.NUGET_PROFILE }}
+
     - name: Publish package to NuGet.org
-      env:
-        NUGET_KEY: ${{ secrets.NUGET_KEY }}
-      run: dotnet nuget push artifacts/*.nupkg --api-key $NUGET_KEY --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push artifacts/*.nupkg --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
       working-directory: ./
