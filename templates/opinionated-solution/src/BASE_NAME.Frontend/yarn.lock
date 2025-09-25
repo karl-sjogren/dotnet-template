@@ -2213,14 +2213,14 @@ __metadata:
     eslint: "npm:^9.36.0"
     eslint-plugin-compat: "npm:^6.0.2"
     eslint-plugin-jsdoc: "npm:^60.1.1"
-    eslint-plugin-testing-library: "npm:^7.8.1"
+    eslint-plugin-testing-library: "npm:^7.9.1"
     jsdom: "npm:^27.0.0"
     jsdom-testing-mocks: "npm:^1.16.0"
     postcss: "npm:^8.5.6"
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
     rollup-plugin-visualizer: "npm:^6.0.3"
-    sass: "npm:^1.93.0"
+    sass: "npm:^1.93.1"
     stylelint: "npm:^16.24.0"
     stylelint-config-standard: "npm:^39.0.0"
     stylelint-config-standard-scss: "npm:^16.0.0"
@@ -4161,15 +4161,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.8.1":
-  version: 7.8.1
-  resolution: "eslint-plugin-testing-library@npm:7.8.1"
+"eslint-plugin-testing-library@npm:^7.9.1":
+  version: 7.9.1
+  resolution: "eslint-plugin-testing-library@npm:7.9.1"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.15.0"
     "@typescript-eslint/utils": "npm:^8.15.0"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/8dd8f1d4f894765a6022aac68c567c593f375c6b0764447ddecd7bb5d0cff1c474e0e817aa1f2cd2eebf23b9bb5a0b05b7a3c70a3dcfec38351bafdd715b8bcc
+  checksum: 10/e6097380fcac790e57e299c3d9f78ff7143fb4638fcefc2f57fc232b24ab38087ce61504a1d4463a33aa44993e2d0eae75e2b7aa342ff421ae442b6e052d0847
   languageName: node
   linkType: hard
 
@@ -7567,9 +7567,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.93.0":
-  version: 1.93.0
-  resolution: "sass@npm:1.93.0"
+"sass@npm:^1.93.1":
+  version: 1.93.1
+  resolution: "sass@npm:1.93.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7580,7 +7580,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/37f22e016e1d5ad04754123009064260c1f568771688742a2b34c763d7c30b706e8c991dffb578ca6a1ecf598ea57e7392597719786eff5eb47b099b7dbf03cd
+  checksum: 10/a09c23d4c3c874c56383fa495f0f9051a107d046036ab4502ff9328c28724adf1dff6b918ba8efa9682391a3849f6f0fc2c877694a590cf38164da93d73318b9
   languageName: node
   linkType: hard
 
@@ -8200,8 +8200,8 @@ __metadata:
   linkType: hard
 
 "tar-fs@npm:^3.0.6":
-  version: 3.0.9
-  resolution: "tar-fs@npm:3.0.9"
+  version: 3.1.1
+  resolution: "tar-fs@npm:3.1.1"
   dependencies:
     bare-fs: "npm:^4.0.1"
     bare-path: "npm:^3.0.0"
@@ -8212,7 +8212,7 @@ __metadata:
       optional: true
     bare-path:
       optional: true
-  checksum: 10/00e194ef36ced339000099c3cb5205fcd9636a531158d73e0fc1ca056fbcf8dcf39a398cbc71f030bbf938d4f477f47e2913c6e37e9c007bad31e0768a120590
+  checksum: 10/f7f7540b563e10541dc0b95f710c68fc1fccde0c1177b4d3bab2023c6d18da19d941a8697fdc1abff54914b71b6e5f2dfb0455572b5c8993b2ab76571cbbc923
   languageName: node
   linkType: hard
 
