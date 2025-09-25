@@ -28,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AdditionalFiles Include="..\BannedSymbols.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BASE_NAME.TestHelpers\BASE_NAME.TestHelpers.csproj" Condition=" '$(ProjectName)' != 'BASE_NAME.TestHelpers' " />
   </ItemGroup>
 
@@ -59,6 +63,10 @@
     <PackageReference Include="coverlet.msbuild" Condition=" '$(ProjectName)' != 'BASE_NAME.TestHelpers' ">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 </Project>

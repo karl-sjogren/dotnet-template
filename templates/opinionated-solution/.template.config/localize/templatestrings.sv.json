@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Microsoft",
+  "name": "Kalles omtvistade .NET-lösning",
+  "description": "En åsiktsfull .NET-lösningstemplate med många saker som inte nödvändigtvis är bästa praxis utan hur Kalle vill ha det.",
+  "symbols/skipRestore/displayName": "Hoppa över återställning av NuGet-paket",
+  "symbols/skipRestore/description": "Om du anger detta till true kommer inte NuGet-paketen att återställas när projektet skapas.",
+  "symbols/includeGithubActions/displayName": "Inkludera GitHub Actions",
+  "symbols/includeGithubActions/description": "Om du anger detta till true kommer GitHub Actions-arbetsflöden att inkluderas i den skapade lösningen.",
+  "symbols/addFrontendProject/displayName": "Lägg till frontend-projekt",
+  "symbols/addFrontendProject/description": "Om du anger detta till true kommer ett frontend-projekt med Yarn, Vite, Vitest osv att inkluderas i den skapade lösningen.",
+  "symbols/includeBenchmarkProject/displayName": "Inkludera benchmark-projekt",
+  "symbols/includeBenchmarkProject/description": "Om du anger detta till true kommer ett benchmark-projekt med BenchmarkDotNet att inkluderas i den skapade lösningen.",
+  "symbols/includeHttpClientSetup/displayName": "Inkludera HttpClient-setup",
+  "symbols/includeHttpClientSetup/description": "Om du anger detta till true kommer en bas-klass för HttpClient med bättre felhantering och testbarhet att inkluderas i den skapade lösningen."
+}
