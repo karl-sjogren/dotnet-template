@@ -8,6 +8,7 @@
   "identity": "Karls.Templates.OpinionatedSolution",
   "groupIdentity": "Karls.Templates",
   "name": "Karls Opinionated Solution",
+  "description": "An opinionated .NET solution template with a lot of things that are not necessarily best practices but how Karl wants it.",
   "shortName": "karls-solution",
   "tags": {
     "language": "C#",
