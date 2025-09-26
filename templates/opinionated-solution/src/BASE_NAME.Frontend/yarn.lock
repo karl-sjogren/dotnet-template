@@ -1981,9 +1981,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.3.12":
-  version: 1.3.12
-  resolution: "@vitest/eslint-plugin@npm:1.3.12"
+"@vitest/eslint-plugin@npm:^1.3.13":
+  version: 1.3.13
+  resolution: "@vitest/eslint-plugin@npm:1.3.13"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.41.0"
     "@typescript-eslint/utils": "npm:^8.24.1"
@@ -1996,7 +1996,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10/56b348e8da37bb5d9d1ef023be0a21ec0e59e64ba4d79fd94a12a240d3ec180a3fc0a1d8d8b58ceee1b11cff76de90a194a57169a6d22556de448652ece12172
+  checksum: 10/fc60dce68e15199b27c41c262baa59e2c20992bd41960d8ce9fa25542f0379b715986426a1bb151a7e240fd9c2499104a605e73c892c707a5c5827e57d4190c9
   languageName: node
   linkType: hard
 
@@ -2203,7 +2203,7 @@ __metadata:
     "@testing-library/dom": "npm:^10.4.1"
     "@vitest/browser": "npm:^3.2.4"
     "@vitest/coverage-v8": "npm:^3.2.4"
-    "@vitest/eslint-plugin": "npm:^1.3.12"
+    "@vitest/eslint-plugin": "npm:^1.3.13"
     "@vitest/ui": "npm:^3.2.4"
     autoprefixer: "npm:^10.4.21"
     browserslist: "npm:^4.26.2"
@@ -2213,7 +2213,7 @@ __metadata:
     eslint: "npm:^9.36.0"
     eslint-plugin-compat: "npm:^6.0.2"
     eslint-plugin-jsdoc: "npm:^60.2.0"
-    eslint-plugin-testing-library: "npm:^7.9.1"
+    eslint-plugin-testing-library: "npm:^7.10.0"
     jsdom: "npm:^27.0.0"
     jsdom-testing-mocks: "npm:^1.16.0"
     postcss: "npm:^8.5.6"
@@ -4162,15 +4162,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.9.1":
-  version: 7.9.1
-  resolution: "eslint-plugin-testing-library@npm:7.9.1"
+"eslint-plugin-testing-library@npm:^7.10.0":
+  version: 7.10.0
+  resolution: "eslint-plugin-testing-library@npm:7.10.0"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.15.0"
     "@typescript-eslint/utils": "npm:^8.15.0"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/e6097380fcac790e57e299c3d9f78ff7143fb4638fcefc2f57fc232b24ab38087ce61504a1d4463a33aa44993e2d0eae75e2b7aa342ff421ae442b6e052d0847
+  checksum: 10/527c338c2152a4e1545f500891fa02c3b30a73bd52af8a65d62590adf96b9188e14bedc990d226877f792dd8f525f6e80e188bd4fde29d6f4f0099fa4c0175c5
   languageName: node
   linkType: hard
 
