@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.6.9</PackageVersion>
+    <PackageVersion>1.7.0</PackageVersion>
     <PackageId>Karls.Templates</PackageId>
     <Title>Karls Templates</Title>
     <Authors>Karl-Johan Sjögren</Authors>
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.25" PrivateAssets="All"/>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.39" PrivateAssets="All"/>
   </ItemGroup>
 
 </Project>
