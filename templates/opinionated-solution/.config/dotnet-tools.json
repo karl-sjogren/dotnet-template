@@ -6,7 +6,15 @@
       "version": "4.6.8",
       "commands": [
         "dotnet-outdated"
-      ]
+      ],
+      "rollForward": false
+    },
+    "karls.bettersecretstool": {
+      "version": "0.0.2",
+      "commands": [
+        "better-secrets"
+      ],
+      "rollForward": false
     }
   }
 }
