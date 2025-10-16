@@ -5,11 +5,14 @@ on:
     tags:
       - '*'
 
+permissions:
+  contents: write
+
 jobs:
   tagged-release:
     name: 'Create release'
 
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest-arm
 
     steps:
       - name: Create release
