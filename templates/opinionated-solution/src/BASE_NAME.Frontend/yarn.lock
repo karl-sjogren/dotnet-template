@@ -2006,7 +2006,7 @@ __metadata:
     stylelint-config-standard-scss: "npm:^16.0.0"
     typescript: "npm:^5.9.3"
     undici: "npm:^7.16.0"
-    vite: "npm:^7.1.11"
+    vite: "npm:^7.1.12"
     vite-plugin-mkcert: "npm:^1.17.9"
     vitest: "npm:^4.0.1"
     webdriverio: "npm:^9.20.0"
@@ -8260,9 +8260,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.1.11":
-  version: 7.1.11
-  resolution: "vite@npm:7.1.11"
+"vite@npm:^7.1.12":
+  version: 7.1.12
+  resolution: "vite@npm:7.1.12"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.5.0"
@@ -8311,7 +8311,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/b75ce7a38beeba7800751938df4fe2638cfb77509647329ac824332af51831eaed52ab0a0bae1d9162ac41ef59fff1c754e0acf7e1470dfa7d3da51fc3bf0985
+  checksum: 10/827a18e7365871532af74b2ec65cccecff1effccbf6fb5c32fa1f8d7bcea26f4403d6988db3fa39e9c09c8091b04654b6cfbcc6da5c5dc449eed2b07afc22d81
   languageName: node
   linkType: hard
 
@@ -8597,21 +8597,6 @@ __metadata:
     imurmurhash: "npm:^0.1.4"
     signal-exit: "npm:^4.0.1"
   checksum: 10/648efddba54d478d0e4330ab6f239976df3b9752b123db5dc9405d9b5af768fa9d70ce60c52fdbe61d1200d24350bc4fbcbaf09288496c2be050de126bd95b7e
-  languageName: node
-  linkType: hard
-
-"ws@npm:^8.18.2":
-  version: 8.18.2
-  resolution: "ws@npm:8.18.2"
-  peerDependencies:
-    bufferutil: ^4.0.1
-    utf-8-validate: ">=5.0.2"
-  peerDependenciesMeta:
-    bufferutil:
-      optional: true
-    utf-8-validate:
-      optional: true
-  checksum: 10/018e04ec95561d88248d53a2eaf094b4ae131e9b062f2679e6e8a62f04649bc543448f1e038125225ac6bbb25f54c1e65d7a2cc9dbc1e28b43e5e6b7162ad88e
   languageName: node
   linkType: hard
 
