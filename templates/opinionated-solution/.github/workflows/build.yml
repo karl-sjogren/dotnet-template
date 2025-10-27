@@ -66,7 +66,7 @@ jobs:
       working-directory: ./src/BASE_NAME.Frontend/
 
     - name: Upload test results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: frontend-test-results
         path: |
@@ -99,7 +99,7 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: frontend-artifacts
         path: ./src/BASE_NAME.Web/wwwroot/
@@ -125,7 +125,7 @@ jobs:
       run: dotnet test --configuration Release
 
     - name: Upload test results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: net-test-results
         path: |
@@ -149,7 +149,7 @@ jobs:
       uses: actions/checkout@v5
 
     - name: Download .NET tests results
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v6
       with:
         name: net-test-results
         path: ./
@@ -192,7 +192,7 @@ jobs:
         verbosity: 'Info'
 
     - name: Upload coverage report
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: coverage-report
         path: coverage-report
@@ -206,7 +206,7 @@ jobs:
         files: coverage-report/Cobertura.xml
 
     - name: Upload coverage history
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: coverage-history
         path: coverage-history
@@ -247,7 +247,7 @@ jobs:
       working-directory: ./
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: publish-artifacts
         path: ./artifacts/
