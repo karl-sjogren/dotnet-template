@@ -27,7 +27,7 @@
     "@vitest/ui": "^4.0.1",
     "autoprefixer": "^10.4.21",
     "browserslist": "^4.26.3",
-    "cssnano": "^7.1.1",
+    "cssnano": "^7.1.2",
     "esbuild": "^0.25.11",
     "esbuild-plugin-browserslist": "^1.0.2",
     "eslint": "^9.38.0",
