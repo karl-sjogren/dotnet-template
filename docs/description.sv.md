@@ -2,14 +2,14 @@
 
 ## .csproj
 
-Exempel på en .csproj-fil från ett nyskapat console-projekt i .NET 9.
+Exempel på en .csproj-fil från ett nyskapat console-projekt i .NET 10.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -57,7 +57,7 @@ ItemGroup innehåller en lista av element, vanligtvis för filer eller referense
 ```xml
 <PropertyGroup>
   <OutputType>Exe</OutputType>
-  <TargetFramework>net9.0</TargetFramework>
+  <TargetFramework>net10.0</TargetFramework>
 </PropertyGroup>
 
 <ItemGroup>

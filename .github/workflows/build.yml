@@ -53,7 +53,7 @@ jobs:
       run: dotnet pack Karls.Templates.csproj --configuration Release --output artifacts
 
     - name: Upload packages
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: packages
         path: artifacts/*.nupkg
@@ -103,7 +103,7 @@ jobs:
         sparse-checkout-cone-mode: false
 
     - name: Download artifacts
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v6
       with:
         name: packages
         path: ./artifacts/
