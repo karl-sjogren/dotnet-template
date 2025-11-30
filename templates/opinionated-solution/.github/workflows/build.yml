@@ -44,7 +44,7 @@ jobs:
         git config --global core.eol crlf
 
     - name: Checkout sources
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v6
@@ -81,7 +81,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v6
@@ -112,7 +112,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Install .NET
       uses: actions/setup-dotnet@v5
@@ -147,7 +147,7 @@ jobs:
     # While we don't use sources directly in this job the test reporter wants to check
     # some files through git so we need the sources.
     - name: Checkout sources
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Download .NET tests results
       uses: actions/download-artifact@v6
@@ -233,7 +233,7 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
 
     - name: Install .NET
       uses: actions/setup-dotnet@v5
