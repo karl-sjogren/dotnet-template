@@ -8,6 +8,7 @@ on:
       - 'release/**'
       - 'feature/**'
       - 'hotfix/**'
+      - 'copilot/**'
     paths-ignore:
       - 'README.md'
       - 'docs/*'
