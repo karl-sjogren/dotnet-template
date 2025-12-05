@@ -10,7 +10,7 @@
       "rollForward": false
     },
     "karls.bettersecretstool": {
-      "version": "0.0.6",
+      "version": "1.0.0",
       "commands": [
         "better-secrets"
       ],
