@@ -3,6 +3,8 @@
     <ParentDirectoryBuildPropsPath>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))</ParentDirectoryBuildPropsPath>
     <IsPublishable>false</IsPublishable>
     <IsTestProject>true</IsTestProject>
+    <OutputType>Exe</OutputType>
+    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
   </PropertyGroup>
 
   <ImportGroup>
@@ -20,7 +22,7 @@
 
   <ItemGroup>
     <Content Remove="Resources/**/*" />
-    <Content Include="../xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../testconfig.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,19 +37,13 @@
     <ProjectReference Include="..\BASE_NAME.TestHelpers\BASE_NAME.TestHelpers.csproj" Condition=" '$(ProjectName)' != 'BASE_NAME.TestHelpers' " />
   </ItemGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <CollectCoverage>true</CollectCoverage>
-    <ExcludeByAttribute>GeneratedCodeAttribute</ExcludeByAttribute>
-    <Exclude>[*]AspNetCoreGeneratedDocument.*</Exclude>
-    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
-    <VSTestLogger>trx</VSTestLogger>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" />
+    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
     <PackageReference Include="FakeItEasy" />
     <PackageReference Include="FakeItEasy.Analyzer.CSharp">
       <PrivateAssets>all</PrivateAssets>
@@ -55,7 +51,7 @@
     </PackageReference>
     <PackageReference Include="Shouldly" />
     <PackageReference Include="TestableIO.System.IO.Abstractions.TestingHelpers" />
-    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.v3.mtp-v2" />
     <PackageReference Include="xunit.runner.visualstudio">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
