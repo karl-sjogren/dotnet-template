@@ -155,13 +155,6 @@ jobs:
         name: net-test-results
         path: ./
 
-    - name: Publish .NET tests
-      uses: dorny/test-reporter@v2
-      with:
-        name: 🧪 .NET test results
-        path: ./**/*.trx
-        reporter: dotnet-trx
-
     - name: Create history folder
       run: mkdir ./coverage-history
       working-directory: ./
