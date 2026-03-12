@@ -160,7 +160,7 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v12
+      uses: dawidd6/action-download-artifact@v17
       with:
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
