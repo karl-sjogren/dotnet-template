@@ -2047,7 +2047,7 @@ __metadata:
     stylelint-config-standard: "npm:^39.0.1"
     stylelint-config-standard-scss: "npm:^16.0.0"
     typescript: "npm:^5.9.3"
-    undici: "npm:^7.24.0"
+    undici: "npm:^7.24.2"
     vite: "npm:^7.3.1"
     vite-plugin-mkcert: "npm:^1.17.9"
     vitest: "npm:^4.1.0"
@@ -4332,24 +4332,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:3.4.0":
+"flatted@npm:3.4.0, flatted@npm:^3.2.9, flatted@npm:^3.3.3":
   version: 3.4.0
   resolution: "flatted@npm:3.4.0"
   checksum: 10/6007896f62acb93c811aef52d962c5cd2fa3c703eacfc4146865c3fc8964d3e466c66e10b1c175a84ce0a207fdc761e2e70d7ca982c82604257d45866169af6a
-  languageName: node
-  linkType: hard
-
-"flatted@npm:^3.2.9":
-  version: 3.2.9
-  resolution: "flatted@npm:3.2.9"
-  checksum: 10/dc2b89e46a2ebde487199de5a4fcb79e8c46f984043fea5c41dbf4661eb881fefac1c939b5bdcd8a09d7f960ec364f516970c7ec44e58ff451239c07fd3d419b
-  languageName: node
-  linkType: hard
-
-"flatted@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "flatted@npm:3.3.3"
-  checksum: 10/8c96c02fbeadcf4e8ffd0fa24983241e27698b0781295622591fc13585e2f226609d95e422bcf2ef044146ffacb6b68b1f20871454eddf75ab3caa6ee5f4a1fe
   languageName: node
   linkType: hard
 
@@ -8240,10 +8226,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^7.24.0":
-  version: 7.24.1
-  resolution: "undici@npm:7.24.1"
-  checksum: 10/0af4ec2fc2ae50b1d0636895793ea2274a89a7cd445690089a1b957c4ac4a0336e48ab9ac48a4e8f5023d4b5eab56368c3f17c75d6b4c81b4281b674d1e60c9f
+"undici@npm:^7.24.2":
+  version: 7.24.5
+  resolution: "undici@npm:7.24.5"
+  checksum: 10/1eef66817e5bd1ee6ba908553452e8e23c6b743221f8435e838a87fcec84db901ad9bca5853e7a6e123520abd8d3dd03215b19bf57c2ffb114bfeb0b7c206027
   languageName: node
   linkType: hard
 
