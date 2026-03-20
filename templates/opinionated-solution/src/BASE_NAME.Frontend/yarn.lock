@@ -249,6 +249,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/css-parser-algorithms@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@csstools/css-parser-algorithms@npm:4.0.0"
+  peerDependencies:
+    "@csstools/css-tokenizer": ^4.0.0
+  checksum: 10/000f3ba55f440d9fbece50714e88f9d4479e2bde9e0568333492663f2c6034dc31d0b9ef5d66d196c76be58eea145ca6920aa8bdfdcc6361894806c21b5402d0
+  languageName: node
+  linkType: hard
+
 "@csstools/css-syntax-patches-for-csstree@npm:^1.0.19":
   version: 1.0.20
   resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.0.20"
@@ -270,6 +279,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/css-tokenizer@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@csstools/css-tokenizer@npm:4.0.0"
+  checksum: 10/074ade1a7fc3410b813c8982cf07a56814a55af509c533c2dc80d5689f34d2ba38219f8fa78fa36ea2adc6c5db506ea3c3a667388dda1b59b1281fdd2a2d1e28
+  languageName: node
+  linkType: hard
+
 "@csstools/media-query-list-parser@npm:^4.0.3":
   version: 4.0.3
   resolution: "@csstools/media-query-list-parser@npm:4.0.3"
@@ -277,6 +293,16 @@ __metadata:
     "@csstools/css-parser-algorithms": ^3.0.5
     "@csstools/css-tokenizer": ^3.0.4
   checksum: 10/ac4e34c21a1c7fc8b788274f316c29ff2f07e7a08996d27b9beb06454666591be9946362c1b7c4d342558c278c8e7d0e35655043e47a9ffd94c3fdb292fbe020
+  languageName: node
+  linkType: hard
+
+"@csstools/media-query-list-parser@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@csstools/media-query-list-parser@npm:5.0.0"
+  peerDependencies:
+    "@csstools/css-parser-algorithms": ^4.0.0
+    "@csstools/css-tokenizer": ^4.0.0
+  checksum: 10/16c51af8032b806abb9b636dd9c7eeac825f7e53da045e405f5c3c8c046ec68098d5e0d1a488b3941a5e0627e7f9a9afe1e08ebfcad74473c08825a64915deab
   languageName: node
   linkType: hard
 
@@ -1467,20 +1493,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@stylistic/stylelint-plugin@npm:4.0.0"
+"@stylistic/stylelint-plugin@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@stylistic/stylelint-plugin@npm:5.0.0"
   dependencies:
-    "@csstools/css-parser-algorithms": "npm:^3.0.5"
-    "@csstools/css-tokenizer": "npm:^3.0.4"
-    "@csstools/media-query-list-parser": "npm:^4.0.3"
+    "@csstools/css-parser-algorithms": "npm:^4.0.0"
+    "@csstools/css-tokenizer": "npm:^4.0.0"
+    "@csstools/media-query-list-parser": "npm:^5.0.0"
     postcss: "npm:^8.5.6"
-    postcss-selector-parser: "npm:^7.1.0"
+    postcss-selector-parser: "npm:^7.1.1"
     postcss-value-parser: "npm:^4.2.0"
     style-search: "npm:^0.1.0"
   peerDependencies:
-    stylelint: ^16.22.0
-  checksum: 10/f7483ba26a30c23ae3fc74e9ec947449192f1b58e0e8c5a41c3bd093a6e889c4360d87c934c0d52bcdaf347ad13b687f09e2ac5b8e4458fbbbf9e75f4527a1e1
+    stylelint: ^17.0.0
+  checksum: 10/d2c3c56ba69c675dc5f801ea57176aba6966b7107f31f7cdab5e407d042fc4ceba9342bdaccf07037246e313e3ac810ae969202a48f11ff24cd29d420cd7e82a
   languageName: node
   linkType: hard
 
@@ -2003,7 +2029,7 @@ __metadata:
   dependencies:
     "@codecov/vite-plugin": "npm:^1.9.1"
     "@stylistic/eslint-plugin-js": "npm:^4.4.1"
-    "@stylistic/stylelint-plugin": "npm:^4.0.0"
+    "@stylistic/stylelint-plugin": "npm:^5.0.0"
     "@testing-library/dom": "npm:^10.4.1"
     "@vitest/browser": "npm:^4.0.16"
     "@vitest/coverage-v8": "npm:^4.0.16"
@@ -6670,6 +6696,16 @@ __metadata:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10/2caf09e66e2be81d45538f8afdc5439298c89bea71e9943b364e69dce9443d9c5ab33f4dd8b237f1ed7d2f38530338dcc189c1219d888159e6afb5b0afe58b19
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "postcss-selector-parser@npm:7.1.1"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10/bb3c6455b20af26a556e3021e21101d8470252644e673c1612f7348ff8dd41b11321329f0694cf299b5b94863f823480b72d3e2f4bd3a89dc43e2d8c0dbad341
   languageName: node
   linkType: hard
 
