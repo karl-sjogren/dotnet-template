@@ -1,6 +1,6 @@
 {
   "name": "BASE_NAME.frontend",
-  "packageManager": "yarn@4.12.0",
+  "packageManager": "yarn@4.13.0",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -19,12 +19,12 @@
   "devDependencies": {
     "@codecov/vite-plugin": "^1.9.1",
     "@stylistic/eslint-plugin-js": "^4.4.1",
-    "@stylistic/stylelint-plugin": "^4.0.0",
+    "@stylistic/stylelint-plugin": "^5.0.0",
     "@testing-library/dom": "^10.4.1",
-    "@vitest/browser": "^4.0.16",
-    "@vitest/coverage-v8": "^4.0.16",
-    "@vitest/eslint-plugin": "^1.6.5",
-    "@vitest/ui": "^4.0.16",
+    "@vitest/browser": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "@vitest/eslint-plugin": "^1.6.12",
+    "@vitest/ui": "^4.1.0",
     "autoprefixer": "^10.4.23",
     "browserslist": "^4.28.1",
     "cssnano": "^7.1.2",
@@ -33,7 +33,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-compat": "^6.0.2",
     "eslint-plugin-jsdoc": "^61.5.0",
-    "eslint-plugin-testing-library": "^7.15.4",
+    "eslint-plugin-testing-library": "^7.16.1",
     "jsdom": "^27.4.0",
     "jsdom-testing-mocks": "^1.16.0",
     "postcss": "^8.5.6",
@@ -41,14 +41,14 @@
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-visualizer": "^6.0.5",
     "sass": "^1.97.2",
-    "stylelint": "^16.26.1",
-    "stylelint-config-standard": "^39.0.1",
-    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint": "^17.5.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^5.9.3",
-    "undici": "^7.18.2",
+    "undici": "^7.24.2",
     "vite": "^7.3.1",
     "vite-plugin-mkcert": "^1.17.9",
-    "vitest": "^4.0.16",
-    "webdriverio": "^9.23.0"
+    "vitest": "^4.1.0",
+    "webdriverio": "^9.23.2"
   }
 }
