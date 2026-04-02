@@ -206,7 +206,7 @@ jobs:
         path: coverage-history
 
     - name: Publish code coverage summary to run
-      uses: LouisBrunner/checks-action@v3.0.0
+      uses: LouisBrunner/checks-action@v3.1.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}
