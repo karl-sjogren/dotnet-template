@@ -46,8 +46,8 @@
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "^5.9.3",
     "undici": "^7.24.2",
-    "vite": "^7.3.2",
-    "vite-plugin-mkcert": "^1.17.9",
+    "vite": "^8.0.8",
+    "vite-plugin-mkcert": "^2.0.0",
     "vitest": "^4.1.2",
     "webdriverio": "^9.23.2"
   }
