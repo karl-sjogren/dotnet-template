@@ -160,7 +160,7 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v19
+      uses: dawidd6/action-download-artifact@v20
       with:
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
@@ -192,7 +192,7 @@ jobs:
         path: coverage-report
 
     - name: Upload to Codecov
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@v6
       # To save on uploads, only upload coverage from the main branches and PRs
       if: env.PUBLISH_CODECOV
       with:
@@ -206,7 +206,7 @@ jobs:
         path: coverage-history
 
     - name: Publish code coverage summary to run
-      uses: LouisBrunner/checks-action@v2.0.0
+      uses: LouisBrunner/checks-action@v3.1.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}

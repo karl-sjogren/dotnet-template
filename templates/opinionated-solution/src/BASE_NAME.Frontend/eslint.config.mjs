@@ -4,7 +4,7 @@ import globals from 'globals';
 import jsdoc from 'eslint-plugin-jsdoc';
 import testingLibrary from 'eslint-plugin-testing-library';
 import compat from 'eslint-plugin-compat';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticJs from '@stylistic/eslint-plugin';
 import vitest from '@vitest/eslint-plugin';
 
 /** @type {import('eslint').Linter.Config} */
@@ -25,7 +25,7 @@ const baseConfig = {
     'no-unused-vars': ['error'],
     '@stylistic/js/indent': ['error', 2, { 'SwitchCase': 1 }],
     '@stylistic/js/linebreak-style': ['error', 'windows'],
-    '@stylistic/js/quotes': ['error', 'single', { 'allowTemplateLiterals': true }],
+    '@stylistic/js/quotes': ['error', 'single', { 'allowTemplateLiterals': 'always' }],
     '@stylistic/js/semi': ['error', 'always'],
     '@stylistic/js/no-trailing-spaces': 'error',
     '@stylistic/js/no-multi-spaces': 'error',

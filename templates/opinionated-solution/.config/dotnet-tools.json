@@ -3,16 +3,16 @@
   "isRoot": true,
   "tools": {
     "dotnet-outdated-tool": {
-      "version": "4.6.8",
+      "version": "4.7.1",
       "commands": [
         "dotnet-outdated"
       ],
       "rollForward": false
     },
     "karls.bettersecretstool": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "commands": [
-        "better-secrets"
+        "dotnet-better-secrets"
       ],
       "rollForward": false
     }
