@@ -1944,7 +1944,7 @@ __metadata:
     stylelint-config-standard: "npm:^40.0.0"
     stylelint-config-standard-scss: "npm:^17.0.0"
     typescript: "npm:^6.0.2"
-    undici: "npm:^8.0.3"
+    undici: "npm:^8.1.0"
     vite: "npm:^8.0.8"
     vite-plugin-mkcert: "npm:^2.0.0"
     vitest: "npm:^4.1.4"
@@ -7855,10 +7855,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^8.0.2, undici@npm:^8.0.3":
+"undici@npm:^8.0.2":
   version: 8.0.3
   resolution: "undici@npm:8.0.3"
   checksum: 10/76a38610180e4a1d8c649c7ba06e86d7192a194d44e08548cded87193df73e7d9cce34ba7089b849f367cb79ff5100c146b76b6e8f22ca5110e8c09b74653964
+  languageName: node
+  linkType: hard
+
+"undici@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "undici@npm:8.1.0"
+  checksum: 10/cc16474d6c3378297f040520e1df83611c6eebe8a11019ecad04d561adf4e2cf1dd72d37110682f871c2147d191a952c5e98fcd884b3249931b222ac8c334081
   languageName: node
   linkType: hard
 
