@@ -1591,7 +1591,7 @@ __metadata:
     cssnano: "npm:^8.0.1"
     eslint: "npm:^10.4.1"
     eslint-plugin-compat: "npm:^7.0.2"
-    eslint-plugin-jsdoc: "npm:^63.0.1"
+    eslint-plugin-jsdoc: "npm:^63.0.2"
     eslint-plugin-testing-library: "npm:^7.16.2"
     jsdom: "npm:^29.1.1"
     jsdom-testing-mocks: "npm:^1.16.0"
@@ -2849,9 +2849,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^63.0.1":
-  version: 63.0.1
-  resolution: "eslint-plugin-jsdoc@npm:63.0.1"
+"eslint-plugin-jsdoc@npm:^63.0.2":
+  version: 63.0.2
+  resolution: "eslint-plugin-jsdoc@npm:63.0.2"
   dependencies:
     "@es-joy/jsdoccomment": "npm:~0.87.0"
     "@es-joy/resolve.exports": "npm:1.2.0"
@@ -2864,12 +2864,12 @@ __metadata:
     html-entities: "npm:^2.6.0"
     object-deep-merge: "npm:^2.0.1"
     parse-imports-exports: "npm:^0.2.4"
-    semver: "npm:^7.8.1"
+    semver: "npm:^7.8.2"
     spdx-expression-parse: "npm:^4.0.0"
     to-valid-identifier: "npm:^1.0.0"
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-  checksum: 10/3dbb013272bb1922a206a676a94221e0f596b144a6dbc220da63e5995b5c4c3b4457370cfb555d907458c95d510f77aaad216eddd65baa6faffaf5a27daf16ff
+  checksum: 10/978f8b06cd6509e311e21799abacf42ffcad5166c87accd8eb007e162292ee78d44edb7ea9fdd5dfbc6a6a4ba76c9767d02a1fe3562833e3ac0324ce45bbaff6
   languageName: node
   linkType: hard
 
@@ -5634,12 +5634,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.2, semver@npm:^7.7.3, semver@npm:^7.7.4, semver@npm:^7.8.1":
+"semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.2, semver@npm:^7.7.3, semver@npm:^7.7.4":
   version: 7.8.1
   resolution: "semver@npm:7.8.1"
   bin:
     semver: bin/semver.js
   checksum: 10/3244f6c4cb3f8126fea0426d353829ed4967e41e1f4696337c6fdcad87426466fe2badaf49d7dc85849acfc496ea0599432a4aecc33802d2d774e723acfa30e6
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.8.2":
+  version: 7.8.3
+  resolution: "semver@npm:7.8.3"
+  bin:
+    semver: bin/semver.js
+  checksum: 10/4386558b6d44616512ca55dd2ed37ea6449f97df13e1e44b8afd41d1f21889912ec1fb80e41a3f26a701fad5b0a621752bea183ff74d565dd1fc6e9ca4c734d7
   languageName: node
   linkType: hard
 
