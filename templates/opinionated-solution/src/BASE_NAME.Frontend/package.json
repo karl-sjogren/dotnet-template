@@ -34,7 +34,7 @@
     "eslint-plugin-testing-library": "^7.16.2",
     "jsdom": "^29.1.1",
     "jsdom-testing-mocks": "^1.16.0",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.18",
     "postcss-scss": "^4.0.9",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-visualizer": "^7.0.1",
