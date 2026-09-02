@@ -1076,20 +1076,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "@stylistic/stylelint-plugin@npm:5.2.0"
+"@stylistic/stylelint-plugin@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@stylistic/stylelint-plugin@npm:5.3.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
     "@csstools/css-tokenizer": "npm:^4.0.0"
     "@csstools/media-query-list-parser": "npm:^5.0.0"
-    postcss: "npm:^8.5.8"
-    postcss-selector-parser: "npm:^7.1.1"
+    postcss: "npm:^8.5.26"
+    postcss-selector-parser: "npm:^7.1.5"
     postcss-value-parser: "npm:^4.2.0"
     style-search: "npm:^0.1.0"
   peerDependencies:
     stylelint: ^17.6.0
-  checksum: 10/3639fdec8eb75eb2c9f1113a057f036b95427cbc99523d5cf7a6aeccbaa29653ef2bfc52cc9cb34b61c190435b5475742b38f54887b041fb34e83aebf228f1f4
+  checksum: 10/51b143e51ac689bcdc60e43dc7e5ad261d984f49f750a99727dbbc264a4d117626bfe38320d7bd76573aa0d2868c3b98f3a2f8f025db7863db2edc6716ce9523
   languageName: node
   linkType: hard
 
@@ -1588,7 +1588,7 @@ __metadata:
     "@codecov/vite-plugin": "npm:^2.0.1"
     "@eslint/js": "npm:^10.0.1"
     "@stylistic/eslint-plugin": "npm:^5.10.0"
-    "@stylistic/stylelint-plugin": "npm:^5.2.0"
+    "@stylistic/stylelint-plugin": "npm:^5.3.0"
     "@testing-library/dom": "npm:^10.4.1"
     "@vitest/browser": "npm:^4.1.11"
     "@vitest/coverage-v8": "npm:^4.1.11"
@@ -4546,7 +4546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.16":
+"nanoid@npm:^3.3.16, nanoid@npm:^3.3.17":
   version: 3.3.18
   resolution: "nanoid@npm:3.3.18"
   bin:
@@ -5227,7 +5227,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^7.0.0, postcss-selector-parser@npm:^7.1.1":
+"postcss-selector-parser@npm:^7.0.0, postcss-selector-parser@npm:^7.1.1, postcss-selector-parser@npm:^7.1.5":
   version: 7.1.5
   resolution: "postcss-selector-parser@npm:7.1.5"
   dependencies:
@@ -5267,7 +5267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.15, postcss@npm:^8.5.8":
+"postcss@npm:^8.5.15":
   version: 8.5.15
   resolution: "postcss@npm:8.5.15"
   dependencies:
@@ -5286,6 +5286,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10/8387f421216696bf62a13e5a270e9fefdafc81e196903c0f8d7653f8bab315367cc2261b3c22cf197e492cb075f31bdfc07fd9c3be1cb165ff3cabe14c5a039a
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.26":
+  version: 8.5.26
+  resolution: "postcss@npm:8.5.26"
+  dependencies:
+    nanoid: "npm:^3.3.17"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10/842a624f822f77cb37264cc24f0cf97c0a69dd8d6f7b4a6d76b5a8dc95355899dd044f33a2d4e890da858293de570fce18dff453f3b629ff14cac67a3591895a
   languageName: node
   linkType: hard
 
