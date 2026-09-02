@@ -25,7 +25,7 @@
     <PackageVersion Include="Microsoft.Testing.Extensions.TrxReport" Version="2.2.3" />
     <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="TestableIO.System.IO.Abstractions.TestingHelpers" Version="22.1.1" />
-    <PackageVersion Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.1.1" />
+    <PackageVersion Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.2.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
     <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.2" />
   </ItemGroup>
