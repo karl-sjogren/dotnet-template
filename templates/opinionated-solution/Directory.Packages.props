@@ -1,6 +1,6 @@
 <Project>
   <ItemGroup>
-    <GlobalPackageReference Include="DotNet.ReproducibleBuilds" Version="2.0.2" />
+    <GlobalPackageReference Include="DotNet.ReproducibleBuilds" Version="2.0.5" />
     <GlobalPackageReference Include="Karls.Analyzers" Version="0.4.3" />
     <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0" />
     <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0" />
