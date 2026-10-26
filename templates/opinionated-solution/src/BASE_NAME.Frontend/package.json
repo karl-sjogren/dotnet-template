@@ -22,10 +22,10 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@stylistic/stylelint-plugin": "^5.3.1",
     "@testing-library/dom": "^10.4.2",
-    "@vitest/browser": "^5.0.4",
-    "@vitest/coverage-v8": "^5.0.4",
-    "@vitest/eslint-plugin": "^1.6.27",
-    "@vitest/ui": "^5.0.4",
+    "@vitest/browser": "^5.0.5",
+    "@vitest/coverage-v8": "^5.0.5",
+    "@vitest/eslint-plugin": "^1.6.28",
+    "@vitest/ui": "^5.0.5",
     "autoprefixer": "^10.6.1",
     "cssnano": "^9.9.0",
     "eslint": "^10.13.0",
@@ -46,7 +46,7 @@
     "undici": "^8.12.2",
     "vite": "^8.3.4",
     "vite-plugin-mkcert": "^2.1.0",
-    "vitest": "^5.0.4",
+    "vitest": "^5.0.5",
     "webdriverio": "^10.0.2"
   }
 }
