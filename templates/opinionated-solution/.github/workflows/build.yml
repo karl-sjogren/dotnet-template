@@ -44,10 +44,10 @@ jobs:
         git config --global core.eol crlf
 
     - name: Checkout sources
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Setup Node.js environment
-      uses: actions/setup-node@v6
+      uses: actions/setup-node@v7
       with:
         node-version: lts/*
         check-latest: true
@@ -67,7 +67,7 @@ jobs:
       working-directory: ./src/BASE_NAME.Frontend/
 
     - name: Upload test results
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: frontend-test-results
         path: |
@@ -81,10 +81,10 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Setup Node.js environment
-      uses: actions/setup-node@v6
+      uses: actions/setup-node@v7
       with:
         node-version: lts/*
         check-latest: true
@@ -100,7 +100,7 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: frontend-artifacts
         path: ./src/BASE_NAME.Web/wwwroot/
@@ -112,21 +112,24 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Install .NET
-      uses: actions/setup-dotnet@v5
+      uses: actions/setup-dotnet@v6
       with:
         global-json-file: global.json
 
     - name: Restore NuGet packages
       run: dotnet restore --verbosity minimal
 
+    - name: Build .NET solution
+      run: dotnet build --configuration Release --no-restore
+
     - name: Run .NET tests
-      run: dotnet test --configuration Release
+      run: dotnet test --coverage --coverage-output-format cobertura --coverage-settings ./test/coverage.config --report-trx --no-build --configuration Release --no-progress
 
     - name: Upload test results
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: net-test-results
         path: |
@@ -147,27 +150,20 @@ jobs:
     # While we don't use sources directly in this job the test reporter wants to check
     # some files through git so we need the sources.
     - name: Checkout sources
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Download .NET tests results
-      uses: actions/download-artifact@v6
+      uses: actions/download-artifact@v8
       with:
         name: net-test-results
         path: ./
-
-    - name: Publish .NET tests
-      uses: dorny/test-reporter@v2
-      with:
-        name: 🧪 .NET test results
-        path: ./**/*.trx
-        reporter: dotnet-trx
 
     - name: Create history folder
       run: mkdir ./coverage-history
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v11
+      uses: dawidd6/action-download-artifact@v27
       with:
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
@@ -178,14 +174,14 @@ jobs:
         if_no_artifact_found: ignore
 
     - name: Install .NET
-      uses: actions/setup-dotnet@v5
+      uses: actions/setup-dotnet@v6
       with:
         global-json-file: global.json
 
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@v5
       with:
-        reports: '../**/coverage.cobertura.xml;../**/cobertura-coverage.xml'
+        reports: './**/coverage.cobertura.xml;./**/cobertura-coverage.xml'
         targetdir: 'coverage-report'
         historydir: 'coverage-history'
         reporttypes: 'Html;MarkdownSummary;MarkdownDeltaSummary;Cobertura'
@@ -193,13 +189,13 @@ jobs:
         verbosity: 'Info'
 
     - name: Upload coverage report
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: coverage-report
         path: coverage-report
 
     - name: Upload to Codecov
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@v7
       # To save on uploads, only upload coverage from the main branches and PRs
       if: env.PUBLISH_CODECOV
       with:
@@ -207,13 +203,13 @@ jobs:
         files: coverage-report/Cobertura.xml
 
     - name: Upload coverage history
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: coverage-history
         path: coverage-history
 
     - name: Publish code coverage summary to run
-      uses: LouisBrunner/checks-action@v2.0.0
+      uses: LouisBrunner/checks-action@v3.1.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}
@@ -233,10 +229,10 @@ jobs:
 
     steps:
     - name: Checkout sources
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     - name: Install .NET
-      uses: actions/setup-dotnet@v5
+      uses: actions/setup-dotnet@v6
       with:
         global-json-file: global.json
 
@@ -248,7 +244,7 @@ jobs:
       working-directory: ./
 
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v7
       with:
         name: publish-artifacts
         path: ./artifacts/

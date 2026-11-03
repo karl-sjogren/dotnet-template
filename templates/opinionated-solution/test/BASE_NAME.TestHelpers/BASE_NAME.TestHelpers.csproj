@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <IsTestProject>false</IsTestProject>
+    <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>
   </PropertyGroup>
 
 <!--#if (includeHttpClientSetup) -->
