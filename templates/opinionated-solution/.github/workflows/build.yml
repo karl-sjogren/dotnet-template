@@ -134,7 +134,7 @@ jobs:
         name: net-test-results
         path: |
           ./**/*.trx
-          ./**/coverage.cobertura.xml
+          ./**/*.cobertura.xml
 
   test-and-coverage-results:
     name: Publish test and coverage results
@@ -163,7 +163,7 @@ jobs:
       working-directory: ./
 
     - name: Download historial coverage
-      uses: dawidd6/action-download-artifact@v27
+      uses: dawidd6/action-download-artifact@v28
       with:
         workflow_conclusion: success
         branch: ${{ github.head_ref }}
@@ -181,7 +181,7 @@ jobs:
     - name: Generate coverage report
       uses: danielpalme/ReportGenerator-GitHub-Action@v5
       with:
-        reports: './**/coverage.cobertura.xml;./**/cobertura-coverage.xml'
+        reports: './**/*.cobertura.xml;./**/cobertura-coverage.xml'
         targetdir: 'coverage-report'
         historydir: 'coverage-history'
         reporttypes: 'Html;MarkdownSummary;MarkdownDeltaSummary;Cobertura'
