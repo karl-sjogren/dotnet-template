@@ -54,7 +54,7 @@
 <!--#endif -->
     <PackageReference Include="Shouldly" />
     <PackageReference Include="TestableIO.System.IO.Abstractions.TestingHelpers" />
-    <PackageReference Include="xunit.v3.mtp-v2" />
+    <PackageReference Include="xunit.v3" />
     <PackageReference Include="xunit.runner.visualstudio">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
