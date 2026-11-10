@@ -134,7 +134,7 @@ jobs:
         name: net-test-results
         path: |
           ./**/*.trx
-          ./**/coverage.cobertura.xml
+          ./**/*.cobertura.xml
 
   test-and-coverage-results:
     name: Publish test and coverage results
