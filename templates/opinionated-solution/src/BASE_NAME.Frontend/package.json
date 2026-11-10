@@ -20,7 +20,7 @@
     "@codecov/vite-plugin": "^2.0.1",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@stylistic/stylelint-plugin": "^5.3.1",
+    "@stylistic/stylelint-plugin": "^6.0.1",
     "@testing-library/dom": "^10.4.2",
     "@vitest/browser": "^5.1.0",
     "@vitest/coverage-v8": "^5.1.0",

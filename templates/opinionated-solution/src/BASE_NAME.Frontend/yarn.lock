@@ -362,6 +362,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/media-query-list-parser@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@csstools/media-query-list-parser@npm:5.0.2"
+  peerDependencies:
+    "@csstools/css-parser-algorithms": ^4.0.2
+    "@csstools/css-tokenizer": ^4.0.2
+  checksum: 10/9b214a27fc0ab45d3b2882e83ff8fe45c8638077877c6cc9841fc51a7096880911a8e88aff0ef3647b68853a00a1d4ce78de53638889cb9843dae6f5c00cbc4a
+  languageName: node
+  linkType: hard
+
 "@csstools/selector-resolve-nested@npm:^4.0.1":
   version: 4.0.1
   resolution: "@csstools/selector-resolve-nested@npm:4.0.1"
@@ -1114,20 +1124,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "@stylistic/stylelint-plugin@npm:5.3.1"
+"@stylistic/stylelint-plugin@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "@stylistic/stylelint-plugin@npm:6.0.1"
   dependencies:
-    "@csstools/css-parser-algorithms": "npm:^4.0.0"
-    "@csstools/css-tokenizer": "npm:^4.0.0"
-    "@csstools/media-query-list-parser": "npm:^5.0.0"
-    postcss: "npm:^8.5.26"
-    postcss-selector-parser: "npm:^7.1.5"
+    "@csstools/css-parser-algorithms": "npm:^4.0.2"
+    "@csstools/css-tokenizer": "npm:^4.0.2"
+    "@csstools/media-query-list-parser": "npm:^5.0.2"
+    postcss: "npm:^8.5.32"
+    postcss-selector-parser: "npm:^7.1.7"
     postcss-value-parser: "npm:^4.2.0"
     style-search: "npm:^0.1.0"
   peerDependencies:
-    stylelint: ^17.6.0
-  checksum: 10/a68347902feb7ea5e39151bdc568a18c89220b2f2b3be77fc2f554fac6aab8445ac82f8aa7d46ef03f1b29c6724ee5f5257db93fe566f4786f66cfc84614715f
+    stylelint: ^18.0.0
+  checksum: 10/0b8fd80908c6ffd20d6503f9dd38d0c997ac0850d023f97fe71860855ec2b2f8d98b0f5ad4e2bb67e1837253e9d0631ab8733b6be42bc7f2db21158cc926025a
   languageName: node
   linkType: hard
 
@@ -1801,7 +1811,7 @@ __metadata:
     "@codecov/vite-plugin": "npm:^2.0.1"
     "@eslint/js": "npm:^10.0.1"
     "@stylistic/eslint-plugin": "npm:^5.10.0"
-    "@stylistic/stylelint-plugin": "npm:^5.3.1"
+    "@stylistic/stylelint-plugin": "npm:^6.0.1"
     "@testing-library/dom": "npm:^10.4.2"
     "@vitest/browser": "npm:^5.1.0"
     "@vitest/coverage-v8": "npm:^5.1.0"
@@ -4742,6 +4752,16 @@ __metadata:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
   checksum: 10/8b00b63c8ae9eab8567bebf2710971dcd832a7a20a9cae7059d92aee3df38fbcd13ce454bdc09c54e777dbddd0df38966227000091c88002741b8575f3878f05
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^7.1.7":
+  version: 7.1.7
+  resolution: "postcss-selector-parser@npm:7.1.7"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10/9413749ad38d8e22e4a5e47287e5501493238ab73eea276381476933332604df49468451e99a3d6614463fd3ee96655a80821a93949cfe425ecd6acf210535b0
   languageName: node
   linkType: hard
 
