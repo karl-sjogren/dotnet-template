@@ -30,6 +30,9 @@ jobs:
     - name: Restore NuGet packages
       run: dotnet restore --verbosity minimal
 
+    - name: Build .NET solution
+      run: dotnet build --configuration Release --no-restore
+
     - name: Run .NET tests
       run: dotnet test --no-build --configuration Release --no-progress
 
