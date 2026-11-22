@@ -9,4 +9,12 @@
     ".vs/": true
   },
   "dotnet.defaultSolution": "BASE_NAME.slnx",
+  //#if (addFrontendProject)
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.packageManager": "yarn",
+  "stylelint.configBasedir": "./src/BASE_NAME.Frontend/",
+  "stylelint.validate": ["css", "postcss", "scss"],
+  //#endif
 }
