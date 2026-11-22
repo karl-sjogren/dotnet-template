@@ -7,5 +7,5 @@
     "**/tmp": true,
     "**/.yarn/cache": true
   },
-  "dotnet.defaultSolution": "Karls.Templates.slnx",
+  "dotnet.defaultSolution": "Karls.Templates.slnx"
 }
