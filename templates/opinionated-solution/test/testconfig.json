@@ -1,4 +1,5 @@
 {
+  "$schema": "https://xunit.net/schema/current/xunit.testconfig.schema.json",
   "xUnit": {
     "culture": "en-US",
     "parallelizeAssembly": true
