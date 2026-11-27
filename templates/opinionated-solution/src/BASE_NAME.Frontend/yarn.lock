@@ -1910,7 +1910,7 @@ __metadata:
     postcss: "npm:^8.5.33"
     postcss-scss: "npm:^4.0.9"
     rollup-plugin-copy: "npm:^3.5.0"
-    rollup-plugin-visualizer: "npm:^7.1.3"
+    rollup-plugin-visualizer: "npm:^7.3.0"
     sass: "npm:^1.108.2"
     stylelint: "npm:^18.1.0"
     stylelint-config-standard: "npm:^41.1.0"
@@ -4908,13 +4908,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^7.1.3":
-  version: 7.1.3
-  resolution: "rollup-plugin-visualizer@npm:7.1.3"
+"rollup-plugin-visualizer@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "rollup-plugin-visualizer@npm:7.3.0"
   dependencies:
+    "@jridgewell/trace-mapping": "npm:^0.3.31"
     open: "npm:^11.0.0"
     picomatch: "npm:^4.0.5"
-    source-map: "npm:^0.8.0"
     yargs: "npm:^18.1.0"
   peerDependencies:
     rolldown: 1.x || ^1.0.0-beta || ^1.0.0-rc
@@ -4926,7 +4926,7 @@ __metadata:
       optional: true
   bin:
     rollup-plugin-visualizer: dist/bin/cli.js
-  checksum: 10/c118abce746c1efa72914c217925e5d3dbce5a9a57fe2ec9b0eb03a87a6aab15129d1d65c159dd7f64e33c10f58a219ae8af9c6c5922c3fca292c10838b480f7
+  checksum: 10/85668e97406647f1656ee59bf089ec227cce0f70fe503e220ebef998461e93a939a25c4b8afe2ac5cf5e9f73aaa3de86556d135c41581c0cb8b3bc31c811081a
   languageName: node
   linkType: hard
 
@@ -5094,7 +5094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.8.0, source-map@npm:~0.8.0":
+"source-map@npm:~0.8.0":
   version: 0.8.0
   resolution: "source-map@npm:0.8.0"
   checksum: 10/ad71b0c03715d970c2d114f0d403cc02c1e60e9ce997715f0a69bde2604b1d1ac287760f93d9763313a2a2b2c297df901f3378569f750a240e936ac5ddfd6b31
