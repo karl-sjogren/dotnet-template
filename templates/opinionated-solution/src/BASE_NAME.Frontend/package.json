@@ -37,7 +37,7 @@
     "postcss": "^8.5.33",
     "postcss-scss": "^4.0.9",
     "rollup-plugin-copy": "^3.5.0",
-    "rollup-plugin-visualizer": "^7.1.3",
+    "rollup-plugin-visualizer": "^7.3.0",
     "sass": "^1.108.2",
     "stylelint": "^18.1.0",
     "stylelint-config-standard": "^41.1.0",
